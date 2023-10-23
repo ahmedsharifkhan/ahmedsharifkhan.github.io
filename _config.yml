@@ -7,7 +7,7 @@ description: >- # this means to ignore newlines until "baseurl:"
   line in _config.yml. It will appear in your document head meta (for
   Google search results) and in your feed.xml site description.
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "https://ahmedsharifkhan.github.io/" # the base hostname & protocol for your site, e.g. http://example.com
+url: "" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: jekyllrb
 github_username:  jekyll
 
@@ -31,7 +31,11 @@ header_pages:
   - title: Resume
     url: /resume
 
+# Example 2: Defining the URL for your CSS file(s)
+# css_url: "/assets/css/styles.css"
 
+# # Example 3: Configuring the asset folder (by default, assets/)
+# assets_dir: "/static"
 
 
 # Build settings
