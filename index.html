@@ -86,6 +86,7 @@ title: Home
       </div>
     </div>
 
+<!-- BLOG EDITORIAL -->
     <div class="section-latest">
       <div class="container">
         <div class="row gutter-v1 align-items-stretch mb-5">
@@ -94,10 +95,11 @@ title: Home
           </div>
           <div class="col-md-9 pr-md-5">
             <div class="row">
+              {% for post in site.posts %}
               <div class="col-12">
                 <div class="post-entry horizontal d-md-flex">
                   <div class="media">
-                    <a href="#"><img src="{{ site.baseurl }}/assets/images/img_h_3.jpg" alt="Image" class="img-fluid"></a>
+                    <a href=""><img src="{{ post.image }}" alt="Image" class="img-fluid"></a>
                   </div>
                   <div class="text">
                     <div class="meta">
@@ -105,12 +107,15 @@ title: Home
                       <span>&bullet;</span>
                       <span>5 mins read</span>
                     </div>
-                    <h2><a href="#">Far far away behind the Word Mountains far from Away</a></h2>
-                    <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia.</p>
+                    <h2><a href="{{ post.url | relative_url }}">{{ post.title | truncate: 65 }}</a></h2>
+                    <p>{{ post.Description | strip_html | truncate: 100 }}</p>
                     
                   </div>
                 </div>
               </div>
+
+              {% endfor %}
+
 
               <div class="col-12">
                 <div class="post-entry horizontal d-md-flex">

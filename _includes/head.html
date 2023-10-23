@@ -21,3 +21,37 @@
   
     <title>Story Free HTML Template by Untree.co</title>
   </head>
+
+  <Style>
+
+    /* For PC screens */
+    @media screen and (min-width: 768px) {
+      .post-slide.single-page {
+        background-image: url('image_pc.jpg');
+      }
+    }
+    
+    /* For mobile screens */
+    @media screen and (max-width: 767px) {
+      .post-slide.single-page {
+        background-image: url('image_mobile.jpg');
+      }
+    }
+    
+
+
+
+    /* Default background image for all devices */
+.post-slide.single-page {
+  background-image: url('image_pc.jpg');
+}
+
+/* For mobile screens */
+@media screen and (max-width: 767px) {
+  .post-slide.single-page {
+    background-image: url('image_mobile.jpg');
+  }
+}
+
+  </Style>
+
