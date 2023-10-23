@@ -28,8 +28,8 @@ header_pages:
     url: /about
   - title: Contact
     url: /contact
-  - title: Resume
-    url: /resume
+  - title: portfolio
+    url: /portfolio
 
 # Example 2: Defining the URL for your CSS file(s)
 # css_url: "/assets/css/styles.css"
