@@ -4,144 +4,51 @@ title: Blog
 ---
 
 <div class="section-latest">
-    <div class="container">
-      <div class="row gutter-v1 align-items-stretch mb-5">
-        <div class="col-12">
-          <h2 class="section-title">{{ site.logo }} Editorial</h2>
-        </div>
-        <div class="col-md-9 pr-md-5">
-          <div class="row">
-            <div class="col-12">
-              <div class="post-entry horizontal d-md-flex">
-                <div class="media">
-                  <a href="#"><img src="{{ site.baseurl }}/assets/images/img_h_3.jpg" alt="Image" class="img-fluid"></a>
-                </div>
-                <div class="text">
-                  <div class="meta">
-                    <span>{{ page.date | date: "%B %d, %Y" }}</span>
-                    <span>&bullet;</span>
-                    <span>5 mins read</span>
-                  </div>
-                  <h2><a href="#">Far far away behind the Word Mountains far from Away</a></h2>
-                  <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia.</p>
-                  
-                </div>
+  <div class="container">
+    <div class="row gutter-v1 align-items-stretch mb-5">
+      <div class="col-12">
+        <h2 class="section-title">{{ site.logo }} Editorial</h2>
+      </div>
+      <div class="col-md-9 pr-md-5">
+        <div class="row">
+          {% for post in site.posts %}
+          <div class="col-12">
+            <div class="post-entry horizontal d-md-flex">
+              <div class="media">
+                <a href="#"><img src="{{ post.image }}" alt="Image" class="img-fluid"></a>
               </div>
-            </div>
+              <div class="text">
+                <div class="meta-cat"><a href="#">{{ post.categories }}</a></div>
+                <h2><a href="{{ post.url | relative_url }}">{{ post.title | truncate: 65 }}</a></h2>
+                <div class="meta mb-0">
+                  <span>{{ post.date | date: "%B %d, %Y" }}</span>
+                  <span>&bullet;</span>
+                  <span>{{ post.date | date: "%I:%M %p" }}</span>
+                </div>
+                <p>{{ post.Description | strip_html | truncate: 100 }}</p>
 
-            <div class="col-12">
-              <div class="post-entry horizontal d-md-flex">
-                <div class="media">
-                  <a href="#"><img src="{{ site.baseurl }}/assets/images/img_h_5.jpg" alt="Image" class="img-fluid"></a>
-                </div>
-                <div class="text">
-                  <div class="meta-cat"><a href="#">Business</a></div>
-                  <h2><a href="#">Far far away behind the Word Mountains far from Away</a></h2>
-                  <div class="meta mb-0">
-                    <span>May 10, 2020</span>
-                    <span>&bullet;</span>
-                    <span>5 mins read</span>
-                  </div>
-                  <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia.</p>
-                  
-                </div>
               </div>
             </div>
-            {% for post in site.posts %}
-            <div class="col-12">
-              <div class="post-entry horizontal d-md-flex">
-                <div class="media">
-                  <a href="#"><img src="{{ post.image }}" alt="Image" class="img-fluid"></a>
-                </div>
-                <div class="text">
-                  <div class="meta-cat"><a href="#">Business</a></div>
-                  <h2><a href="{{ post.url | relative_url }}">{{ post.title | truncate: 65 }}</a></h2>
-                  <div class="meta mb-0">
-                    <span>{{ post.date | date: "%B %d, %Y" }}</span>
-                    <span>&bullet;</span>
-                    <span>{{ post.date | date: "%I:%M %p" }}</span>
-                  </div>
-                  <p>{{ post.Description | strip_html | truncate: 100 }}</p>
-                  
-                </div>
-              </div>
-            </div>
-            {% endfor %}
-
-            <div class="col-12">
-              <div class="post-entry horizontal d-md-flex">
-                <div class="media">
-                  <a href="#"><img src="{{ site.baseurl }}/assets/images/img_h_1.jpg" alt="Image" class="img-fluid"></a>
-                </div>
-                <div class="text">
-                  <div class="meta-cat"><a href="#">Business</a></div>
-                  <h2><a href="#">Far far away behind the Word Mountains far from Away</a></h2>
-                  <div class="meta mb-0">
-                    <span>May 10, 2020</span>
-                    <span>&bullet;</span>
-                    <span>5 mins read</span>
-                  </div>
-                  <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia.</p>
-                  
-                </div>
-              </div>
-            </div>
-
-            <div class="col-12">
-              <div class="post-entry horizontal d-md-flex">
-                <div class="media">
-                  <a href="#"><img src="{{ site.baseurl }}/assets/images/img_h_7.jpg" alt="Image" class="img-fluid"></a>
-                </div>
-                <div class="text">
-                  <div class="meta-cat"><a href="#">Business</a></div>
-                  <h2><a href="#">Far far away behind the Word Mountains far from Away</a></h2>
-                  <div class="meta mb-0">
-                    <span>May 10, 2020</span>
-                    <span>&bullet;</span>
-                    <span>5 mins read</span>
-                  </div>
-                  <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia.</p>
-                  
-                </div>
-              </div>
-            </div>
-
-            <div class="col-12">
-              <div class="post-entry horizontal d-flex mb-0">
-                <div class="media">
-                  <a href="#"><img src="{{ site.baseurl }}/assets/images/img_h_8.jpg" alt="Image" class="img-fluid"></a>
-                </div>
-                <div class="text">
-                  <div class="meta-cat"><a href="#">Business</a></div>
-                  <h2><a href="#">Far far away behind the Word Mountains far from Away</a></h2>
-                  <div class="meta mb-0">
-                    <span>May 10, 2020</span>
-                    <span>&bullet;</span>
-                    <span>5 mins read</span>
-                  </div>
-                  <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia.</p>
-                  
-                </div>
-              </div>
-            </div>
-
           </div>
-        </div>
-<br>
-        <div class="col-md-3">
-          <div class="mb-4">
-            <a href="https://vimeo.com/342333493" data-fancybox class="video-wrap">
-              <span class="play-wrap"><span class="icon-play"></span></span>
-              <img src="{{ site.baseurl }}/assets/images/img_h_5.jpg" alt="Image" class="img-fluid rounded">
-            </a>
-          </div>
-          <div class="floating-block sticky-top text-center">
-            <h2 class="mb-3 text-black">Subscribe to Newsletter</h2>
-            <p>Far far away behind the word mountains far from.</p>
-            <form action="#">
-              <input type="email" class="form-control mb-2" placeholder="Enter email">
-              <input type="submit" value="Subscribe" class="btn btn-primary btn-block">
-            </form>
-          </div>
+          {% endfor %}
+
         </div>
       </div>
+      <br>
+      <div class="col-md-3">
+        <div class="mb-4">
+          <a href="https://vimeo.com/342333493" data-fancybox class="video-wrap">
+            <span class="play-wrap"><span class="icon-play"></span></span>
+            <img src="{{ site.baseurl }}/assets/images/img_h_5.jpg" alt="Image" class="img-fluid rounded">
+          </a>
+        </div>
+        <div class="floating-block sticky-top text-center">
+          <h2 class="mb-3 text-black">Subscribe to Newsletter</h2>
+          <p>Far far away behind the word mountains far from.</p>
+          <form action="#">
+            <input type="email" class="form-control mb-2" placeholder="Enter email">
+            <input type="submit" value="Subscribe" class="btn btn-primary btn-block">
+          </form>
+        </div>
+      </div>
+    </div>
