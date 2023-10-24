@@ -18,7 +18,7 @@ author_social:
 title:  "Jekyll has built-in support for using plugins to extend the core functionality."
 date:   2023-10-12 17:35:09 +0600
 categories: [Health,  Travel, Life Style]
-Description: To work with plugins packaged as gems, one has to list the desired gems in the configuration file under a top-level key named.
+description: To work with plugins packaged as gems, one has to list the desired gems in the configuration file under a top-level key named.
 image: "https://tds-images.thedailystar.net/sites/default/files/styles/big_202/public/images/2023/10/07/the_road_to_resilient_entrepreneurship.jpg"
 ---
 
