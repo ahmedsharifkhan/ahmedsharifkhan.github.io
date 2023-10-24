@@ -18,6 +18,10 @@ defaults:
     values:
       permalink: "/blog/:title/"
 
+collections:
+  portfolio:
+    output: true
+    permalink: /portfolio/:path/
 
 header_pages:
   - title: Home

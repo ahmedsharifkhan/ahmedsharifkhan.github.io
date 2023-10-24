@@ -3,10 +3,6 @@ layout: default
 title: Portfolio
 ---
 
-
-
-
-
 <div class="site-hero py-5 bg-light mb-5">
 
   <div class="container">
@@ -17,10 +13,6 @@ title: Portfolio
     </div>
   </div>
 </div>
-
-
-
-
 
 <section class="site-section pt-0" id="portfolio-section">
   <div class="container">
@@ -35,96 +27,29 @@ title: Portfolio
       </ul>
     </div>
 
+
+    
     <div class="filters-content mb-5" data-aos="fade-up" data-aos-delay="200">
       <div class="row grid">
-        <div class="isotope-card col-sm-4 all mockup">
-          <a href="{{ site.baseurl }}/assets/images/img_v_4.jpg" data-fancybox="gal">
-            <img src="{{ site.baseurl }}/assets/images/img_v_4.jpg" alt="Image" class="img-fluid">
-            <div class="contents">
-              <h3>Card Vol. 3</h3>
-              <div class="cat">Mockup</div>
-            </div>
-          </a>
-        </div>
+        
+        {% assign sorted_portfolio = site.portfolio | sort: 'date' | reverse %}
+        {% for item in sorted_portfolio limit: 10 %}
 
         <div class="isotope-card col-sm-4 all mockup">
-          <a href="{{ site.baseurl }}/assets/images/img_h_1.jpg" data-fancybox="gal">
-            <img src="{{ site.baseurl }}/assets/images/img_h_1.jpg" alt="Image" class="img-fluid">
+          <a href="{{ item.image }}" data-fancybox="gal">
+            <img src="{{ item.image }}" alt="{{ item.title }}" class="img-fluid">
             <div class="contents">
-              <h3>Card Vol. 3</h3>
-              <div class="cat">Mockup</div>
+              <h3>{{ item.title }}</h3>
+              <div class="cat">{{ item.description | truncate: 30}}</div>
             </div>
           </a>
         </div>
-        <div class="isotope-card col-sm-4 all mockup">
-          <a href="{{ site.baseurl }}/assets/images/img_h_8.jpg" data-fancybox="gal">
-            <img src="{{ site.baseurl }}/assets/images/img_h_8.jpg" alt="Image" class="img-fluid">
-            <div class="contents">
-              <h3>Card Vol. 3</h3>
-              <div class="cat">Mockup</div>
-            </div>
-          </a>
-        </div>
-        <div class="isotope-card col-sm-4 all typography">
-          <a href="{{ site.baseurl }}/assets/images/img_h_2.jpg" data-fancybox="gal">
-            <img src="{{ site.baseurl }}/assets/images/img_h_2.jpg" alt="Image" class="img-fluid">
-            <div class="contents">
-              <h3>House Design</h3>
-              <div class="cat">Typography</div>
-            </div>
-          </a>
-
-        </div>                            
-        <div class="isotope-card col-sm-4 all mockup">
-          <a href="{{ site.baseurl }}/assets/images/img_h_3.jpg" data-fancybox="gal">
-            <img src="{{ site.baseurl }}/assets/images/img_h_3.jpg" alt="Image" class="img-fluid">
-            <div class="contents">
-              <h3>WoW</h3>
-              <div class="cat">Mockup</div>
-            </div>
-          </a>
-        </div>
-        <div class="isotope-card col-sm-4 all packaging">
-          <a href="{{ site.baseurl }}/assets/images/img_h_4.jpg" data-fancybox="gal">
-            <img src="{{ site.baseurl }}/assets/images/img_h_4.jpg" alt="Image" class="img-fluid">
-            <div class="contents">
-              <h3>Seat</h3>
-              <div class="cat">Packaging</div>
-            </div>
-          </a>
-        </div>
-        <div class="isotope-card col-sm-4 all typography">
-          <a href="{{ site.baseurl }}/assets/images/img_h_5.jpg" data-fancybox="gal">
-            <img src="{{ site.baseurl }}/assets/images/img_h_5.jpg" alt="Image" class="img-fluid">
-            <div class="contents">
-              <h3>Seat</h3>
-              <div class="cat">Packaging</div>
-            </div>
-          </a>
-        </div>
-        <div class="isotope-card col-sm-4 all photography">
-          <a href="{{ site.baseurl }}/assets/images/img_v_1.jpg" data-fancybox="gal">
-            <img src="{{ site.baseurl }}/assets/images/img_v_1.jpg" alt="Image" class="img-fluid">
-            <div class="contents">
-              <h3>House Design</h3>
-              <div class="cat">Photography</div>
-            </div>
-          </a>
-        </div>
-        <div class="isotope-card col-sm-4 all photography">
-          <a href="{{ site.baseurl }}/assets/images/img_v_2.jpg" data-fancybox="gal">
-            <img src="{{ site.baseurl }}/assets/images/img_v_2.jpg" alt="Image" class="img-fluid">
-            <div class="contents">
-              <h3>House Design</h3>
-              <div class="cat">Photography</div>
-            </div>
-          </a>
-
-        </div>
+        {% endfor %}
       </div>
     </div>
   </div>
 </section>
+
 <!-- .untrtee_co-section -->
 
 <div class="site-section testimonial-section">
