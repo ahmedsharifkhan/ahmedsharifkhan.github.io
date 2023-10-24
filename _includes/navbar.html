@@ -23,12 +23,15 @@
       <nav class="site-nav">
         <div class="row justify-content-between align-items-center">
           <div class="d-none d-lg-block col-lg-3 top-menu">
-            <a href="#" class="d-inline-flex align-items-center"><span class="icon-facebook mr-2"></span></a>
-            <a href="#" class="d-inline-flex align-items-center"><span class="icon-twitter mr-2"></span></a>
-            <a href="#" class="d-inline-flex align-items-center"><span class="icon-instagram mr-2"></span></a>
+            <a href="{{ site.facebook_username }}" class="d-inline-flex align-items-center" target="_blank"><span class="icon-facebook mr-2"></span></a>
+            <a href="{{ site.twitter_username }}" class="d-inline-flex align-items-center" target="_blank"><span class="icon-twitter mr-2"></span></a>
+            <a href="{{ site.instagram_username }}" class="d-inline-flex align-items-center" target="_blank"><span class="icon-instagram mr-2"></span></a>
+            <a href="{{ site.linkedin_username }}" class="d-inline-flex align-items-center" target="_blank"><span class="icon-linkedin mr-2"></span></a>
+            <a href="{{ site.github_username }}" class="d-inline-flex align-items-center" target="_blank"><span class="icon-github mr-2"></span></a>
+            <a href="{{ site.youtube_username }}" class="d-inline-flex align-items-center" target="_blank"><span class="icon-youtube-play mr-2"></span></a>
           </div>
           <div class="col-3 col-md-6 col-lg-6 text-lg-center logo">
-            <a href="{{ site.baseurl }}/">Story<span class="text-primary">.</span> </a>
+            <a href="{{ site.baseurl }}/">{{ site.logo }}<span class="text-primary">.</span> </a>
           </div>
           <div class="col-9 col-md-6 col-lg-3 text-right top-menu">
 
