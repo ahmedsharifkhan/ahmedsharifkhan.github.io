@@ -18,7 +18,7 @@ title: Home
               <span class="mx-2">&bullet;</span>
               <span><a href="#">8 Comments</a></span>
             </div>
-            <h3><a href="#">{{ post.title | truncate: 30 }}</a></h3>
+            <h3><a href="{{ post.url | relative_url }}">{{ post.title | truncate: 30 }}</a></h3>
             <p>{{ post.description | truncate: 150 }}</p>
             <div class="author d-flex align-items-center">
               <div class="img mr-3">
@@ -66,106 +66,7 @@ title: Home
                   </div>
                 </div>
               </div>
-
               {% endfor %}
-
-
-              <div class="col-12">
-                <div class="post-entry horizontal d-md-flex">
-                  <div class="media">
-                    <a href="#"><img src="{{ site.baseurl }}/assets/images/img_h_5.jpg" alt="Image" class="img-fluid"></a>
-                  </div>
-                  <div class="text">
-                    <div class="meta-cat"><a href="#">Business</a></div>
-                    <h2><a href="#">Far far away behind the Word Mountains far from Away</a></h2>
-                    <div class="meta mb-0">
-                      <span>May 10, 2020</span>
-                      <span>&bullet;</span>
-                      <span>5 mins read</span>
-                    </div>
-                    <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia.</p>
-                    
-                  </div>
-                </div>
-              </div>
-
-              <div class="col-12">
-                <div class="post-entry horizontal d-md-flex">
-                  <div class="media">
-                    <a href="#"><img src="{{ site.baseurl }}/assets/images/img_h_6.jpg" alt="Image" class="img-fluid"></a>
-                  </div>
-                  <div class="text">
-                    <div class="meta-cat"><a href="#">Business</a></div>
-                    <h2><a href="#">Far far away behind the Word Mountains far from Away</a></h2>
-                    <div class="meta mb-0">
-                      <span>May 10, 2020</span>
-                      <span>&bullet;</span>
-                      <span>5 mins read</span>
-                    </div>
-                    <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia.</p>
-                    
-                  </div>
-                </div>
-              </div>
-
-
-              <div class="col-12">
-                <div class="post-entry horizontal d-md-flex">
-                  <div class="media">
-                    <a href="#"><img src="{{ site.baseurl }}/assets/images/img_h_1.jpg" alt="Image" class="img-fluid"></a>
-                  </div>
-                  <div class="text">
-                    <div class="meta-cat"><a href="#">Business</a></div>
-                    <h2><a href="#">Far far away behind the Word Mountains far from Away</a></h2>
-                    <div class="meta mb-0">
-                      <span>May 10, 2020</span>
-                      <span>&bullet;</span>
-                      <span>5 mins read</span>
-                    </div>
-                    <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia.</p>
-                    
-                  </div>
-                </div>
-              </div>
-
-              <div class="col-12">
-                <div class="post-entry horizontal d-md-flex">
-                  <div class="media">
-                    <a href="#"><img src="{{ site.baseurl }}/assets/images/img_h_7.jpg" alt="Image" class="img-fluid"></a>
-                  </div>
-                  <div class="text">
-                    <div class="meta-cat"><a href="#">Business</a></div>
-                    <h2><a href="#">Far far away behind the Word Mountains far from Away</a></h2>
-                    <div class="meta mb-0">
-                      <span>May 10, 2020</span>
-                      <span>&bullet;</span>
-                      <span>5 mins read</span>
-                    </div>
-                    <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia.</p>
-                    
-                  </div>
-                </div>
-              </div>
-
-              <div class="col-12">
-                <div class="post-entry horizontal d-flex mb-0">
-                  <div class="media">
-                    <a href="#"><img src="{{ site.baseurl }}/assets/images/img_h_8.jpg" alt="Image" class="img-fluid"></a>
-                  </div>
-                  <div class="text">
-                    <div class="meta-cat"><a href="#">Business</a></div>
-                    <h2><a href="#">Far far away behind the Word Mountains far from Away</a></h2>
-                    <div class="meta mb-0">
-                      <span>May 10, 2020</span>
-                      <span>&bullet;</span>
-                      <span>5 mins read</span>
-                    </div>
-                    <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia.</p>
-                    
-                  </div>
-                </div>
-              </div>
-
             </div>
           </div>
 
