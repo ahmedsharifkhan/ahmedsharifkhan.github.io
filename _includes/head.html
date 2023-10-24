@@ -23,20 +23,30 @@
     <title>{{ page.title }}</title>
   </head>
 
-  <Style>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.7.2/highlight.min.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script>
+  
+  <style>
+    pre code {
+        display: block;
+        padding: 1em;
+        border: 1px solid #ccc;
+        background-color: #F1F1F3; /* Set the background color to black */
+        color: #110e0e; /* Set the text color to white */
+    }
+    
+    .copy-code-button {
+        background-color: #A4C639;
+        color: #fff;
+        border: none;
+        margin-top: 1px;
+        padding: 5px 10px;
+        cursor: pointer;
+        transition: background-color 0.3s ease, transform 0.3s ease;
+    }
 
-/* Default background image for screens wider than 767px (PC screens) */
-.post-slide.single-page {
-  background-image: url('{{ page.image }}');
-}
-
-/* Background image for screens up to 767px wide (mobile screens) */
-@media screen and (max-width: 767px) {
-  .post-slide.single-page {
-    background-image: url('{{ page.image_mobile }}');
-  }
-}
-
-
-  </Style>
+    .copy-code-button:hover {
+      background-color: #7FA11D;
+      transform: scale(1.1);
+    </style>
 

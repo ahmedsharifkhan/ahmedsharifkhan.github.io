@@ -9,3 +9,32 @@
 <script src="{{ site.baseurl }}/assets/js/jquery.waypoints.min.js"></script>
 <script src="{{ site.baseurl }}/assets/js/jquery.fancybox.min.js"></script>
 <script src="{{ site.baseurl }}/assets/js/custom.js"></script>
+
+
+<!-- and it's easy to individually load additional languages -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/languages/go.min.js"></script>
+
+<script>hljs.highlightAll();</script>
+
+<script>
+document.addEventListener('DOMContentLoaded', (event) => {
+    const codeBlocks = document.querySelectorAll('pre code');
+
+    codeBlocks.forEach((codeBlock) => {
+        const button = document.createElement('button');
+        button.className = 'copy-code-button';
+        button.textContent = 'Copy Code';
+
+        button.addEventListener('click', () => {
+            const textArea = document.createElement('textarea');
+            textArea.value = codeBlock.innerText;
+            document.body.appendChild(textArea);
+            textArea.select();
+            document.execCommand('copy');
+            document.body.removeChild(textArea);
+        });
+
+        codeBlock.parentNode.insertBefore(button, codeBlock.nextSibling);
+    });
+});
+</script>
