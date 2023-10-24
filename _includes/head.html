@@ -2,11 +2,12 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="author" content="Untree.co">
-    <link rel="shortcut icon" href="{{ site.baseurl }}/assets/images/favicon.png">
-  
-    <meta name="description" content="" />
-    <meta name="keywords" content="bootstrap, bootstrap4" />
-  
+    <link rel="shortcut icon" href="{{ site.baseurl }}/assets/Images/favicon2.png">
+
+    <meta name="description" content="{{ page.description | strip_html | truncate: 158 }}">
+    <meta name="keywords" content="{{ page.keywords | default: site.keywords }}">
+
+    <meta name="author" content="{{ page.author_name }}">
   
     <link href="https://fonts.googleapis.com/css?family=Roboto:400,700,900&display=swap" rel="stylesheet">
     
@@ -19,39 +20,23 @@
     <link rel="stylesheet" href="{{ site.baseurl }}/assets/css/aos.css">
     <link rel="stylesheet" href="{{ site.baseurl }}/assets/css/style.css">
   
-    <title>Story Free HTML Template by Untree.co</title>
+    <title>{{ page.title }}</title>
   </head>
 
   <Style>
 
-    /* For PC screens */
-    @media screen and (min-width: 768px) {
-      .post-slide.single-page {
-        background-image: url('image_pc.jpg');
-      }
-    }
-    
-    /* For mobile screens */
-    @media screen and (max-width: 767px) {
-      .post-slide.single-page {
-        background-image: url('image_mobile.jpg');
-      }
-    }
-    
-
-
-
-    /* Default background image for all devices */
+/* Default background image for screens wider than 767px (PC screens) */
 .post-slide.single-page {
-  background-image: url('image_pc.jpg');
+  background-image: url('{{ page.image }}');
 }
 
-/* For mobile screens */
+/* Background image for screens up to 767px wide (mobile screens) */
 @media screen and (max-width: 767px) {
   .post-slide.single-page {
-    background-image: url('image_mobile.jpg');
+    background-image: url('{{ page.image_mobile }}');
   }
 }
+
 
   </Style>
 

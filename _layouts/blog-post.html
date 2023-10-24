@@ -2,9 +2,26 @@
 layout: default
 ---
 
+<div class="site-hero py-5 bg-light mb-1">
+
+    <div class="container">
+      <div class="row align-items-center justify-content-between">
+        <div class="col-lg-12 text-center">
+          <h1 class="text-black mb-0">Read The Article</h1>
+        </div>
+      </div>
+    </div>
+  </div>
+
 <div class="featured-post single-article">
     <div class="container">
-      <div class="post-slide single-page" style="background-image: url('{{ page.image }}');">
+      <div class="post-slide single-page" style="background-image: url('{{ page.image }}'); background-size: 100% auto; background-repeat: no-repeat; @media (min-width: 768px) {
+        background-image: url('{{ page.image }}');
+      }">
+        
+        
+       
+
         <div class="text-wrap pb-5">
           <div class="share">
             <ul class="list-unstyled">
