@@ -10,19 +10,19 @@ title: Home
         {% for post in site.posts | reverse | limit: 40 %}
         <div class="huge-article d-md-flex">
           <div class="img-wrap">
-            <a href="#"><img src="{{ post.image }}" alt="Image" class="img-fluid"></a>
+            <a href="#"><img src="{{ post.image }}" alt="{{ post.title }}" class="img-fluid"></a>
           </div>
           <div class="text-wrap">
             <div class="meta`">
               <span class="d-inline-block">2 Mins Read</span>
               <span class="mx-2">&bullet;</span>
-              <span><a href="#">2 Comments</a></span>
+              <span><a href="#">8 Comments</a></span>
             </div>
             <h3><a href="#">{{ post.title | truncate: 30 }}</a></h3>
             <p>{{ post.description | truncate: 150 }}</p>
             <div class="author d-flex align-items-center">
               <div class="img mr-3">
-                <img src="{{ site.baseurl }}/assets/Images/favicon2.png" alt="Image" class="img-fluid">
+                <img src="{{ site.baseurl }}/assets/Images/favicon2.png" alt="{{ post.author_name }}" class="img-fluid">
               </div>
               <div class="text">
                 <h3><a href="#">{{ post.author_name }}</a></h3>
@@ -52,13 +52,13 @@ title: Home
               <div class="col-12">
                 <div class="post-entry horizontal d-md-flex">
                   <div class="media">
-                    <a href=""><img src="{{ post.image }}" alt="Image" class="img-fluid"></a>
+                    <a href=""><img src="{{ post.image }}" alt="{{ post.title }}" class="img-fluid"></a>
                   </div>
                   <div class="text">
                     <div class="meta">
-                      <span>May 10, 2020</span>
+                      <span>{{ post.date | date: "%B %d, %Y" }}</span>
                       <span>&bullet;</span>
-                      <span>5 mins read</span>
+                      <span>{{ post.date | date: "%I:%M %p" }}</span>
                     </div>
                     <h2><a href="{{ post.url | relative_url }}">{{ post.title | truncate: 65 }}</a></h2>
                     <p>{{ post.Description | strip_html | truncate: 100 }}</p>
