@@ -72,16 +72,26 @@ title: Contact
 
           <form action="https://formsubmit.co/4647465f0d6bfa7efb801aed6d050409" method="POST">
             <div class="row">
+              <!-- honeypot -->
+              <input type="text" name="_honey" style="display: none;">
+
+              <!-- Disable captcha -->
+              <input type="hidden" name="_captcha" value="false">
+              <!-- Redirect  -->
+
+              <input type="hidden" name="_next" value="{{ site.baseurl }}/contact">
+
+
               <div class="col-6">
                 <div class="form-group">
                   <label class="text-black" for="fname">First name</label>
-                  <input type="text" class="form-control" id="fname" name="fname" required>
+                  <input type="text" class="form-control" id="fname" name="name" required>
                 </div>
               </div>
               <div class="col-6">
                 <div class="form-group">
                   <label class="text-black" for="lname">Last name</label>
-                  <input type="text" class="form-control" id="lname" name="lname" required>
+                  <input type="text" class="form-control" id="lname" name="Last&nbsp;Name" required>
                 </div>
               </div>
             </div>
@@ -94,11 +104,6 @@ title: Contact
               <label class="text-black" for="message">Message</label>
               <textarea class="form-control" id="message" name="message" cols="30" rows="5"></textarea>
             </div>
-
-           <input type="hidden" name="_captcha" value="false">
-            <input type="hidden" name="_template" value="table">
-            <input type="hidden" name="_next" value="{{ site.baseurl }}/contact">
-
             <button type="submit" class="btn btn-primary-hover-outline">Send Message</button>
           </form>
         </div>

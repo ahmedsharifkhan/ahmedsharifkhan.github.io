@@ -7,7 +7,7 @@ author_bio: Digital Marketer and SEO Specialist
 author_email: jane.doe@email.com
 author_avatar: "/assets/authors/jane_doe.jpg"
 author_social: null
-keywords: Health,  Travel, Life Style
+keywords: Health  Travel  Life Style
 date: 2023-10-25 02:33:00 +0600
 categories:
 - Digital Marketing
@@ -23,6 +23,7 @@ Basic Git Editors
 Github VS code integration - Go to any repository on GitHub and press . on your keyboard
 Prose - Git content editor
 Jekyll CMSs
+
 1. Jekyll Admin
 A Jekyll plugin that provides users with a traditional CMS-style graphical interface to author content and administer Jekyll sites.
 
