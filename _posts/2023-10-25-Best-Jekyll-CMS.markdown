@@ -8,7 +8,7 @@ author_email: jane.doe@email.com
 author_avatar: "/assets/authors/jane_doe.jpg"
 author_social: null
 keywords: Health,  Travel, Life Style
-date: '2023-10-25 02:33:00'
+date: 2023-10-25 02:33:00 +0600
 categories:
 - Digital Marketing
 - Marketing
