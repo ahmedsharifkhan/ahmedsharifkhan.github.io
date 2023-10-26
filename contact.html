@@ -70,54 +70,54 @@ title: Contact
             </div>
           </div>
 
-          <form action="https://formsubmit.co/4647465f0d6bfa7efb801aed6d050409" method="POST">
+
+          <script type="text/javascript">var submitted=false;</script>
+          <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" onload="if(submitted)  {window.location='{{ site.baseurl }}/success';}"></iframe>
+
+
+<!-- <form action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSeo8Dw2zcB_edyl4YtlBmJ543Kspejk--KdPvdA8Voh3NAgeQ/formResponse" method="post" target="hidden_iframe"
+    onsubmit="submitted=true;">
+          <label>Name</label>
+          <input name="entry.1726838017" type="text" placeholder="Name" />
+          <br>
+          <label>Email</label>
+          <input name="entry.368384318" type="email" placeholder="Email"/>
+          <br>
+          <textarea name="entry.2045894047" id="" cols="30" rows="10"></textarea>
+          <br>
+          <input type="submit" value="Send" />
+    </form> -->
+
+<!-- website original form -->
+          <form action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSeo8Dw2zcB_edyl4YtlBmJ543Kspejk--KdPvdA8Voh3NAgeQ/formResponse" method="post" target="hidden_iframe"
+          onsubmit="submitted=true;">
             <div class="row">
-              <!-- honeypot -->
-              <input type="text" name="_honey" style="display: none;">
-
-              <!-- Disable captcha -->
-              <input type="hidden" name="_captcha" value="false">
-              <!-- Redirect  -->
-
-              <input type="hidden" name="_next" value="{{ site.baseurl }}/success">
-
-
               <div class="col-6">
                 <div class="form-group">
                   <label class="text-black" for="fname">First name</label>
-                  <input type="text" class="form-control" id="fname" name="name" required>
+                  <input type="text" class="form-control" id="text" name="entry.1726838017" required>
                 </div>
               </div>
-              <div class="col-6">
+              <!-- <div class="col-6">
                 <div class="form-group">
                   <label class="text-black" for="lname">Last name</label>
                   <input type="text" class="form-control" id="lname" name="Last&nbsp;Name" required>
                 </div>
-              </div>
+              </div> -->
             </div>
             <div class="form-group">
               <label class="text-black" for="email">Email address</label>
-              <input type="email" class="form-control" id="email" name="email" required>
+              <input type="email" class="form-control" id="email" name="entry.368384318" required>
             </div>
-
             <div class="form-group">
               <label class="text-black" for="message">Message</label>
-              <textarea class="form-control" id="message" name="message" cols="30" rows="5"></textarea>
+              <textarea class="form-control" id="message" name="entry.2045894047" type="message" cols="30" rows="5"></textarea>
             </div>
             <button type="submit" class="btn btn-primary-hover-outline">Send Message</button>
           </form>
         </div>
-
-
-
-
-
       </div>
-
     </div>
-
   </div>
-
-
 </div>
 </div>
