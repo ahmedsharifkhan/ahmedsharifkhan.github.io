@@ -1,5 +1,5 @@
 ---
-title: Google Form Customization for Static Websites!
+title: Customizing Google Forms is important for someone who trusts Google
 layout: blog-post
 author_name: Ahmed Sharif Khan Noor
 username: Ahmed-Sharif-Khan-Noor
