@@ -13,7 +13,7 @@ categories:
 - Digital Marketing
 - Marketing
 - SEO
-Description: A Jekyll plugin that provides users with a traditional CMS-style graphical
+description: A Jekyll plugin that provides users with a traditional CMS-style graphical
   interface to author content and administer Jekyll sites.
 image: https://tds-images.thedailystar.net/sites/default/files/styles/big_202/public/images/2023/10/19/dalle_2023-10-19_19.19.51_-_vibrant_landscape_image_of_two_brown-skinned_urban_bangladeshi_girls_in_their_teens_sitting_on_a_city_bench._one_holds_a_smartphone_and_they_both_dan.png
 ---

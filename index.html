@@ -14,7 +14,7 @@ title: Home
           </div>
           <div class="text-wrap">
             <div class="meta`">
-              <span class="d-inline-block">2 Mins Read</span>
+              <span class="d-inline-block">{{ post.date | date: "%I:%M %p" }}</span>
               <span class="mx-2">&bullet;</span>
               <span><a href="#">8 Comments</a></span>
             </div>
@@ -22,7 +22,7 @@ title: Home
             <p>{{ post.description | truncate: 150 }}</p>
             <div class="author d-flex align-items-center">
               <div class="img mr-3">
-                <img src="{{ site.baseurl }}/assets/Images/author.png" alt="{{ post.author_name }}" class="img-fluid">
+                <img src="{{ site.url }}/assets/Images/author.png" alt="{{ post.author_name }}" class="img-fluid">
               </div>
               <div class="text">
                 <h3><a href="#">{{ post.author_name }}</a></h3>
@@ -61,7 +61,7 @@ title: Home
                       <span>{{ post.date | date: "%I:%M %p" }}</span>
                     </div>
                     <h2><a href="{{ post.url | relative_url }}">{{ post.title | truncate: 65 }}</a></h2>
-                    <p>{{ post.Description | strip_html | truncate: 100 }}</p>
+                    <p>{{ post.description | strip_html | truncate: 90 }}</p>
                     
                   </div>
                 </div>

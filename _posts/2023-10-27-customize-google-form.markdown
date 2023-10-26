@@ -13,7 +13,7 @@ categories:
 - Digital Marketing
 - Marketing
 - SEO
-Description: Customizing Google Forms is important for someone who trusts Google
+description: Customizing Google Forms is important for someone who trusts Google
 image: https://lh3.googleusercontent.com/pw/ADCreHcyayhneTSDtps_4OFoSA4FnwOIo6eoee9Sr-GcNo2adwglHS9n1RV3q5rzlDA2B1SH_M3SAt1Z9LLYN1EPeO0UYB5oh2Yd4Hs9_putut1BLjn8Zj_Euz6STJPcSgqk7RHE1bDvE2CppejlQ2wnlFi3=w860-h484-s-no-gm?authuser=0
 ---
 
