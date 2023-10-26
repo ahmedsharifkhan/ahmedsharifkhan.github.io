@@ -40,6 +40,10 @@ header_pages:
 google_analytics_id: UA-XXXXXXXXX-X
 facebook_pixel_id: 1234567890
 
+gems:
+  - jekyll-sitemap
+# exclude:
+#   - excluded-page.html
 
 
 # Build settings
