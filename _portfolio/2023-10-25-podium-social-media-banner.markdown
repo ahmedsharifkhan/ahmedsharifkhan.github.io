@@ -1,5 +1,7 @@
 ---
-title: Podium - Social Media Banner Design
+layout: portfolio
+title: Podium Social Media Banner Design
+date:   2023-10-12 17:35:09 +0600
 layout: portfolio
 description: Airbuds - Design for Social Media
 tags: []
