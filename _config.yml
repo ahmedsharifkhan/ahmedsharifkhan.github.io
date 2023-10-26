@@ -37,11 +37,9 @@ header_pages:
   - title: portfolio
     url: /portfolio
 
-# Example 2: Defining the URL for your CSS file(s)
-# css_url: "/assets/css/styles.css"
+google_analytics_id: UA-XXXXXXXXX-X
+facebook_pixel_id: 1234567890
 
-# # Example 3: Configuring the asset folder (by default, assets/)
-# assets_dir: "/static"
 
 
 # Build settings
