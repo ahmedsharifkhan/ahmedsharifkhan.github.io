@@ -10,9 +10,17 @@
     <meta name="keywords" content="{{ page.keywords | default: site.keywords }}">
 
     <meta name="author" content="{{ page.author_name }}">
-  
+
+    <meta property="og:title" content="{{ page.title }}">
+<meta property="og:description" content="{{ page.description | truncate: 150 }}">
+<meta property="og:image" content="{{ page.image }}">
+<meta name="twitter:title" content="{{ page.title }}">
+<meta name="twitter:description" content="{{ page.description | truncate: 150 }}">
+<meta name="twitter:image" content="{{ page.image }}">
+
+
     <link href="https://fonts.googleapis.com/css?family=Roboto:400,700,900&display=swap" rel="stylesheet">
-    
+
     <link rel="stylesheet" href="{{ site.baseurl }}/assets/css/bootstrap.min.css">
     <link rel="stylesheet" href="{{ site.baseurl }}/assets/css/owl.carousel.min.css">
     <link rel="stylesheet" href="{{ site.baseurl }}/assets/css/owl.theme.default.min.css">
@@ -21,37 +29,39 @@
     <link rel="stylesheet" href="{{ site.baseurl }}/assets/css/jquery.fancybox.min.css">
     <link rel="stylesheet" href="{{ site.baseurl }}/assets/css/aos.css">
     <link rel="stylesheet" href="{{ site.baseurl }}/assets/css/style.css">
-  
+
     <!-- All kinds of tracking -->
     {% include tracking.html %}
 
-<!-- google site verification -->
+    <!-- google site verification -->
     <meta name="google-site-verification" content="FY761GODLm7L0iuWDtItCKMWVmWik8CA7pO1knXG_5c" />
 
 
-<!-- Search api  -->
-<meta name="csh" content="TOKEN"/>
+    <!-- Search api  -->
+    <meta name="csh" content="TOKEN" />
 
-<!-- Search api  -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/lunr.js/2.3.7/lunr.min.js"></script>
+    <!-- Search api  -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lunr.js/2.3.7/lunr.min.js"></script>
 
 
 
     <title>{{ page.title }}</title>
-  </head>
+</head>
 
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.7.2/highlight.min.js"></script>
-  <script>hljs.initHighlightingOnLoad();</script>
-  
-  <style>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.7.2/highlight.min.js"></script>
+<script>hljs.initHighlightingOnLoad();</script>
+
+<style>
     pre code {
         display: block;
         padding: 1em;
         border: 1px solid #ccc;
-        background-color: #F1F1F3; /* Set the background color to black */
-        color: #110e0e; /* Set the text color to white */
+        background-color: #F1F1F3;
+        /* Set the background color to black */
+        color: #110e0e;
+        /* Set the text color to white */
     }
-    
+
     .copy-code-button {
         background-color: #A4C639;
         color: #fff;
@@ -63,7 +73,7 @@
     }
 
     .copy-code-button:hover {
-      background-color: #7FA11D;
-      transform: scale(1.1);
-    </style>
-
+        background-color: #7FA11D;
+        transform: scale(1.1);
+    }
+</style>

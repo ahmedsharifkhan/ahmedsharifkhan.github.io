@@ -1,78 +1,96 @@
 <div class="site-mobile-menu site-navbar-target">
-    <div class="site-mobile-menu-header">
-      <div class="site-mobile-menu-close">
-        <span class="icofont-close js-menu-toggle"></span>
-      </div>
+  <div class="site-mobile-menu-header">
+    <div class="site-mobile-menu-close">
+      <span class="icofont-close js-menu-toggle"></span>
     </div>
-    <div class="site-mobile-menu-body"></div>
   </div>
+  <div class="site-mobile-menu-body"></div>
+</div>
 
-  
-  <div class="site-mobile-menu site-navbar-target">
-      <div class="site-mobile-menu-header">
-        <div class="site-mobile-menu-close">
-          <span class="icofont-close js-menu-toggle"></span>
-        </div>
-      </div>
-      <div class="site-mobile-menu-body"></div>
+
+<div class="site-mobile-menu site-navbar-target">
+  <div class="site-mobile-menu-header">
+    <div class="site-mobile-menu-close">
+      <span class="icofont-close js-menu-toggle"></span>
     </div>
-    
-    <div class="container">
+  </div>
+  <div class="site-mobile-menu-body"></div>
+</div>
+
+<div class="container">
 
 
-      <nav class="site-nav">
-        <div class="row justify-content-between align-items-center">
-          <div class="d-none d-lg-block col-lg-3 top-menu">
-            <a href="{{ site.facebook_username }}" class="d-inline-flex align-items-center" target="_blank"><span class="icon-facebook mr-2"></span></a>
-            <a href="{{ site.twitter_username }}" class="d-inline-flex align-items-center" target="_blank"><span class="icon-twitter mr-2"></span></a>
-            <a href="{{ site.instagram_username }}" class="d-inline-flex align-items-center" target="_blank"><span class="icon-instagram mr-2"></span></a>
-            <a href="{{ site.linkedin_username }}" class="d-inline-flex align-items-center" target="_blank"><span class="icon-linkedin mr-2"></span></a>
-            <a href="{{ site.github_username }}" class="d-inline-flex align-items-center" target="_blank"><span class="icon-github mr-2"></span></a>
-            <a href="{{ site.youtube_username }}" class="d-inline-flex align-items-center" target="_blank"><span class="icon-youtube-play mr-2"></span></a>
-          </div>
-          <div class="col-3 col-md-6 col-lg-6 text-lg-center logo">
-            <a href="{{ site.baseurl }}/">{{ site.logo }}<span class="text-primary">.</span> </a>
-          </div>
-          <div class="col-9 col-md-6 col-lg-3 text-right top-menu">
+  <nav class="site-nav">
+    <div class="row justify-content-between align-items-center">
+      <div class="d-none d-lg-block col-lg-3 top-menu">
+        <a href="{{ site.facebook_username }}" class="d-inline-flex align-items-center" target="_blank"><span
+            class="icon-facebook mr-2"></span></a>
+        <a href="{{ site.twitter_username }}" class="d-inline-flex align-items-center" target="_blank"><span
+            class="icon-twitter mr-2"></span></a>
+        <a href="{{ site.instagram_username }}" class="d-inline-flex align-items-center" target="_blank"><span
+            class="icon-instagram mr-2"></span></a>
+        <a href="{{ site.linkedin_username }}" class="d-inline-flex align-items-center" target="_blank"><span
+            class="icon-linkedin mr-2"></span></a>
+        <a href="{{ site.github_username }}" class="d-inline-flex align-items-center" target="_blank"><span
+            class="icon-github mr-2"></span></a>
+        <a href="{{ site.youtube_username }}" class="d-inline-flex align-items-center" target="_blank"><span
+            class="icon-youtube-play mr-2"></span></a>
+      </div>
+      <div class="col-3 col-md-6 col-lg-6 text-lg-center logo">
+        <a href="{{ site.baseurl }}/">{{ site.logo }}<span class="text-primary">.</span> </a>
+      </div>
+      <div class="col-9 col-md-6 col-lg-3 text-right top-menu">
 
-            <div class="d-inline-flex align-items-center">
-              <div class="search-wrap">
-              <a href="#" class="d-inline-flex align-items-center js-search-toggle"><span class="icon-search2 mr-2"></span><span>Search</span></a>
-              
-              <!-- search form -->
-              <div class="container">
-              <form action="#" class="d-flex" id="search-form">
-                <input type="text" id="search-input" class="form-control" placeholder="Enter keyword and hit enter...">                  
+        <div class="d-inline-flex align-items-center">
+          <div class="search-wrap">
+            <a href="#" class="d-inline-flex align-items-center js-search-toggle"><span
+                class="icon-search2 mr-2"></span><span>Search</span></a>
+
+            <!-- search form -->
+            <div class="container">
+              <form action="" class="d-flex" id="search-form">
+                <input type="text" id="search-input" class="form-control" placeholder="Enter keyword and hit enter...">
               </form>
               <ul id="search-results"></ul>
             </div>
+            
+            
+
             <style>
               /* Style for the search results */
               #search-results {
                 display: none;
                 position: absolute;
-                top: 100%; /* Position below the search bar */
+                top: 100%;
+                /* Position below the search bar */
                 left: 0;
-                z-index: 999; /* Ensure it's above other content */
-                background: #fff; /* Background color */
+                z-index: 999;
+                /* Ensure it's above other content */
+                background: #fff;
+                /* Background color */
                 border: 1px solid #ccc;
-                border-top: none; /* Remove top border to align with search bar */
-                box-shadow: 0 5px 5px rgba(0, 0, 0, 0.2); /* Add a shadow effect */
-                padding: 10px; /* Adjust padding as needed */
-                max-height: 300px; /* Limit the height to prevent overflow */
-                overflow-y: auto; /* Add a scrollbar if results exceed max height */
+                border-top: none;
+                /* Remove top border to align with search bar */
+                box-shadow: 0 5px 5px rgba(0, 0, 0, 0.2);
+                /* Add a shadow effect */
+                padding: 10px;
+                /* Adjust padding as needed */
+                max-height: 300px;
+                /* Limit the height to prevent overflow */
+                overflow-y: auto;
+                /* Add a scrollbar if results exceed max height */
               }
-            
+
               /* Style for individual search results */
               #search-results li {
                 margin-bottom: 10px;
               }
-            
+
               #search-results a {
-                color: #A4C639;
+                color: #000000;
                 text-decoration: none;
               }
-            
+
               #search-results a:hover {
                 text-decoration: underline;
               }
@@ -84,7 +102,7 @@
               $(document).ready(function () {
                 var searchInput = $("#search-input");
                 var searchResults = $("#search-results");
-            
+
                 searchInput.on("input", function () {
                   var query = searchInput.val().toLowerCase().trim();
                   if (query === "") {
@@ -94,56 +112,56 @@
                     // Perform search and display results based on query
                   }
                 });
-            
+
                 // Hide search results when clicking outside the search bar
                 $(document).on("click", function (event) {
                   if (!$(event.target).closest("#search-form").length) {
                     searchResults.hide();
                   }
                 });
-            
+
                 // Prevent hiding when clicking inside the search results container
                 searchResults.on("click", function (event) {
                   event.stopPropagation();
                 });
               });
             </script>
-            
-            
 
-            
-             
-
-              </div>
-
-              <span class="mx-2 d-inline-block d-lg-none"></span>
-              
-              <a href="#" class="d-inline-flex align-items-center d-inline-block d-lg-none"><span class="icon-facebook mr-2"></span></a>
-              <a href="#" class="d-inline-flex align-items-center d-inline-block d-lg-none"><span class="icon-twitter mr-2"></span></a>
-              <a href="#" class="d-inline-flex align-items-center d-inline-block d-lg-none"><span class="icon-instagram mr-2"></span></a>
-
-
-              <a href="#" class="burger ml-3 site-menu-toggle js-menu-toggle d-inline-block d-lg-none" data-toggle="collapse" data-target="#main-navbar">
-                <span></span>
-              </a>
-
-              
-            </div>
-            
-            
 
           </div>
+
+          <span class="mx-2 d-inline-block d-lg-none"></span>
+
+          <a href="#" class="d-inline-flex align-items-center d-inline-block d-lg-none"><span
+              class="icon-facebook mr-2"></span></a>
+          <a href="#" class="d-inline-flex align-items-center d-inline-block d-lg-none"><span
+              class="icon-twitter mr-2"></span></a>
+          <a href="#" class="d-inline-flex align-items-center d-inline-block d-lg-none"><span
+              class="icon-instagram mr-2"></span></a>
+
+
+          <a href="#" class="burger ml-3 site-menu-toggle js-menu-toggle d-inline-block d-lg-none"
+            data-toggle="collapse" data-target="#main-navbar">
+            <span></span>
+          </a>
+
+
         </div>
-        <div class="d-none d-lg-block row align-items-center py-3">
-          
-          
-          <div class="col-12 col-sm-12 col-lg-12 site-navigation text-center">
-            <ul class="js-clone-nav d-none d-lg-inline-block text-left site-menu">
-              <li class="{% if page.url == '/' %}active{% endif %}"><a href="{{ site.baseurl }}/">Business</a></li>
-              <li><a href="/portfolio">Portfolio</a></li>
-              <li class="children">
-                <a href="/blog">Blog</a>
-                <!-- <ul class="dropdown">
+
+
+
+      </div>
+    </div>
+    <div class="d-none d-lg-block row align-items-center py-3">
+
+
+      <div class="col-12 col-sm-12 col-lg-12 site-navigation text-center">
+        <ul class="js-clone-nav d-none d-lg-inline-block text-left site-menu">
+          <li class="{% if page.url == '/' %}active{% endif %}"><a href="{{ site.baseurl }}/">Business</a></li>
+          <li><a href="/portfolio">Portfolio</a></li>
+          <li class="children">
+            <a href="/blog">Blog</a>
+            <!-- <ul class="dropdown">
                   <li><a href="portfolio.html">Portfolio</a></li>
                   <li><a href="single.html">Single</a></li>
                   <li><a href="about.html">About Us</a></li>
@@ -159,15 +177,15 @@
                   </li>
                   <li><a href="#">Menu Three</a></li>
                 </ul> -->
-              </li>
-              <li><a href="/about">About</a></li>
-              
-              <li><a href="/contact">Contact</a></li>
-            </ul>
+          </li>
+          <li><a href="/about">About</a></li>
 
-          </div>
+          <li><a href="/contact">Contact</a></li>
+        </ul>
 
-        </div>  
-      </nav> <!-- END nav -->
+      </div>
 
-    </div> <!-- END container -->
+    </div>
+  </nav> <!-- END nav -->
+
+</div> <!-- END container -->
