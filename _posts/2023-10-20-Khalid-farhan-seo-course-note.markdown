@@ -344,5 +344,3 @@ Who is my target
 404 page ka amadar page nia asa jaikina
 
 Brand mension link building strategy`enter code here`
-
-<iframe src="/assets/file/TheArtofSEO.pdf" width="100%" height="600px"></iframe>
