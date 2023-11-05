@@ -1025,3 +1025,31 @@ Here’s a list of more free video submission sites you can use to add your vide
 </tbody>
 </table>
 
+### Presrelase (PR) - Backlink Stragey
+
+Website: [prlog.org](prlog.org)
+[prfee.org](prfee.org)
+[pr.com](pr.com)
+[onlineprnews.com](onlineprnews.com)
+
+Just for uk [pressat.co.uk](pressat.co.uk)
+[globenewswire.com](globenewswire.com)
+[businesswire.com](businesswire.com)
+[prnewswire.com](prnewswire.com)
+
+### on Facebook group - Backlink Exchange Group
+### Supplier BackLink Strategy
+### Membership BackLink Strategy 
+Example: [e-cab.net](e-cab.net)
+for online business list
+### "Donation list" + "contributors"
+###  "contributoors page" + "donate"
+### SkeyScraper Backlink Strategy
+### Backlink Gap analysis
+### Keyword Gap analysis
+### Blog Comment Backlink
+### BackLink buy 
+spam score checker
+ 
+ https://www.semrush.com/blog/seo-blog/
+ 17 seo blog semrush
