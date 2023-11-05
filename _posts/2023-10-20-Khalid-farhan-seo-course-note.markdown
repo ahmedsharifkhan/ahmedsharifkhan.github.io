@@ -344,3 +344,237 @@ Who is my target
 404 page ka amadar page nia asa jaikina
 
 Brand mension link building strategy`enter code here`
+
+## Broken Link Buiding:
+
+404 page ka amadar page nia asa jaikina
+
+Brand mension link building strategy`enter code here`
+
+### Backlink Building Strategy
+
+### Top Video Submission Sites
+
+<table><tbody><tr><th>VS #</th><th>Video Submission Site</th><th>Website URL</th></tr><tr><td>1</td><td>YouTube</td><td><a href="https://youtube.com" target="_blank" rel="noopener">https://youtube.com</a></td></tr><tr><td>2</td><td>Vimeo</td><td><a href="https://vimeo.com/" target="_blank" rel="noopener">https://vimeo.com/</a></td></tr><tr><td>3</td><td>Dailymotion</td><td><a href="https://www.dailymotion.com/" target="_blank" rel="noopener">https://www.dailymotion.com/</a></td></tr><tr><td>4</td><td>Twitch</td><td><a href="http://twitch.tv/" target="_blank" rel="noopener">http://twitch.tv/</a></td></tr><tr><td>5</td><td>Veoh</td><td><a href="https://www.veoh.com/" target="_blank" rel="noopener">https://www.veoh.com/</a></td></tr><tr><td>6</td><td>Myspace</td><td><a href="https://myspace.com/" target="_blank" rel="noopener">https://myspace.com/</a></td></tr><tr><td>7</td><td>DTube</td><td><a href="https://d.tube/" target="_blank" rel="noopener">https://d.tube/</a></td></tr><tr><td>8</td><td>Flickr</td><td><a href="https://www.flickr.com/" target="_blank" rel="noopener">https://www.flickr.com/</a></td></tr><tr><td>9</td><td>Photobucket</td><td><a href="https://photobucket.com/" target="_blank" rel="noreferrer noopener">https://photobucket.com/</a></td></tr><tr><td>10</td><td>Videoshub</td><td><a href="https://videoshub.com/" target="_blank" rel="noreferrer noopener">https://videoshub.com/</a></td></tr><tr><td>11</td><td>Facebook</td><td><a href="https://www.facebook.com/" target="_blank" rel="noopener">https://www.facebook.com/</a></td></tr><tr><td>12</td><td>Twitter</td><td><a href="https://twitter.com/?lang=en" target="_blank" rel="noopener">https://twitter.com/?lang=en</a></td></tr><tr><td>13</td><td>Youku</td><td><a href="https://youku.com/" target="_blank" rel="noopener">https://youku.com/</a></td></tr><tr><td>14</td><td>Pinterest</td><td><a href="https://pinterest.com/" target="_blank" rel="noopener">https://pinterest.com/</a></td></tr><tr><td>15</td><td>Utreon</td><td><a href="https://utreon.com/" target="_blank" rel="noopener">https://utreon.com/</a></td></tr><tr><td>16</td><td>TikTok</td><td><a href="https://www.tiktok.com/en/" target="_blank" rel="noopener">https://www.tiktok.com/en/</a></td></tr><tr><td>17</td><td>9Gag</td><td><a href="https://9gag.com/" target="_blank" rel="noopener">https://9gag.com/</a></td></tr><tr><td>18</td><td>Bitchute</td><td><a href="https://www.bitchute.com/" target="_blank" rel="noopener">https://www.bitchute.com/</a></td></tr><tr><td>19</td><td>SmugMug</td><td><a href="https://www.smugmug.com/" target="_blank" rel="noopener">https://www.smugmug.com/</a></td></tr><tr><td>20</td><td>Instagram</td><td><a href="https://www.instagram.com/" target="_blank" rel="noopener">https://www.instagram.com/</a></td></tr><tr><td>21</td><td>Reddit</td><td><a href="https://www.reddit.com/" target="_blank" rel="noopener">https://www.reddit.com/</a></td></tr><tr><td>22</td><td>Tumblr</td><td><a href="https://www.tumblr.com/" target="_blank" rel="noopener">https://www.tumblr.com/</a></td></tr><tr><td>23</td><td>LinkedIn</td><td><a href="https://www.linkedin.com/" target="_blank" rel="noopener">https://www.linkedin.com/</a></td></tr><tr><td>24</td><td>Quora</td><td><a href="https://www.quora.com/" target="_blank" rel="noopener">https://www.quora.com/</a></td></tr></tbody></table>
+
+## More Free Video Submission Sites
+
+Here’s a list of more free video submission sites you can use to add your videos to third-party websites for off-page SEO and to gain more brand awareness and traffic for your website.
+
+-   myvidster.com
+-   fotki.com
+-   imgur.com
+-   pbase.com
+-   4shared.com
+-   uploaded.net
+-   zippyshare.com
+-   gofile.io
+-   zoho.com
+-   pcloud.com
+
+## **List of Best Free Audio Sharing Sites**
+
+-   https://soundcloud.com/
+-   https://myspace.com/
+-   https://www.last.fm/
+-   https://bandcamp.com/
+-   https://www.pandora.com/
+-   https://www.filestube.com/
+-   https://www.mediafire.com/
+-   https://www.box.com/
+-   https://www.reverbnation.com/
+-   https://www.finetune.com/
+-   https://www.4shared.com/
+-   https://www.depositfiles.com/
+-   https://www.2shared.com/
+-   https://sutros.com/
+-   https://www.mobypicture.com/
+-   https://yourlisten.com/
+-   https://www.thesixtyone.com/
+-   https://www.hypem.com/
+-   https://www.rapidshare.com/
+-   https://www.hotfile.com/
+-   https://uploading.com/
+-   https://www.filefactory.com/
+-   https://www.fileserve.com/
+-   https://www.zippyshare.com/
+
+## **Top PDF Submission Sites List**
+
+-   slideshare.net
+-   issuu.com
+-   scribd.com
+-   calameo.com
+-   lulu.com
+-   mediafire.com
+-   box.com
+-   smashwords.com
+-   4shared.com
+-   zoho.com
+-   rapidshare.com
+-   sendspace.com
+-   box.net
+-   Pingpdf.com
+-   Pinpdf.com
+-   wattpad.com
+-   filefactory.com
+
+## PDF Submission Sites List 2023
+<table id="tablepress-438" class="tablepress tablepress-id-438">
+<thead>
+<tr class="row-1 odd">
+	<th class="column-1">Website</th><th class="column-2">Link Type</th>
+</tr>
+</thead>
+<tbody class="row-hover">
+<tr class="row-2 even">
+	<td class="column-1"><a href="http://www.slideshare.net" target="_blank" rel="nofollow noopener noreferrer">slideshare.net</a></td><td class="column-2">DoFollow</td>
+</tr>
+<tr class="row-3 odd">
+	<td class="column-1"><a href="http://www.issuu.com" target="_blank" rel="nofollow noopener noreferrer">issuu.com</a></td><td class="column-2">DoFollow</td>
+</tr>
+<tr class="row-4 even">
+	<td class="column-1"><a href="http://www.scribd.com" target="_blank" rel="nofollow noopener noreferrer">scribd.com</a></td><td class="column-2">DoFollow</td>
+</tr>
+<tr class="row-5 odd">
+	<td class="column-1"><a href="http://www.calameo.com" target="_blank" rel="nofollow noopener noreferrer">calameo.com</a></td><td class="column-2">DoFollow</td>
+</tr>
+<tr class="row-6 even">
+	<td class="column-1"><a href="http://www.lulu.com" target="_blank" rel="nofollow noopener noreferrer">lulu.com</a></td><td class="column-2">DoFollow</td>
+</tr>
+<tr class="row-7 odd">
+	<td class="column-1"><a href="http://www.mediafire.com" target="_blank" rel="nofollow noopener noreferrer">mediafire.com</a></td><td class="column-2">DoFollow</td>
+</tr>
+<tr class="row-8 even">
+	<td class="column-1"><a href="http://www.box.com" target="_blank" rel="nofollow noopener noreferrer">box.com</a></td><td class="column-2">DoFollow</td>
+</tr>
+<tr class="row-9 odd">
+	<td class="column-1"><a href="http://www.smashwords.com" target="_blank" rel="nofollow noopener noreferrer">smashwords.com</a></td><td class="column-2">DoFollow</td>
+</tr>
+<tr class="row-10 even">
+	<td class="column-1"><a href="http://www..4shared.com" target="_blank" rel="nofollow noopener noreferrer">.4shared.com</a></td><td class="column-2">DoFollow</td>
+</tr>
+<tr class="row-11 odd">
+	<td class="column-1"><a href="http://www.zoho.com" target="_blank" rel="nofollow noopener noreferrer">zoho.com</a></td><td class="column-2">DoFollow</td>
+</tr>
+<tr class="row-12 even">
+	<td class="column-1"><a href="http://www.rapidshare.com" target="_blank" rel="nofollow noopener noreferrer">rapidshare.com</a></td><td class="column-2">DoFollow</td>
+</tr>
+<tr class="row-13 odd">
+	<td class="column-1"><a href="http://www.sendspace.com" target="_blank" rel="nofollow noopener noreferrer">sendspace.com</a></td><td class="column-2">DoFollow</td>
+</tr>
+<tr class="row-14 even">
+	<td class="column-1"><a href="http://www.box.net" target="_blank" rel="nofollow noopener noreferrer">box.net</a></td><td class="column-2">DoFollow</td>
+</tr>
+<tr class="row-15 odd">
+	<td class="column-1"><a href="http://www.wattpad.com" target="_blank" rel="nofollow noopener noreferrer">wattpad.com</a></td><td class="column-2">DoFollow</td>
+</tr>
+<tr class="row-16 even">
+	<td class="column-1"><a href="http://www.docstoc.com" target="_blank" rel="nofollow noopener noreferrer">docstoc.com</a></td><td class="column-2">DoFollow</td>
+</tr>
+<tr class="row-17 odd">
+	<td class="column-1"><a href="http://www.gamefront.com" target="_blank" rel="nofollow noopener noreferrer">gamefront.com</a></td><td class="column-2">DoFollow</td>
+</tr>
+<tr class="row-18 even">
+	<td class="column-1"><a href="http://www.yudu.com" target="_blank" rel="nofollow noopener noreferrer">yudu.com</a></td><td class="column-2">DoFollow</td>
+</tr>
+<tr class="row-19 odd">
+	<td class="column-1"><a href="http://www.keepandshare.com" target="_blank" rel="nofollow noopener noreferrer">keepandshare.com</a></td><td class="column-2">DoFollow</td>
+</tr>
+<tr class="row-20 even">
+	<td class="column-1"><a href="http://www.letitbit.net" target="_blank" rel="nofollow noopener noreferrer">letitbit.net</a></td><td class="column-2">DoFollow</td>
+</tr>
+<tr class="row-21 odd">
+	<td class="column-1"><a href="http://www.depositfiles.com" target="_blank" rel="nofollow noopener noreferrer">depositfiles.com</a></td><td class="column-2">DoFollow</td>
+</tr>
+</tbody>
+</table>
+
+## Sponsored Premium  [Image Submission](https://www.expert-seo-training-institute.in/blog/image-submission-sites/)  Sites List 2023
+<table id="tablepress-405" class="tablepress tablepress-id-405">
+<thead>
+<tr class="row-1 odd">
+	<th class="column-1">S.No.</th><th class="column-2">Website</th><th class="column-3">Link Type</th>
+</tr>
+</thead>
+<tbody class="row-hover">
+<tr class="row-2 even">
+	<td class="column-1">1</td><td class="column-2"><a href="http://www.dayviews.com" target="_blank" rel="nofollow">http://www.dayviews.com</a></td><td class="column-3">DoFollow</td>
+</tr>
+<tr class="row-3 odd">
+	<td class="column-1">2</td><td class="column-2"><a href="http://www.blujay.com" target="_blank" rel="nofollow">http://www.blujay.com</a></td><td class="column-3">DoFollow</td>
+</tr>
+<tr class="row-4 even">
+	<td class="column-1">3</td><td class="column-2"><a href="http://www.iforce.co.nz" target="_blank" rel="nofollow">http://www.iforce.co.nz</a></td><td class="column-3">DoFollow</td>
+</tr>
+<tr class="row-5 odd">
+	<td class="column-1">4</td><td class="column-2"><a href="http://www.photosig.com" target="_blank" rel="nofollow">http://www.photosig.com</a></td><td class="column-3">DoFollow</td>
+</tr>
+<tr class="row-6 even">
+	<td class="column-1">5</td><td class="column-2"><a href="http://www.twitxr.com" target="_blank" rel="nofollow">http://www.twitxr.com</a></td><td class="column-3">DoFollow</td>
+</tr>
+<tr class="row-7 odd">
+	<td class="column-1">6</td><td class="column-2"><a href="http://www.artlimited.net" target="_blank" rel="nofollow">http://www.artlimited.net</a></td><td class="column-3">DoFollow</td>
+</tr>
+<tr class="row-8 even">
+	<td class="column-1">7</td><td class="column-2"><a href="http://www.fotobabble.com" target="_blank" rel="nofollow">http://www.fotobabble.com</a></td><td class="column-3">DoFollow</td>
+</tr>
+<tr class="row-9 odd">
+	<td class="column-1">8</td><td class="column-2"><a href="http://www.woophy.com" target="_blank" rel="nofollow">http://www.woophy.com</a></td><td class="column-3">DoFollow</td>
+</tr>
+<tr class="row-10 even">
+	<td class="column-1">9</td><td class="column-2"><a href="http://www.storeboard.com" target="_blank" rel="nofollow">http://www.storeboard.com</a></td><td class="column-3">DoFollow</td>
+</tr>
+<tr class="row-11 odd">
+	<td class="column-1">10</td><td class="column-2"><a href="http://www.smugmug.com" target="_blank" rel="nofollow">http://www.smugmug.com</a></td><td class="column-3">DoFollow</td>
+</tr>
+<tr class="row-12 even">
+	<td class="column-1">11</td><td class="column-2"><a href="http://www.chevereto.com" target="_blank" rel="nofollow">http://www.chevereto.com</a></td><td class="column-3">DoFollow</td>
+</tr>
+<tr class="row-13 odd">
+	<td class="column-1">12</td><td class="column-2"><a href="http://www.imgsrc.ru" target="_blank" rel="nofollow">http://www.imgsrc.ru</a></td><td class="column-3">DoFollow</td>
+</tr>
+<tr class="row-14 even">
+	<td class="column-1">13</td><td class="column-2"><a href="http://www.imgfave.com" target="_blank" rel="nofollow">http://www.imgfave.com</a></td><td class="column-3">DoFollow</td>
+</tr>
+<tr class="row-15 odd">
+	<td class="column-1">14</td><td class="column-2"><a href="http://www.gifboom.com" target="_blank" rel="nofollow">http://www.gifboom.com</a></td><td class="column-3">DoFollow</td>
+</tr>
+<tr class="row-16 even">
+	<td class="column-1">15</td><td class="column-2"><a href="http://www.stipple.com" target="_blank" rel="nofollow">http://www.stipple.com</a></td><td class="column-3">DoFollow</td>
+</tr>
+</tbody>
+</table>
+### Presrelase (PR) - Backlink Stragey
+
+Website:  [prlog.org](https://ahmedsharifkhan.github.io/blog/Khalid-farhan-seo-course-note/prlog.org)  [prfee.org](https://ahmedsharifkhan.github.io/blog/Khalid-farhan-seo-course-note/prfee.org)  [pr.com](https://ahmedsharifkhan.github.io/blog/Khalid-farhan-seo-course-note/pr.com)  [onlineprnews.com](https://ahmedsharifkhan.github.io/blog/Khalid-farhan-seo-course-note/onlineprnews.com)
+
+Just for uk  [pressat.co.uk](https://ahmedsharifkhan.github.io/blog/Khalid-farhan-seo-course-note/pressat.co.uk)  [globenewswire.com](https://ahmedsharifkhan.github.io/blog/Khalid-farhan-seo-course-note/globenewswire.com)  [businesswire.com](https://ahmedsharifkhan.github.io/blog/Khalid-farhan-seo-course-note/businesswire.com)  [prnewswire.com](https://ahmedsharifkhan.github.io/blog/Khalid-farhan-seo-course-note/prnewswire.com)
+
+### on Facebook group - Backlink Exchange Group
+
+### Supplier BackLink Strategy
+
+### Membership BackLink Strategy
+
+Example:  [e-cab.net](https://ahmedsharifkhan.github.io/blog/Khalid-farhan-seo-course-note/e-cab.net)  for online business list
+
+### “Donation list” + “contributors”
+
+### “contributoors page” + “donate”
+
+### SkeyScraper Backlink Strategy
+
+### Backlink Gap analysis
+
+### Keyword Gap analysis
+
+### Blog Comment Backlink
+
+### BackLink buy
+
+spam score checker
+
+https://www.semrush.com/blog/seo-blog/ 17 seo blog semrush
+
+<iframe src="{{site.baseurl}}/assets/file/TheArtofSEO.pdf" width="100%" height="700px"></iframe>
