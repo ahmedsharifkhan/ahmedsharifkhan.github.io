@@ -577,4 +577,6 @@ spam score checker
 
 https://www.semrush.com/blog/seo-blog/ 17 seo blog semrush
 
+https://www.semrush.com/blog/seo-blog/
+
 <iframe src="{{site.baseurl}}/assets/file/TheArtofSEO.pdf" width="100%" height="700px"></iframe>
