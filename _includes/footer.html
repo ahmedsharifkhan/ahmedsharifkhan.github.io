@@ -3,15 +3,16 @@
     <div class="row justify-content-center copyright">
 
       <div class="col-lg-7 text-center">
-        
+
+
         <div class="widget">
           <ul class="js-clone-nav d-none d-lg-inline-block text-left site-menu">
-            <li><a href="{{ site.baseurl }}/sitemap.xml" target="_blank">Sitemap</a></li>
-            <li><a href="{{ site.baseurl }}/feed.xml" target="_blank">RSS</a></li>
+            <li class="menu-item {% if page.url == '/noor' %}active{% else %}{% endif %}" style="display: inline; margin-right: 10px;"><a href="{{ site.baseurl }}/noor">Resume</a></li>
+            <li style="display: inline; margin-right: 10px;"><a href="{{ site.baseurl }}/sitemap.xml" target="_blank">Sitemap</a></li>
+            <li style="display: inline;"><a href="{{ site.baseurl }}/feed.xml" target="_blank">RSS</a></li>
           </ul>
         </div>
-        
-          <br>
+
         <div class="widget">
           <ul class="social list-unstyled">
             <li><a href="{{ site.facebook_username }}" target="_blank"><span class="icon-facebook"></span></a></li>
@@ -25,16 +26,12 @@
 
         <div class="widget">
           <p>Copyright &copy;
-            <script>document.write(new Date().getFullYear());</script>. All Rights Reserved. &mdash; 
+            <script>document.write(new Date().getFullYear());</script>. All Rights Reserved. &mdash;
             by <a href="{{ site.baseurl }}/">{{ site.logo }}</a>
           </p>
         </div>
-
       </div>
-
-
     </div>
-
     <div id="overlayer"></div>
     <div class="loader">
       <div class="spinner-border" role="status">
