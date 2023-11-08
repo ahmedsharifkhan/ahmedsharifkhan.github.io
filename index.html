@@ -1,100 +1,103 @@
 ---
 layout: default
+
 title: Home
 ---
 
 
-    <div class="container mb-5">
+<div class="container mb-5">
 
-      <div class="main-slider owl-single owl-carousel">
-        {% for post in site.posts | reverse | limit: 40 %}
-        <div class="huge-article d-md-flex">
-          <div class="img-wrap">
-            <a href="{{ post.url | relative_url }}"><img src="{{ post.image }}" alt="{{ post.title }}" class="img-fluid"></a>
+  <div class="main-slider owl-single owl-carousel">
+    {% for post in site.posts | reverse | limit: 40 %}
+    <div class="huge-article d-md-flex">
+      <div class="img-wrap">
+        <a href="{{ post.url | relative_url }}"><img src="{{ post.image }}" alt="{{ post.title }}"
+            class="img-fluid"></a>
+      </div>
+      <div class="text-wrap">
+        <div class="meta`">
+          <span class="d-inline-block">{{ post.date | date: "%I:%M %p" }}</span>
+          <span class="mx-2">&bullet;</span>
+          <span><a href="#">8 Comments</a></span>
+        </div>
+        <h3><a href="{{ post.url | relative_url }}">{{ post.title | truncate: 30 }}</a></h3>
+        <p>{{ post.description | truncate: 150 }}</p>
+        <div class="author d-flex align-items-center">
+          <div class="img mr-3">
+            <img src="{{ site.baseurl }}/assets/images/author.png" alt="{{ post.author_name }}" class="img-fluid">
           </div>
-          <div class="text-wrap">
-            <div class="meta`">
-              <span class="d-inline-block">{{ post.date | date: "%I:%M %p" }}</span>
-              <span class="mx-2">&bullet;</span>
-              <span><a href="#">8 Comments</a></span>
-            </div>
-            <h3><a href="{{ post.url | relative_url }}">{{ post.title | truncate: 30 }}</a></h3>
-            <p>{{ post.description | truncate: 150 }}</p>
-            <div class="author d-flex align-items-center">
-              <div class="img mr-3">
-                <img src="{{ site.baseurl }}/assets/images/author.png" alt="{{ post.author_name }}" class="img-fluid">
-              </div>
-              <div class="text">
-                <h3><a href="#">{{ post.author_name }}</a></h3>
-                <strong>{{ post.author_bio }}</strong>
-              </div>
-            </div>
+          <div class="text">
+            <h3><a href="#">{{ post.author_name }}</a></h3>
+            <strong>{{ post.author_bio }}</strong>
           </div>
         </div>
-        {% endfor %}
-        <!-- item -->
+      </div>
+    </div>
+    {% endfor %}
+    <!-- item -->
 
-       
 
+
+  </div>
+</div>
+
+<!-- BLOG EDITORIAL -->
+<div class="section-latest">
+  <div class="container">
+    <div class="row gutter-v1 align-items-stretch mb-5">
+      <div class="col-12">
+        <h2 class="section-title">Editorial</h2>
+      </div>
+      <div class="col-md-9 pr-md-5">
+        <div class="row">
+          {% for post in site.posts %}
+          <div class="col-12">
+            <div class="post-entry horizontal d-md-flex">
+              <div class="media">
+                <a href="{{ post.url | relative_url }}"><img src="{{ post.image }}" alt="{{ post.title }}"
+                    class="img-fluid"></a>
+              </div>
+              <div class="text">
+                <div class="meta">
+                  <span>{{ post.date | date: "%B %d, %Y" }}</span>
+                  <span>&bullet;</span>
+                  <span>{{ post.date | date: "%I:%M %p" }}</span>
+                </div>
+                <h2><a href="{{ post.url | relative_url }}">{{ post.title | truncate: 65 }}</a></h2>
+                <p>{{ post.description | strip_html | truncate: 90 }}</p>
+
+              </div>
+            </div>
+          </div>
+          {% endfor %}
+        </div>
+      </div>
+
+      <div class="col-md-3">
+        <div class="mb-4">
+          <a href="https://vimeo.com/342333493" data-fancybox class="video-wrap">
+            <span class="play-wrap"><span class="icon-play"></span></span>
+            <img src="{{ site.baseurl }}/assets/images/img_h_5.jpg" alt="Image" class="img-fluid rounded">
+          </a>
+        </div>
+        <div class="floating-block sticky-top text-center">
+          <h2 class="mb-3 text-black">Subscribe to Newsletter</h2>
+          <p>Far far away behind the word mountains far from.</p>
+          <form action="#">
+            <input type="email" class="form-control mb-2" placeholder="Enter email">
+            <input type="submit" value="Subscribe" class="btn btn-primary btn-block">
+          </form>
+        </div>
       </div>
     </div>
 
-<!-- BLOG EDITORIAL -->
-    <div class="section-latest">
-      <div class="container">
-        <div class="row gutter-v1 align-items-stretch mb-5">
-          <div class="col-12">
-            <h2 class="section-title">Editorial</h2>
-          </div>
-          <div class="col-md-9 pr-md-5">
-            <div class="row">
-              {% for post in site.posts %}
-              <div class="col-12">
-                <div class="post-entry horizontal d-md-flex">
-                  <div class="media">
-                    <a href=""><img src="{{ post.image }}" alt="{{ post.title }}" class="img-fluid"></a>
-                  </div>
-                  <div class="text">
-                    <div class="meta">
-                      <span>{{ post.date | date: "%B %d, %Y" }}</span>
-                      <span>&bullet;</span>
-                      <span>{{ post.date | date: "%I:%M %p" }}</span>
-                    </div>
-                    <h2><a href="{{ post.url | relative_url }}">{{ post.title | truncate: 65 }}</a></h2>
-                    <p>{{ post.description | strip_html | truncate: 90 }}</p>
-                    
-                  </div>
-                </div>
-              </div>
-              {% endfor %}
-            </div>
-          </div>
-
-          <div class="col-md-3">
-            <div class="mb-4">
-              <a href="https://vimeo.com/342333493" data-fancybox class="video-wrap">
-                <span class="play-wrap"><span class="icon-play"></span></span>
-                <img src="{{ site.baseurl }}/assets/images/img_h_5.jpg" alt="Image" class="img-fluid rounded">
-              </a>
-            </div>
-            <div class="floating-block sticky-top text-center">
-              <h2 class="mb-3 text-black">Subscribe to Newsletter</h2>
-              <p>Far far away behind the word mountains far from.</p>
-              <form action="#">
-                <input type="email" class="form-control mb-2" placeholder="Enter email">
-                <input type="submit" value="Subscribe" class="btn btn-primary btn-block">
-              </form>
-            </div>
-          </div>
-        </div>
-
+    <div class="row">
+      <div class="col-lg-6">
         <div class="row">
-          <div class="col-lg-6">
-            <div class="row">
-              <div class="col-12">
-                <h2 class="section-title">Sports</h2>
-              </div>
-              <!-- <div class="col-md-6 col-lg-6">
+          <div class="col-12">
+            <h2 class="section-title">Sports</h2>
+          </div>
+          <!-- <div class="col-md-6 col-lg-6">
                 <div class="post-entry">
                   <div class="media">
                     <a href="#"><img src="{{ site.baseurl }}/assets/images/img_h_1.jpg" alt="Image" class="img-fluid"></a>
@@ -122,7 +125,7 @@ title: Home
                 </div>
               </div> -->
 
-<!-- 
+          <!-- 
               <div class="col-md-6 col-lg-6">
                 <div class="post-entry">
                   <div class="media">
@@ -152,17 +155,17 @@ title: Home
                 </div>
               </div> -->
 
-          
-            </div>
+
+        </div>
+      </div>
+
+      <div class="col-lg-6">
+        <div class="row">
+          <div class="col-12">
+            <h2 class="section-title">Design</h2>
           </div>
 
-          <div class="col-lg-6">
-            <div class="row">
-              <div class="col-12">
-                <h2 class="section-title">Design</h2>
-              </div>
-
-              <!-- <div class="col-md-6 col-lg-6">
+          <!-- <div class="col-md-6 col-lg-6">
                 <div class="post-entry">
                   <div class="media">
                     <a href="#"><img src="{{ site.baseurl }}/assets/images/img_h_3.jpg" alt="Image" class="img-fluid"></a>
@@ -190,7 +193,7 @@ title: Home
                 </div>
               </div> -->
 
-              <!-- <div class="col-md-6 col-lg-6">
+          <!-- <div class="col-md-6 col-lg-6">
                 <div class="post-entry">
                   <div class="media">
                     <a href="#"><img src="{{ site.baseurl }}/assets/images/img_h_4.jpg" alt="Image" class="img-fluid"></a>
@@ -219,17 +222,10 @@ title: Home
                 </div>
               </div> -->
 
-          
-            </div>
-          </div>
-          
+
         </div>
       </div>
+
     </div>
-    
-
-   
-
-
-    
-
+  </div>
+</div>

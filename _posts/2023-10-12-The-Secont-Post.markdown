@@ -1,6 +1,7 @@
 ---
 layout: blog-post
 
+
 author: author1
 
 author_name: Jane Doe

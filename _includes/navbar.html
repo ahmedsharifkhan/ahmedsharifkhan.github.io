@@ -1,3 +1,13 @@
+<style>
+
+  .menu-item.active {
+    color: #A4C639;
+    /* You can also add other styles if needed */
+  }
+
+</style>
+
+
 <div class="site-mobile-menu site-navbar-target">
   <div class="site-mobile-menu-header">
     <div class="site-mobile-menu-close">
@@ -53,8 +63,8 @@
               </form>
               <ul id="search-results"></ul>
             </div>
-            
-            
+
+
 
             <style>
               /* Style for the search results */
@@ -158,9 +168,10 @@
       <div class="col-12 col-sm-12 col-lg-12 site-navigation text-center">
         <ul class="js-clone-nav d-none d-lg-inline-block text-left site-menu">
           <li class="{% if page.url == '/' %}active{% endif %}"><a href="{{ site.baseurl }}/">Business</a></li>
-          <li><a href="/portfolio">Portfolio</a></li>
-          <li class="children">
-            <a href="/blog">Blog</a>
+          <li class="{% if page.url == '/portfolio' %}active{% else %}{% endif %}"><a
+              href="{{ site.baseurl }}/portfolio">Portfolio</a></li>
+          <li class="children {% if page.url == '/blog' %}active{% endif %}">
+            <a href="{{ site.baseurl }}/blog">Blog</a>
             <!-- <ul class="dropdown">
                   <li><a href="portfolio.html">Portfolio</a></li>
                   <li><a href="single.html">Single</a></li>
@@ -178,9 +189,11 @@
                   <li><a href="#">Menu Three</a></li>
                 </ul> -->
           </li>
-          <li><a href="/about">About</a></li>
+          <li class="{% if page.url == '/about' %}active{% else %}{% endif %}"><a href="{{ site.baseurl }}/about">About</a></li>
 
-          <li><a href="/contact">Contact</a></li>
+          <li class="menu-item {% if page.url == '/contact' %}active{% else %}{% endif %}"><a href="{{ site.baseurl }}/contact">Contact</a>
+          <li class="menu-item {% if page.url == '/noor' %}active{% else %}{% endif %}"><a href="{{ site.baseurl }}/noor">Resume</a></li>
+          </li>
         </ul>
 
       </div>

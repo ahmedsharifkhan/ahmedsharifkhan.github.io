@@ -2,6 +2,8 @@
 logo: AHMED'S WORLD
 title: Ahmed world is a portfolio site
 email: 
+start_year: 2023
+current_year: { { site.time | date: "%Y" } }
 description: 
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
@@ -34,8 +36,10 @@ header_pages:
     url: /about
   - title: Contact
     url: /contact
-  - title: portfolio
+  - title: Portfolio
     url: /portfolio
+  - title: Noor
+    url: /noor
 
 google_analytics_id: G-W5KN8DPXQ9
 facebook_pixel_id: 1234567890
@@ -51,6 +55,7 @@ theme: minima
 plugins:
   - jekyll-admin
   - jekyll-sitemap
+  - jekyll-feed
 
 # Exclude from processing.
 # The following items will not be processed, by default.
