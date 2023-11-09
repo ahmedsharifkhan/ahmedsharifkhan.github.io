@@ -48,19 +48,6 @@ title: Portfolio
   </div>
 </section>
 
-{% for project in site.data.folio.portfolio %}
-  <div>
-    <h2>{{ project.title }}</h2>
-    <p>{{ project.date }}</p>
-    <p>{{ project.description }}</p>
-    <a href="{{ project.url }}" target="_blank">{{ project.url }}</a>
-    <img src="{{ project.image }}" alt="{{ project.title }}">
-    <p>Keywords: {{ project.keywords }}</p>
-    <p>Categories: {{ project.categories }}</p>
-  </div>
-{% endfor %}
-
-
 <!-- .untrtee_co-section -->
 
 <div class="site-section testimonial-section">
