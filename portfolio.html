@@ -30,16 +30,15 @@ title: Portfolio
     </div>
     <div class="filters-content mb-5" data-aos="fade-up" data-aos-delay="200">
       <div class="row grid">
-        
-        {% assign sorted_portfolio = site.portfolio | sort: 'date' | reverse %}
-        {% for item in sorted_portfolio limit: 10 %}
+        {% assign reversed_projects = site.data.folio.portfolio | reverse %}
+        {% for project in reversed_projects %}
 
         <div class="isotope-card col-sm-4 all mockup">
-          <a href="{{ item.image }}" data-fancybox="gal">
-            <img src="{{ item.image }}" alt="{{ item.title }}" class="img-fluid">
+          <a href="{{ project.image }}" data-fancybox="gal">
+            <img src="{{ project.image }}" alt="{{ project.title }}" class="img-fluid">
             <div class="contents">
-              <h3>{{ item.title }}</h3>
-              <div class="cat">{{ item.description | truncate: 30}}</div>
+              <h3>{{ project.title }}</h3>
+              <div class="cat">{{ project.description | truncate: 30 }}</div>
             </div>
           </a>
         </div>
@@ -48,6 +47,19 @@ title: Portfolio
     </div>
   </div>
 </section>
+
+{% for project in site.data.folio.portfolio %}
+  <div>
+    <h2>{{ project.title }}</h2>
+    <p>{{ project.date }}</p>
+    <p>{{ project.description }}</p>
+    <a href="{{ project.url }}" target="_blank">{{ project.url }}</a>
+    <img src="{{ project.image }}" alt="{{ project.title }}">
+    <p>Keywords: {{ project.keywords }}</p>
+    <p>Categories: {{ project.categories }}</p>
+  </div>
+{% endfor %}
+
 
 <!-- .untrtee_co-section -->
 
