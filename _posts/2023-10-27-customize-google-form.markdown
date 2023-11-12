@@ -19,6 +19,15 @@ image: https://lh3.googleusercontent.com/pw/ADCreHcyayhneTSDtps_4OFoSA4FnwOIo6eo
 
 telegram_channel: answereverything4_b
 telegram_message_id: 3
+
+
+social:
+    facebook: "https://facebook.com/ahmedsharifkhannoor"
+    twitter: "https://twitter.com/maxnoor87"
+    instagram: "https://instagram.com/ahmedsharifkhannoor"
+    linkedin: "https://linkedin.com/in/ahmedsharifkhannoor"
+    github: "https://github.com/ahmedsharifkhan"
+    youtube: "https://youtube.com/johndoe"
 ---
 
 

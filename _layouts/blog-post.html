@@ -43,23 +43,58 @@ layout: default
 <div class="featured-post single-article">
   <div class="container">
     <!-- Image -->
-    <img src="{{ page.image }}" class="rounded mx-auto d-block img-fluid" style="width: 100%; max-height: 600px;" alt="{{ page.title }}">
-
-  <div class="row no-gutters" style="border-width: 1px;">
-    <div class="col-md-auto d-xl-flex align-items-xl-center mt-3"><img class="img-fluid" src="{{ site.baseurl }}/assets/images/author.png" width="40" height="40" alt="{{ page.author_name }}" style="border-radius: 50%;" /></div>
-    <div class="col d-xl-flex align-items-xl-center mt-3" style="font-family: Montserrat, sans-serif;"><span class="author badge badge-light" padding="2"><b>{{ page.author_name }}</b></span>
-      <div class="col-md-auto d-xl-flex align-items-xl-center mt-3">
-      </div>
-      
-      <span class="badge badge-light" style="font-family: Montserrat, sans-serif;">&nbsp;&nbsp;Published: {{ page.date | date: "%B %d, %Y" }} - {{ page.date | date: "%I:%M %p" }}<br /></span></div>
-    </div>
-</div>
+    <img src="{{ page.image }}" class="rounded mx-auto d-block img-fluid" style="width: 100%; max-height: 600px;"
+      alt="{{ page.title }}">
   </div>
+
+  <div class="container" style="padding-top: 2px;">
+    <div class="dropdown">
+      <button class="btn dropdown-toggle" style="color: #A4C639;" type="button" id="dropdownMenu2"
+        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        <img class="img-fluid" src="{{ site.baseurl }}/assets/images/author.png" width="30" height="30"
+          alt="{{ page.author_name }}" style="border-radius: 50%;" /> <span class="author badge badge-light"
+          padding="2"><b>{{ page.author_name }}</b></span>
+      </button>
+      <span class="badge badge-light" style="font-family: Montserrat, sans-serif;">&nbsp;&nbsp;Published: {{ page.date |
+        date: "%B %d, %Y" }} - {{ page.date | date: "%I:%M %p" }}<br /></span>
+      <div class="dropdown-menu" aria-labelledby="dropdownMenu2">
+
+        <div class="card">
+          <div class="card-body">
+            <blockquote class="blockquote mb-0">
+              <p>{{page.author_bio}}</p>
+              <cite title="Source Title">{{page.author_email}}</cite>
+              <P>Find Me</P>
+              <div class="row justify-content-between align-items-center">
+                <div class="col-lg-3 top-menu">
+
+                  {% if page.social %}
+                  {% for platform_link in page.social %}
+                  {% assign platform = platform_link[0] %}
+                  {% assign link = platform_link[1] %}
+                  <a href="{{ link }}" class="d-inline-flex align-items-center" style="color: #A4C639;" target="_blank">
+                    <span class="icon-{{ platform | downcase }} mr-2"></span>
+                  </a>
+                  {% endfor %}
+                  {% endif %}
+                </div>
+              </div>
+
+
+            </blockquote>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+  </div>
+</div>
 </div>
 <!-- -------------------------------------- -->
 <div class="container article">
   <div class="row justify-content-center align-items-stretch">
-    
+
     <article class="col-lg-8 order-lg-2 px-lg-5">
       <p class="h2 text-center">{{ page.title }}</p>
       <p> {{ content }}</p>
@@ -85,20 +120,20 @@ layout: default
 
       <div class="post-single-navigation d-flex align-items-stretch">
         {% if page.previous %}
-          <a href="{{ page.previous.url }}" class="mr-auto w-50 pr-4">
-            <span class="d-block">Previous Post</span>
-            {{ page.previous.title }}
-          </a>
+        <a href="{{ page.previous.url }}" class="mr-auto w-50 pr-4">
+          <span class="d-block">Previous Post</span>
+          {{ page.previous.title }}
+        </a>
         {% endif %}
-      
+
         {% if page.next %}
-          <a href="{{ page.next.url }}" class="ml-auto w-50 text-right pl-4">
-            <span class="d-block">Next Post</span>
-            {{ page.next.title }}
-          </a>
+        <a href="{{ page.next.url }}" class="ml-auto w-50 text-right pl-4">
+          <span class="d-block">Next Post</span>
+          {{ page.next.title }}
+        </a>
         {% endif %}
       </div>
-      
+
       <!-- <div class="post-single-navigation d-flex align-items-stretch">
         {% if page.previous %}
           <a href="{{ page.previous.url }}" class="mr-auto w-50 pr-4">
@@ -120,19 +155,20 @@ layout: default
           </a>
         {% endif %}
       </div> -->
-      
+
 
       <div id="telegram-comments">
-      <script async src="https://telegram.org/js/telegram-widget.js?22" data-telegram-discussion="answereverything4_b/13" data-comments-limit="5"></script>
+        <script async src="https://telegram.org/js/telegram-widget.js?22"
+          data-telegram-discussion="answereverything4_b/13" data-comments-limit="5"></script>
       </div>
 
       <!-- <div class="pt-5">
         <h3 class="mb-5">6 Comments</h3> -->
-      
-<!-- Telegram Discussion Widget -->
-<!-- https://t.me/answereverything4_b -->
-<!-- https://t.me/c/2039956533/6 -->
-<!-- https://t.me/c/2039956533/2
+
+      <!-- Telegram Discussion Widget -->
+      <!-- https://t.me/answereverything4_b -->
+      <!-- https://t.me/c/2039956533/6 -->
+      <!-- https://t.me/c/2039956533/2
 https://t.me/c/2039956533/10
 https://t.me/answereverything4_b/9 -->
 
@@ -141,7 +177,7 @@ https://t.me/answereverything4_b/9 -->
 
 
 
-        <!-- <ul class="comment-list">
+      <!-- <ul class="comment-list">
           <li class="comment">
             <div class="vcard bio">
               <img src="{{ site.baseurl }}/assets/images/person_6.jpg" alt="Image placeholder">
@@ -233,9 +269,9 @@ https://t.me/answereverything4_b/9 -->
             </div>
           </li>
         </ul> -->
-        <!-- END comment-list -->
+      <!-- END comment-list -->
 
-        <!-- <div class="comment-form-wrap pt-5">
+      <!-- <div class="comment-form-wrap pt-5">
           <h3 class="mb-5">Leave a comment</h3>
           <form action="#" class="">
             <div class="form-group">
@@ -277,20 +313,20 @@ https://t.me/answereverything4_b/9 -->
           <li><a href="#"><span class="icon-linkedin"></span></a></li>
           <li><a href="#"><span class="icon-pinterest"></span></a></li>
           </ul> -->
-          <!-- AddToAny BEGIN -->
-<div class="a2a_kit a2a_kit_size_32 a2a_default_style list-unstyled share-article">
-  
-  <li><a class="a2a_button_facebook"><span class="icon-facebook"></span></a></li>
-  <li><a class="a2a_button_whatsapp"><span class="icon-whatsapp"></span></a></li>
-  <li><a class="a2a_button_pinterest"><span class="icon-pinterest"></span></a></li>
-  <li><a class="a2a_button_linkedin"><span class="icon-linkedin"></span></a></li>
-  <li><a class="a2a_button_x"><span class="icon-twitter"></span></a></li>
-  <li><a class="a2a_button_copy_link"><span class="icon-link"></span></a></li>
- 
-  </div>
-  <!-- <script async src="https://static.addtoany.com/menu/page.js"></script> -->
-  <!-- AddToAny END -->
-          
+        <!-- AddToAny BEGIN -->
+        <div class="a2a_kit a2a_kit_size_32 a2a_default_style list-unstyled share-article">
+
+          <li><a class="a2a_button_facebook"><span class="icon-facebook"></span></a></li>
+          <li><a class="a2a_button_whatsapp"><span class="icon-whatsapp"></span></a></li>
+          <li><a class="a2a_button_pinterest"><span class="icon-pinterest"></span></a></li>
+          <li><a class="a2a_button_linkedin"><span class="icon-linkedin"></span></a></li>
+          <li><a class="a2a_button_x"><span class="icon-twitter"></span></a></li>
+          <li><a class="a2a_button_copy_link"><span class="icon-link"></span></a></li>
+
+        </div>
+        <!-- <script async src="https://static.addtoany.com/menu/page.js"></script> -->
+        <!-- AddToAny END -->
+
         </ul>
       </div>
     </div>
@@ -329,8 +365,8 @@ https://t.me/answereverything4_b/9 -->
           </form> -->
         </div>
       </div>
-    
+
     </div>
-    
+
   </div>
 </div>
