@@ -1,6 +1,8 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <meta name="author" content="Untree.co">
     <meta name="google-site-verification" content="FY761GODLm7L0iuWDtItCKMWVmWik8CA7pO1knXG_5c" />
     <link rel="shortcut icon" href="{{ site.baseurl }}/assets/images/favicon.png" style="border-radius: 50%;">
@@ -30,6 +32,10 @@
     <link rel="stylesheet" href="{{ site.baseurl }}/assets/css/aos.css">
     <link rel="stylesheet" href="{{ site.baseurl }}/assets/css/style.css">
 
+    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/alpinejs@2.8.2/dist/alpine.min.js" integrity="sha256-uq+I5uvM3/5VBu8jfvvkoon6y9eukQupAZiYYtDQADo=" crossorigin="anonymous"> -->
+<!-- <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.13.2/dist/cdn.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/alpinejs@2.8.2/dist/alpine.min.js" defer></script> -->
+
     <!-- All kinds of tracking -->
     {% include tracking.html %}
 
@@ -41,11 +47,11 @@
     <meta name="csh" content="TOKEN" />
 
     <!-- Search api  -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/lunr.js/2.3.7/lunr.min.js"></script>
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/lunr.js/2.3.7/lunr.min.js"></script> -->
 
     <link rel="canonical" href="{{ page.url | absolute_url }}" />
 
-    <script async src="https://telegram.org/js/telegram-widget.js?22" data-telegram-discussion="{{ page.telegram_channel }}/{{ page.telegram_message_id }}" data-comments-limit="5"></script>
+    <!-- <script async src="https://telegram.org/js/telegram-widget.js?22" data-telegram-discussion="{{ page.telegram_channel }}/{{ page.telegram_message_id }}" data-comments-limit="5"></script> -->
 
     <style>
         #telegram-comments {
@@ -69,7 +75,15 @@
 
     <title>{{ page.title }}</title>
 
-
+    <!-- <style>
+        /* Your loading bar styles here */
+        #loadingBar {
+            height: 5px;
+            width: 0;
+            background-color: #4caf50;
+            transition: width 0.3s;
+        }
+    </style> -->
 
 
 </head>
