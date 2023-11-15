@@ -88,10 +88,13 @@
     </style> -->
 
 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/dark.min.css">
+    
+    
 </head>
 
-<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.7.2/highlight.min.js"></script>
-<script>hljs.initHighlightingOnLoad();</script>
+<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.7.2/highlight.min.js"></script> -->
+<!-- <script>hljs.initHighlightingOnLoad();</script> -->
 
 <!-- <style>
     pre code {
@@ -137,6 +140,7 @@
         box-shadow: 0 4px 30px rgba(0, 0, 0, 0.5);
     }
 
+    
     pre code {
         display: block;
         padding: 1em;
@@ -144,10 +148,9 @@
         /* background: linear-gradient(to right, #614294, #8C4E9E); */
         /* Set the background color to black */
         color: #fff;
-
+        
         /* Set the text color to white */
     }
-
     ::selection {
         background-color: #464da4;
         /* Green color */
@@ -155,8 +158,8 @@
 
     .copy-code-button {
         background-color: #A4C639;
-        color: #fff;
-        border: none;
+        color: #0f0f0f;
+        border-radius: 15px;
         margin-top: 1px;
         padding: 5px 10px;
         cursor: pointer;
@@ -175,39 +178,39 @@
 <style>
     /* Style for the search results */
     #search-results {
-      display: none;
-      position: absolute;
-      top: 100%;
-      /* Position below the search bar */
-      left: 0;
-      z-index: 999;
-      /* Ensure it's above other content */
-      background: #fff;
-      /* Background color */
-      border: 1px solid #ccc;
-      border-top: none;
-      /* Remove top border to align with search bar */
-      box-shadow: 0 5px 5px rgba(0, 0, 0, 0.2);
-      /* Add a shadow effect */
-      padding: 10px;
-      /* Adjust padding as needed */
-      max-height: 300px;
-      /* Limit the height to prevent overflow */
-      overflow-y: auto;
-      /* Add a scrollbar if results exceed max height */
+        display: none;
+        position: absolute;
+        top: 100%;
+        /* Position below the search bar */
+        left: 0;
+        z-index: 999;
+        /* Ensure it's above other content */
+        background: #fff;
+        /* Background color */
+        border: 1px solid #ccc;
+        border-top: none;
+        /* Remove top border to align with search bar */
+        box-shadow: 0 5px 5px rgba(0, 0, 0, 0.2);
+        /* Add a shadow effect */
+        padding: 10px;
+        /* Adjust padding as needed */
+        max-height: 300px;
+        /* Limit the height to prevent overflow */
+        overflow-y: auto;
+        /* Add a scrollbar if results exceed max height */
     }
 
     /* Style for individual search results */
     #search-results li {
-      margin-bottom: 10px;
+        margin-bottom: 10px;
     }
 
     #search-results a {
-      color: #000000;
-      text-decoration: none;
+        color: #000000;
+        text-decoration: none;
     }
 
     #search-results a:hover {
-      text-decoration: underline;
+        text-decoration: underline;
     }
-  </style>
+</style>
