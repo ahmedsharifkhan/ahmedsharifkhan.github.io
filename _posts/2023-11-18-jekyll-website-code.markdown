@@ -13,7 +13,7 @@ title:  "Jekyll Website Code"
 date:   2023-11-18 17:35:09 +0600
 categories: [Jekyll, Code, Website]
 keywords: Jekyll  Code Website
-description:  BDIX CONNECTED MEDIA & FTP SERVERS - TOP 50 ACTIVE SERVERS
+description:  Jekyll Website code to strat a jekyll project
 image: "https://tds-images.thedailystar.net/sites/default/files/styles/big_202/public/images/2023/07/13/facebook_thumbnail_8.png"
 ---
 
