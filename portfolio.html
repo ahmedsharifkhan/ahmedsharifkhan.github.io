@@ -15,17 +15,54 @@ title: Portfolio
   </div>
 </div>
 
-<section class="site-section pt-0" id="portfolio-section">
+<!-- Banner portfolio -->
+  <section class="site-section pt-0" id="portfolio-section">
+    <div class="container">
+      <div class="filters" data-aos="fade-up" data-aos-delay="100">
+        <ul>
+          <li class="active" data-filter="*">All</li>
+          {% assign unique_categories = site.data.folio.portfolio | map: "category" | uniq %}
+          {% for category in unique_categories %}
+            <li data-filter=".{{ category }}">{{ category | capitalize }}</li>
+          {% endfor %}
+        </ul>
+      </div>
+
+      <div class="filters-content mb-5" data-aos="fade-up" data-aos-delay="200">
+        <div class="row grid">
+          {% for project in site.data.folio.portfolio %}
+            <div class="isotope-card col-sm-4 all {{ project.category }}">
+              <a href="{{ project.image }}" data-fancybox="gal">
+                <img src="{{ project.image }}" alt="{{ project.title }}" class="img-fluid">
+                <div class="contents">
+                  <h3>{{ project.title }}</h3>
+                  <div class="cat">{{ project.category | capitalize }}</div>
+                </div>
+              </a>
+            </div>
+          {% endfor %}
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+<!-- end banner portfolio -->
+
+
+
+<!-- <section class="site-section pt-0" id="portfolio-section">
   <div class="container">
 
     <div class="filters" data-aos="fade-up" data-aos-delay="100">
       <ul>
         <li class="active" data-filter="*">All</li>
         
-        <!-- <li data-filter=".packaging">Design Details</li>
+        <li data-filter=".packaging">Design Details</li>
         <li data-filter=".mockup">Mockup</li>
         <li data-filter=".typography">Typography</li>
-        <li data-filter=".photography">Photography</li> -->
+        <li data-filter=".photography">Photography</li>
       </ul>
     </div>
     <div class="filters-content mb-5" data-aos="fade-up" data-aos-delay="200">
@@ -46,7 +83,7 @@ title: Portfolio
       </div>
     </div>
   </div>
-</section>
+</section> -->
 
 <!-- .untrtee_co-section -->
 
@@ -62,38 +99,18 @@ title: Portfolio
       <div class="col-lg-7">
 
         <div class="main-slider owl-single owl-carousel">
+          {% for port in site.data.client.client | reverse | limit: 40 %}
           <div class="testimonial mx-auto">
             <figure class="img-wrap">
-              <img src="{{ site.baseurl }}/assets/images/person_2.jpg" alt="Image" class="img-fluid">
+              <img src="{{ port.image }}" alt="{{ port.name }}" class="img-fluid">
             </figure>
-            <h3 class="name">Adam Aderson</h3>
+            <h3 class="name">{{ port.name }}</h3>
             <blockquote>
-              <p>&ldquo;There live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.&rdquo;</p>
+              <p>&ldquo;{{ port.message }}&rdquo;</p>
             </blockquote>
           </div>
-
-          <div class="testimonial mx-auto">
-            <figure class="img-wrap">
-              <img src="{{ site.baseurl }}/assets/images/person_3.jpg" alt="Image" class="img-fluid">
-            </figure>
-            <h3 class="name">Lukas Devlin</h3>
-            <blockquote>
-              <p>&ldquo;There live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.&rdquo;</p>
-            </blockquote>
-          </div>
-
-          <div class="testimonial mx-auto">
-            <figure class="img-wrap">
-              <img src="{{ site.baseurl }}/assets/images/person_4.jpg" alt="Image" class="img-fluid">
-            </figure>
-            <h3 class="name">Kayla Bryant</h3>
-            <blockquote>
-              <p>&ldquo;There live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.&rdquo;</p>
-            </blockquote>
-          </div>
-
+          {% endfor %}
         </div>
-
       </div>
     </div>
   </div>

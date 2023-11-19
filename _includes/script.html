@@ -12,9 +12,9 @@
 
 
 <!-- and it's easy to individually load additional languages -->
-<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/languages/go.min.js"></script> -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/languages/go.min.js"></script>
 
-<!-- <script>hljs.highlightAll();</script> -->
+<script>hljs.highlightAll();</script>
 
 <!-- <script>
 document.addEventListener('DOMContentLoaded', (event) => {
@@ -38,94 +38,54 @@ document.addEventListener('DOMContentLoaded', (event) => {
     });
 });
 </script> -->
-
-
 <script>
-    document.addEventListener('DOMContentLoaded', (event) => {
-        const codeBlocks = document.querySelectorAll('pre code');
-  
-        codeBlocks.forEach((codeBlock) => {
-            const container = document.createElement('div');
-            container.className = 'copy-code-container';
-  
-            const button = document.createElement('button');
-            button.className = 'copy-code-button primary_btn'; // Add the 'primary_btn' class here
-            button.textContent = 'Copy Code';
-  
-            button.addEventListener('click', () => {
-                const textArea = document.createElement('textarea');
-                textArea.value = codeBlock.innerText;
-                document.body.appendChild(textArea);
-                textArea.select();
-                document.execCommand('copy');
-                document.body.removeChild(textArea);
-  
-                // Change the button text to "Copied!" for a short duration
-                const originalText = button.textContent;
-                button.textContent = 'Copied!';
-                
-                setTimeout(() => {
-                    button.textContent = originalText;
-                }, 1000); // Adjust the duration as needed
-            });
-  
-            container.appendChild(button);
-  
-            codeBlock.parentNode.insertBefore(container, codeBlock.nextSibling);
-        });
+  document.addEventListener('DOMContentLoaded', (event) => {
+    const codeBlocks = document.querySelectorAll('pre code');
+
+    codeBlocks.forEach((codeBlock) => {
+      const container = document.createElement('div');
+      container.className = 'copy-code-container';
+
+      const button = document.createElement('button');
+      button.className = 'copy-code-button primary_btn'; // Add the 'primary_btn' class here
+      button.textContent = 'Copy Code';
+
+      button.addEventListener('click', () => {
+        const textArea = document.createElement('textarea');
+        textArea.value = codeBlock.innerText;
+        document.body.appendChild(textArea);
+        textArea.select();
+        document.execCommand('copy');
+        document.body.removeChild(textArea);
+
+        // Change the button text to "Copied!" for a short duration
+        const originalText = button.textContent;
+        button.textContent = 'Copied!';
+        setTimeout(() => {
+          button.textContent = originalText;
+        }, 1000); // Adjust the duration as needed
+      });
+
+      container.appendChild(button);
+      codeBlock.parentNode.insertBefore(container, codeBlock.nextSibling);
     });
-  </script>
+  });
+</script>
+
+
+
+
+<!-- <script src="https://unpkg.com/htmx.org@1.9.6"></script> -->
+<script src="https://unpkg.com/htmx.org@1.7.0/dist/htmx.min.js"></script>
 
 
 <!-- Search form -->
 
 <script src="{{ site.baseurl }}/assets/js/search.js"></script>
 
-<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/lunr.js/2.3.7/lunr.min.js"></script> -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/lunr.js/2.3.7/lunr.min.js"></script>
 
 
 <!-- share button -->
 <script async src="https://static.addtoany.com/menu/page.js"></script>
 
-    <!-- Your scripts, including Alpine.js -->
-<!-- <script src="https://cdn.jsdelivr.net/npm/alpinejs@2.8.2/dist/alpine.min.js" integrity="sha256-uq+I5uvM3/5VBu8jfvvkoon6y9eukQupAZiYYtDQADo=" crossorigin="anonymous"></script>
- -->
-
- <script type="module">
-  import hljs from 'https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/es/highlight.min.js';
-  //  and it's easy to individually load additional languages
-  import go from 'https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/es/languages/go.min.js';
-  hljs.registerLanguage('go', go);
-  </script>
-
-
- <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-
- <script>
-   $(document).ready(function () {
-     var searchInput = $("#search-input");
-     var searchResults = $("#search-results");
-
-     searchInput.on("input", function () {
-       var query = searchInput.val().toLowerCase().trim();
-       if (query === "") {
-         searchResults.hide();
-       } else {
-         searchResults.show();
-         // Perform search and display results based on query
-       }
-     });
-
-     // Hide search results when clicking outside the search bar
-     $(document).on("click", function (event) {
-       if (!$(event.target).closest("#search-form").length) {
-         searchResults.hide();
-       }
-     });
-
-     // Prevent hiding when clicking inside the search results container
-     searchResults.on("click", function (event) {
-       event.stopPropagation();
-     });
-   });
- </script>

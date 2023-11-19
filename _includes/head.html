@@ -1,8 +1,6 @@
 <head>
     <meta charset="utf-8">
-    <!-- <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"> -->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="author" content="Untree.co">
     <meta name="google-site-verification" content="FY761GODLm7L0iuWDtItCKMWVmWik8CA7pO1knXG_5c" />
     <link rel="shortcut icon" href="{{ site.baseurl }}/assets/images/favicon.png" style="border-radius: 50%;">
@@ -32,10 +30,6 @@
     <link rel="stylesheet" href="{{ site.baseurl }}/assets/css/aos.css">
     <link rel="stylesheet" href="{{ site.baseurl }}/assets/css/style.css">
 
-    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/alpinejs@2.8.2/dist/alpine.min.js" integrity="sha256-uq+I5uvM3/5VBu8jfvvkoon6y9eukQupAZiYYtDQADo=" crossorigin="anonymous"> -->
-    <!-- <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.13.2/dist/cdn.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/alpinejs@2.8.2/dist/alpine.min.js" defer></script> -->
-
     <!-- All kinds of tracking -->
     {% include tracking.html %}
 
@@ -47,11 +41,13 @@
     <meta name="csh" content="TOKEN" />
 
     <!-- Search api  -->
-    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/lunr.js/2.3.7/lunr.min.js"></script> -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lunr.js/2.3.7/lunr.min.js"></script>
 
     <link rel="canonical" href="{{ page.url | absolute_url }}" />
 
-    <!-- <script async src="https://telegram.org/js/telegram-widget.js?22" data-telegram-discussion="{{ page.telegram_channel }}/{{ page.telegram_message_id }}" data-comments-limit="5"></script> -->
+    <script async src="https://telegram.org/js/telegram-widget.js?22"
+        data-telegram-discussion="{{ page.telegram_channel }}/{{ page.telegram_message_id }}"
+        data-comments-limit="5"></script>
 
     <style>
         #telegram-comments {
@@ -67,9 +63,7 @@
             overflow: hidden;
             /* Ensures that rounded corners and box shadow are visible */
             transition: background-color 0.3s ease;
-
         }
-
         #telegram-comments:hover {
             background-color: #e0e0e0;
         }
@@ -77,24 +71,10 @@
 
     <title>{{ page.title }}</title>
 
-    <!-- <style>
-        /* Your loading bar styles here */
-        #loadingBar {
-            height: 5px;
-            width: 0;
-            background-color: #4caf50;
-            transition: width 0.3s;
-        }
-    </style> -->
 
-
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/dark.min.css">
     
-    
-</head>
-
-<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.7.2/highlight.min.js"></script> -->
-<!-- <script>hljs.initHighlightingOnLoad();</script> -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.7.2/highlight.min.js"></script>
+<script>hljs.initHighlightingOnLoad();</script>
 
 <!-- <style>
     pre code {
@@ -106,7 +86,7 @@
         color: #110e0e;
         /* Set the text color to white */
     }
-
+    
     .copy-code-button {
         background-color: #A4C639;
         color: #fff;
@@ -123,7 +103,6 @@
     }
 </style> -->
 
-<!-- code show -->
 <style>
     pre {
         background-color: #272A3D;
@@ -139,8 +118,6 @@
         border-radius: 15px;
         box-shadow: 0 4px 30px rgba(0, 0, 0, 0.5);
     }
-
-    
     pre code {
         display: block;
         padding: 1em;
@@ -148,14 +125,12 @@
         /* background: linear-gradient(to right, #614294, #8C4E9E); */
         /* Set the background color to black */
         color: #fff;
-        
         /* Set the text color to white */
     }
     ::selection {
         background-color: #464da4;
         /* Green color */
     }
-
     .copy-code-button {
         background-color: #A4C639;
         color: #0f0f0f;
@@ -165,52 +140,12 @@
         cursor: pointer;
         transition: background-color 0.3s ease, transform 0.3s ease;
     }
-
     .copy-code-button:hover {
         background-color: #7FA11D;
         transform: scale(1.1);
+
     }
 </style>
 
-
-<!-- for search -->
-
-<style>
-    /* Style for the search results */
-    #search-results {
-        display: none;
-        position: absolute;
-        top: 100%;
-        /* Position below the search bar */
-        left: 0;
-        z-index: 999;
-        /* Ensure it's above other content */
-        background: #fff;
-        /* Background color */
-        border: 1px solid #ccc;
-        border-top: none;
-        /* Remove top border to align with search bar */
-        box-shadow: 0 5px 5px rgba(0, 0, 0, 0.2);
-        /* Add a shadow effect */
-        padding: 10px;
-        /* Adjust padding as needed */
-        max-height: 300px;
-        /* Limit the height to prevent overflow */
-        overflow-y: auto;
-        /* Add a scrollbar if results exceed max height */
-    }
-
-    /* Style for individual search results */
-    #search-results li {
-        margin-bottom: 10px;
-    }
-
-    #search-results a {
-        color: #000000;
-        text-decoration: none;
-    }
-
-    #search-results a:hover {
-        text-decoration: underline;
-    }
-</style>
+<!-- <script type='text/javascript' src='https://platform-api.sharethis.com/js/sharethis.js#property=617730be2c621500122ddde2&product=inline-share-buttons' async='async'></script> -->
+    </head>

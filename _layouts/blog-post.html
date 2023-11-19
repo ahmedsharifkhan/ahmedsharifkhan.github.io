@@ -162,22 +162,60 @@ layout: default
           data-telegram-discussion="answereverything4_b/13" data-comments-limit="5"></script>
       </div>
 
-      <!-- <div class="pt-5">
+
+
+  <!-- card second -->
+<h3 class="card-text text-black pt-4">Related Post</h3>
+  <div class="row row-cols-1 row-cols-md-3">
+    {% assign popular_posts_limit = 5 %}
+    {% assign popular_posts = site.posts | sort: 'date' | reverse %}
+    {% for post in popular_posts %}
+      {% if forloop.index <= popular_posts_limit %} 
+        <div class="col mb-4">
+          <div class="card" style="height: 100%;">
+            <a href="{{ post.url | relative_url }}"><img src="{{ post.image }}" class="card-img-top" alt="{{ post.title }}"></a>
+            <div class="card-body">
+              <a href="{{ post.url | relative_url }}"><h5 class="card-title">{{ post.title | truncate: 15 }}</h5></a>
+              <p class="card-text"><small class="text-muted">{{ post.date | date: "%b %-d, %Y %H:%M:%S" }}</small></p>
+            </div>
+          </div>
+        </div>
+      {% endif %}
+    {% endfor %}
+  </div>
+  
+<!-- card end second -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- <div class="pt-5">
         <h3 class="mb-5">6 Comments</h3> -->
 
-      <!-- Telegram Discussion Widget -->
-      <!-- https://t.me/answereverything4_b -->
-      <!-- https://t.me/c/2039956533/6 -->
-      <!-- https://t.me/c/2039956533/2
+<!-- Telegram Discussion Widget -->
+<!-- https://t.me/answereverything4_b -->
+<!-- https://t.me/c/2039956533/6 -->
+<!-- https://t.me/c/2039956533/2
 https://t.me/c/2039956533/10
 https://t.me/answereverything4_b/9 -->
 
 
-
-
-
-
-      <!-- <ul class="comment-list">
+<!-- <ul class="comment-list">
           <li class="comment">
             <div class="vcard bio">
               <img src="{{ site.baseurl }}/assets/images/person_6.jpg" alt="Image placeholder">
@@ -269,9 +307,9 @@ https://t.me/answereverything4_b/9 -->
             </div>
           </li>
         </ul> -->
-      <!-- END comment-list -->
+<!-- END comment-list -->
 
-      <!-- <div class="comment-form-wrap pt-5">
+<!-- <div class="comment-form-wrap pt-5">
           <h3 class="mb-5">Leave a comment</h3>
           <form action="#" class="">
             <div class="form-group">
@@ -300,12 +338,12 @@ https://t.me/answereverything4_b/9 -->
       </div> -->
 
 
-    </article>
+</article>
 
-    <div class="col-md-12 col-lg-1 order-lg-1">
-      <div class="share sticky-top">
-        <h3>Share</h3>
-        <!-- <ul class="list-unstyled share-article">
+<div class="col-md-12 col-lg-1 order-lg-1">
+  <div class="share sticky-top">
+    <h3>Share</h3>
+    <!-- <ul class="list-unstyled share-article">
           
           <li><a href="#"><span class="icon-facebook"></span></a></li>
           <li><a href="#"><span class="icon-twitter"></span></a></li>
@@ -313,24 +351,25 @@ https://t.me/answereverything4_b/9 -->
           <li><a href="#"><span class="icon-linkedin"></span></a></li>
           <li><a href="#"><span class="icon-pinterest"></span></a></li>
           </ul> -->
-        <!-- AddToAny BEGIN -->
-        <div class="a2a_kit a2a_kit_size_32 a2a_default_style list-unstyled share-article">
+    <!-- AddToAny BEGIN -->
+    <div class="a2a_kit a2a_kit_size_32 a2a_default_style list-unstyled share-article">
 
-          <li><a class="a2a_button_facebook"><span class="icon-facebook"></span></a></li>
-          <li><a class="a2a_button_whatsapp"><span class="icon-whatsapp"></span></a></li>
-          <li><a class="a2a_button_pinterest"><span class="icon-pinterest"></span></a></li>
-          <li><a class="a2a_button_linkedin"><span class="icon-linkedin"></span></a></li>
-          <li><a class="a2a_button_x"><span class="icon-twitter"></span></a></li>
-          <li><a class="a2a_button_copy_link"><span class="icon-link"></span></a></li>
-
-        </div>
-        <!-- <script async src="https://static.addtoany.com/menu/page.js"></script> -->
-        <!-- AddToAny END -->
-
-        </ul>
-      </div>
+      <li><a class="a2a_button_facebook"><span class="icon-facebook"></span></a></li>
+      <li><a class="a2a_button_whatsapp"><span class="icon-whatsapp"></span></a></li>
+      <li><a class="a2a_button_pinterest"><span class="icon-pinterest"></span></a></li>
+      <li><a class="a2a_button_linkedin"><span class="icon-linkedin"></span></a></li>
+      <li><a class="a2a_button_x"><span class="icon-twitter"></span></a></li>
+      <li><a class="a2a_button_copy_link"><span class="icon-link"></span></a></li>
+      <li><a class="a2a_dd"><span class="icon-share"></span></a></li>
     </div>
-    <!-- <div class="col-lg-3 mb-5 mb-lg-0 order-lg-3">
+
+    <!-- <script async src="https://static.addtoany.com/menu/page.js"></script> -->
+    <!-- AddToAny END -->
+
+    </ul>
+  </div>
+</div>
+<!-- <div class="col-lg-3 mb-5 mb-lg-0 order-lg-3">
 
       <div class="mb-4 sticky-top">
         <a href="https://vimeo.com/342333493" data-fancybox class="video-wrap">
@@ -350,23 +389,39 @@ https://t.me/answereverything4_b/9 -->
       </div>
     </div> -->
 
-    <div class="col-lg-3 mb-5 mb-lg-0 order-lg-3" style="position: relative; z-index: 1;">
-      <div class="mb-4 sticky-top">
-        <a href="https://youtu.be/{{ page.youtubeid }}" data-fancybox class="video-wrap">
-          <span class="play-wrap"><span class="icon-play"></span></span>
-          <img src="{{ site.baseurl }}/assets/images/img_h_5.jpg" alt="Image" class="img-fluid rounded">
-        </a>
-        <div class="share floating-block">
-          <h2 class="mb-3 text-black">Subscribe to Newsletter</h2>
-          <p>Far far away behind the word mountains far from.</p>
-          <!-- <form action="#">
-            <input type="email" class="form-control mb-2" placeholder="Enter email">
-            <input type="submit" value="Subscribe" class="btn btn-primary btn-block">
-          </form> -->
-        </div>
-      </div>
+<div class="col-lg-3 mb-5 mb-lg-0 order-lg-3" style="position: relative; z-index: 1;">
+  <div class="mb-4 sticky-top">
+    <a href="https://youtu.be/{{ page.youtubeid }}" data-fancybox class="video-wrap">
+      <span class="play-wrap"><span class="icon-play"></span></span>
+      <img src="{{ site.baseurl }}/assets/images/img_h_5.jpg" alt="Image" class="img-fluid rounded">
+    </a>
+    <div class="share floating-block">
+      <h2 class="mb-3 text-black">Watch the Video</h2>
+      <p>Far far away behind the word mountains far from.</p>
 
     </div>
+    <div class="share floating-block">
+      <h2 class="mb-3 text-black">Popular Posts</h2>
+      {% assign popular_posts_limit = 7 %}
+      {% assign popular_posts = site.posts | sort: 'date' | reverse %}
 
+      {% for post in popular_posts %}
+      {% if forloop.index <= popular_posts_limit %} <div class="media post_item">
+        <img style="border-radius: .5rem;" width="80" height="40" src="{{ post.image }}" alt="{{ post.title }}">
+        <div class="media-body">
+          <a href="{{ post.url | relative_url }}">
+            <h3 class="ml-3 text-black"><b>{{ post.title | truncate: 20 }}</b></h3>
+          </a>
+          <p class="ml-3 text-black">{{ post.date | date: "%b %-d, %Y" }}</p>
+        </div>
+    </div>
+    {% endif %}
+    {% endfor %}
+    <div class="br"></div>
   </div>
+</div>
+
+</div>
+
+</div>
 </div>

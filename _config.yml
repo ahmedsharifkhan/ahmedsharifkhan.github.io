@@ -25,7 +25,7 @@ defaults:
 collections:
   portfolio:
     output: true
-    permalink: /portfolio/:path/
+    permalink: /portfolio/:title/
 
 header_pages:
   - title: Home
