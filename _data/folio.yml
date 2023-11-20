@@ -6,7 +6,19 @@ portfolio:
     url: 
     image: https://lh3.googleusercontent.com/pw/ADCreHe8Ehg70_s59hr-Bvo_eR-kntpOVSgPce2_ILLkZDCXikwZYXbCoDCUa7a85QTvORkPOcBZcA4z_B3U7_kxHLMP0O5HESSITQM59skuoeb6BnmtwfxAj6QfSsFuvQ-2KzUwdHQGTbyQ_3HwHRvGKICk=w879-h919-s-no-gm?authuser=0
     keywords: Graphic Design, Photoshop, Adobe Photoshop, Socila Media Banner Design
-    category: Banner
+    category: Post
+    # Rest of your data
+
+  - title: Airbuds Social Media Banner Design
+    date: 2023-10-12 17:35:09 +0600
+    description: |
+      Airbuds - Design for Social Media
+    url: 
+    image: https://lh3.googleusercontent.com/pw/ADCreHdhKInfaPvhJZtd9MJJQak1ZC-uINB_LRxPj1eitb-h2ozj0cfU5bycUnkkoIq3HsAJ8AaVfmmXg_zFJczqJm9LFIyio-eFYsFbPrXeHkD0A8AkgJMmTdtYcrnrlTYRrVkBEDIEcBAQwRQRliaoQ5YZ=w1271-h953-s-no-gm?authuser=0
+    keywords: Graphic Design, Photoshop, Adobe Photoshop, Socila Media Banner Design
+    category: Post
+
+
     # Rest of your data
 
   - title: Nutella Social Media Banner Design Presentation
@@ -27,7 +39,8 @@ portfolio:
     url: 
     image: https://lh3.googleusercontent.com/pw/ADCreHe2pJgO8M_Lwnperkd3zgHx8zwZEDMe6tDlK5V1OwqnWIDU-JodGMbmocf9WgA32LlPhsXtLM68cqXn_-zB0aST-vG4vwFJ3OQJj1YM_GJRwKgdF5Bpi8xq9v2BIu76CiCZlMpDRIQZ9Yt2yzqYoLQw=w879-h919-s-no-gm?authuser=0
     keywords: Graphic Design, Photoshop, Adobe Photoshop, Socila Media Banner Design
-    category: Design
+    category: Post
+
     # Rest of your data
 
   - title: Watch Social Media Banner Design
@@ -37,9 +50,7 @@ portfolio:
     url: 
     image: https://lh3.googleusercontent.com/pw/ADCreHcMgHlo6-YQWrwsocLoc1kGdfMT5Of_Uj-S584J8sWlTrrvg3-JeUOIz3uqwtYatT7uWDRIi4AKnAqoDx1L43-bu9oVczk2CL64dMMN-j0nZ2w0elx6oYIMFSicH3ApeAy0O8OFXceyPl7C8Rb1DkaF=w919-h919-s-no-gm?authuser=0
     keywords: Graphic Design, Photoshop, Adobe Photoshop, Socila Media Banner Design
-    category: Design
-    # Rest of your data
-
+    category: Post
 
   - title: Podium Presentation Social Media Banner Design
     date: 2023-10-12 17:35:09 +0600
@@ -48,8 +59,8 @@ portfolio:
     url: 
     image: https://lh3.googleusercontent.com/pw/ADCreHcx4zRk6RXZFT9SduewdUuhP5H05W7lNHHpdYKRK_VcXZdANzt9F_f4kD_HXuIy79JtlrOGwrQ-pSEtYEe16TKMZ0HcvNuq1_bDHLVaBQzOmzWetzHpadQuYD5pkX97eikbZxHLghw-fm38hnK7WD1jNQ=w1225-h919-s-no-gm?authuser=0
     keywords: Graphic Design, Photoshop, Adobe Photoshop, Socila Media Banner Design
-    category: Design
-    # Rest of your data
+    category: Post
+
 
 
   - title: Podium Social Media Banner Design
@@ -59,8 +70,8 @@ portfolio:
     url: 
     image: https://lh3.googleusercontent.com/pw/ADCreHcCl2rjVGrdR3J4ygxVJl-DuZXbuuLNl-HAo0dO25OPtDQE_EjJvfju02bb81Xs85a20I8QfEp6_EIym4Bd5fQTd-_vRu0IYRugFS2X2cbZEgG7fpsOG_B2WUY-ZOFAhC-p38UnmEHVRwlSvFmhZn6G=w879-h919-s-no-gm?authuser=0
     keywords: Graphic Design, Photoshop, Adobe Photoshop, Socila Media Banner Design
-    category: photography
-    # Rest of your data
+    category: Post
+
 
 
   - title: Youtube - Social Media Banner Design
@@ -70,9 +81,7 @@ portfolio:
     url: 
     image: https://lh3.googleusercontent.com/pw/ADCreHeYoTzhwry5zEjAqrYkfVgO_OELqCS2Ut9qscXOhfHWyCq1I20279E7Z4vZCIHs_Uf4PAYSjn0nhJpjd1enzINmFDQ1lJRQvrV_sLn5wjd7EgD_5j7b96guOKO4lh5IYxgATNBKvyTOY3KWmwdx9u2g=w1608-h905-s-no-gm?authuser=0
     keywords: Graphic Design, Photoshop, Adobe Photoshop, Socila Media Banner Design
-    category: photography
-    # Rest of your data
-
+    category: Banner
 
   - title: Logo Social Media Banner Design
     date: 2023-10-12 17:35:09 +0600
@@ -81,19 +90,20 @@ portfolio:
     url: 
     image: https://lh3.googleusercontent.com/pw/ADCreHcsJ4RO-IXRaUZSOfHhyK4QvGJ2M1eD9bNthJMMQQRzvPPPhpdXKZjz_pjzr0TMaHNLUSiCpgRIoL-KUpDPRsxKHvD1Jtt9Y5z4piN5oHeT_2lanB4RL3GB6vsGPQBhA8N2NtDjbxAaCFRETLDLbf_T=w800-h800-s-no-gm?authuser=0
     keywords: Graphic Design, Photoshop, Adobe Photoshop, Socila Media Banner Design
-    category: Banner
+    category: Logo
     # Rest of your data
 
 # 11-18-2023
 
-  - title: Banner Social Media Banner Design
+   
+  - title: Fish Banner Social Media Banner Design
     date: 2023-11-18 17:35:09 +0600
     description: |
       Fish Shop Banner - Design for Social Media Facebook
     url: 
     image: https://lh3.googleusercontent.com/pw/ADCreHfNhFQfTt8ygUnbr8yHwdJ8rn_3-KiaG8_IWGU-hvN_NOP2h98jkn6KALzMdTTRh3OMncONEu0CFLJ8X6_cA6V6Slt7avBThM6AzavRtpxb2qkV0uiMdk8BpN24mpJMhHohS8D64e3gHt3pELAD__48=w1694-h953-s-no-gm?authuser=0
     keywords: Graphic Design, Photoshop, Adobe Photoshop, Socila Media Banner Design
-    category: mockup
+    category: Banner
     # Rest of your data
 
 
@@ -114,7 +124,7 @@ portfolio:
     url: 
     image: https://lh3.googleusercontent.com/pw/ADCreHd9HNhe21iBrBz5LGHs8lULgB_dXPA0I22sTV4XSTiTlacfjaNdCxRZmIqFBrkp-DEs1_uiRUvoiFrSPLcJHvFosvmaM-SVMJ8Ons1nik0-I-ymkhMPcz6p3E0zFxKQuCL12mWu6tknpTvj05NDUIkv=w912-h953-s-no-gm?authuser=0
     keywords: Graphic Design, Photoshop, Adobe Photoshop, Socila Media Banner Design
-    category: mockup
+    category: Post
     # Rest of your data
 
   - title: Fashion Social Media Banner Design
@@ -124,9 +134,8 @@ portfolio:
     url: 
     image: https://lh3.googleusercontent.com/pw/ADCreHdr-RsnzqhlrWz_shuQ9c1DS_24a60MUjjyIaipg7-At4axTibNHGTJuihBFbjC2Safcf3LKEcqGKMWIiocH6JA6aLVX9shqCWESKr9pM0xz3uk85fSi961-u93weVVtUGCsR9Qfk0_XP4jHggKTBch=w912-h953-s-no-gm?authuser=0
     keywords: Graphic Design, Photoshop, Adobe Photoshop, Socila Media Banner Design
-    category: photography
-    # Rest of your data
-
+    category: Post
+ 
   - title: Fashion Social Media Banner Design
     date: 2023-11-18 17:35:09 +0600
     description: |
@@ -134,6 +143,106 @@ portfolio:
     url: 
     image: https://lh3.googleusercontent.com/pw/ADCreHeKYe5qr7Ad6dP_nQFUusam6Ou2SNWeTYfQMuNrxe52qvLKgcZxu9T7MhZG9qeANw6eLaC3XQZQGyhluUFU2uvs-Y_0CH5CgbJC_qtwD7G5iODo3X44-OEGtvPuDSS6ggPcLtMfFiqVIxMV26tEDuSG=w912-h953-s-no-gm?authuser=0
     keywords: Graphic Design, Photoshop, Adobe Photoshop, Socila Media Banner Design
-    category: photography
+   
+    category: Post
     # Rest of your data
 
+  - title: Skincare Social Media Banner Design
+    date: 2023-11-18 17:35:09 +0600
+    description: |
+      Skincare Banner - Design for Social Media
+    url: 
+    image: https://lh3.googleusercontent.com/pw/ADCreHfV8ZNAUICCCmN44RgYgVAj_80PVdEk3ireWN-xfZTZBT9l5_Ztr4sUoFRNqidtEJtZrVXtQgXDn1TWqPx8WGfIhGPMmpPpojJuObVgAzSN1F3lm-VN-PHqkGWHZY7Y3gAKbX4CgQUvBjdaKGFSQOkN=w1694-h953-s-no-gm?authuser=0
+    keywords: Graphic Design, Photoshop, Adobe Photoshop, Socila Media Banner Design
+    category: Banner
+    # Rest of your data
+
+  - title: Skincare Social Media Banner Design Presentation
+    date: 2023-11-18 17:35:09 +0600
+    description: |
+      Skincare Banner - Design for Social Media
+    url: 
+    image: https://lh3.googleusercontent.com/pw/ADCreHfLcWrStF7jmeBqzZJEhnvaPDH9V6Jg2tFhRD91Bfw1g2f7NSQwKjkIOO5UKLJt1FQ7SP8Zi-guCb3KbkeoMJs5eorj3CNjVSHNZmaRFE8Sa4MFi-I_DpH3iJ-1gyj1xE89eb21RMaj8VbkMAz_SbIy=w1694-h953-s-no-gm?authuser=0
+    keywords: Graphic Design, Photoshop, Adobe Photoshop, Socila Media Banner Design
+    category: Banner
+    # Rest of your data
+
+  - title: Airtel Social Media Banner Design
+    date: 2023-11-18 17:35:09 +0600
+    description: |
+      Airtel Banner - Design for Social Media
+    url: 
+    image: https://lh3.googleusercontent.com/pw/ADCreHcxeB0TTM4iBPsuV9LJopjNcjc2ddd-nOni8yj1JejjGO0Up-_avpSHyI9wyGqeZ-IsfgmZHB3bm4EfQs2VY8tVFlyD4TrD1l_dvhXv6MGCk1Rbv3vz3LD3Bvxpytk6dqsur-FtdpaVYELbnyi8MPwR=w912-h953-s-no-gm?authuser=0
+    keywords: Graphic Design, Photoshop, Adobe Photoshop, Socila Media Banner Design
+    category: Post
+    # Rest of your data
+
+  - title: Airtel Social Media Banner Design
+    date: 2023-11-18 17:35:09 +0600
+    description: |
+      Airtel Banner - Design for Social Media
+    url: 
+    image: https://lh3.googleusercontent.com/pw/ADCreHeq3bnRulCQLVmZ6M1NJsSbttE0jjInBzqLrAk4S8A343j6oo1a5G1IFNJ2q7qYjl-6OSAwaj6m6eOWj63G1LOkMeFtVkh4UrX4hvNvzG70NkjpjAevpgX5nadUOFM4BRBEmpSJ1CdDtzGQOYo4pcFN=w912-h953-s-no-gm?authuser=0
+    keywords: Graphic Design, Photoshop, Adobe Photoshop, Socila Media Banner Design
+    category: Post
+    # Rest of your data
+
+  - title: Fashion Social Media Banner Design Presentation
+    date: 2023-11-18 17:35:09 +0600
+    description: |
+      Model Banner - Design for Social Media
+    url: 
+    image: https://lh3.googleusercontent.com/pw/ADCreHd5JQykyDTYv47iqAY-ZbqA5hNz_ARRRTP-iMbLG6M0bHtPZRtOZTFAJkBQFNcnIIMfn8ahKlwK0JnCn6RdwEeZuHGJirnzITnghyNDse03GsDIyl1VnTsxdxh8WSEhNIkVsY5vZEt0iVHdcObk6xaU=w1694-h953-s-no-gm?authuser=0
+    keywords: Graphic Design, Photoshop, Adobe Photoshop, Socila Media Banner Design
+    category: Banner
+    # Rest of your data
+
+  - title: Airbuds Social Media Banner Design
+    date: 2023-11-18 17:35:09 +0600
+    description: |
+      Airbuds Banner - Design for Social Media
+    url: 
+    image: https://lh3.googleusercontent.com/pw/ADCreHfaBA61p0RUf3noLp8KqUCocI6SIoX_qgN-vUWldltNYH15SV_YCMQ5h4qYjq_83oHb5wFeYy6Mz0GwAUceFm_f-7t9H2R8PUrQqSbxZNkPXsSOmFM4-BFx4OYm5FMNDGHbEgcZb0nPghC0sLT2gdsU=w912-h953-s-no-gm?authuser=0
+    keywords: Graphic Design, Photoshop, Adobe Photoshop, Socila Media Banner Design
+    category: Post
+    # Rest of your data
+
+  - title: MacBookAir Social Media Banner Design
+    date: 2023-11-18 17:35:09 +0600
+    description: |
+      MacBookAir Banner - Design for Social Media
+    url: 
+    image: https://lh3.googleusercontent.com/pw/ADCreHft3JVkgEQF8nboLczcJKogfMCHKoviXsZCXOBKY_5u0nnWE0e5t0l93lD8ac50LINGc3nLmFao4hvERyMJGGdBpqilzcE1OjGGmOIcKbQMs5rJMi2ugULGxrxhl1w6IjkLKMmobFEpO4vH9OGW78bd=w912-h953-s-no-gm?authuser=0
+    keywords: Graphic Design, Photoshop, Adobe Photoshop, Socila Media Banner Design
+    category: Post
+    # Rest of your data
+
+  - title: Fashion Collection Social Media Banner Design
+    date: 2023-11-18 17:35:09 +0600
+    description: |
+      Fashion Collection Banner - Design for Social Media
+    url: 
+    image: https://lh3.googleusercontent.com/pw/ADCreHfryRnxgz7_YIzxDlpVanI8qhmI9MsmXnGNvQpwNTPu3Ja3VYwfmF_Qi0oxaBCFIPfY-pOhpl3-jdLSNN49-BJrCDtP-BaopyEqMktx7OHeihhnD6fm2A8ath97saisHtsNeJ2DMekTSTO59xhNS4AS=w953-h953-s-no-gm?authuser=0
+    keywords: Graphic Design, Photoshop, Adobe Photoshop, Socila Media Banner Design
+    category: Post
+    # Rest of your data
+
+  - title: Fashion Collection Social Media Banner Design
+    date: 2023-11-18 17:35:09 +0600
+    description: |
+      Fashion Collection Banner - Design for Social Media
+    url: 
+    image: https://lh3.googleusercontent.com/pw/ADCreHdtOq9EY1lLP0jkBb_0vGEPR10xdWgJIowRZc9oUyptS5ymOJ32uMMxA6-TrHTff8evJj6JrPwQhPjTSbyZdNLlH_sCIgpJj8-sV3B_8VXbS3YsX9b4fZyrxPQ6N9aG3zx-m4Qo1YBPYZk7xKyzr1mJ=w953-h953-s-no-gm?authuser=0
+    keywords: Graphic Design, Photoshop, Adobe Photoshop, Socila Media Banner Design
+    category: Post
+    # Rest of your data
+
+  - title: Fashion Collection Social Media Banner Design
+    date: 2023-11-18 17:35:09 +0600
+    description: |
+      Fashion Collection Banner - Design for Social Media
+    url: 
+    image: https://lh3.googleusercontent.com/pw/ADCreHf_KsxC0PEzD6wNwswkIGotDciHjZe0x8FXe09RZfMkTV12u0mmvBaP19V2__wp0lzV_2R9sWIryskIq0ixHMEQKmrwcQXRAkg81GGb1Wv2jCXUpvOI20Fa-KaUPwqzIud8hamAXPMERW6IRWrVavBN=w953-h953-s-no-gm?authuser=0
+    keywords: Graphic Design, Photoshop, Adobe Photoshop, Socila Media Banner Design
+    category: Post
+    # Rest of your data
