@@ -3,10 +3,52 @@ title: "Categories"
 layout: default
 permalink: "/categories.html"
 ---
+<div class="container">
+
+
+<div class="row row-cols-1 row-cols-md-3">
+    <div class="col mb-4">
+      <div class="card h-100">
+        <img src="..." class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Card title</h5>
+          <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+        </div>
+      </div>
+    </div>
+    <div class="col mb-4">
+      <div class="card h-100">
+        <img src="..." class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Card title</h5>
+          <p class="card-text">This is a short card.</p>
+        </div>
+      </div>
+    </div>
+    <div class="col mb-4">
+      <div class="card h-100">
+        <img src="..." class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Card title</h5>
+          <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content.</p>
+        </div>
+      </div>
+    </div>
+    <div class="col mb-4">
+      <div class="card h-100">
+        <img src="..." class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Card title</h5>
+          <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
 
 {% for category in site.categories %}
   <h4 class="mt-5 mb-4 pb-2 border-bottom" id="{{ category[0] | replace: " ","-" }}">
-    <span class="text-capitalize small font-weight-bold">In "{{ category[0] }}"</span>
+    <a href="{{ '/categories/' | append: category[0] | slugify }}">{{ category[0] }}</a>
   </h4>
 
   <div class="row">
@@ -15,11 +57,11 @@ permalink: "/categories.html"
     {% for post in pages_list %}
       {% if post.title != null %}
         {% if group == null or group == post.group %}
-          <div class="col-md-9 pr-md-5">
-            <div class="row">
+          
+            
               {% include postbox.html %}
-            </div>
-          </div>
+            
+         
         {% endif %}
       {% endif %}
     {% endfor %}
