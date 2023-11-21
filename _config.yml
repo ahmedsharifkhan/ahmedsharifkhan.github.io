@@ -22,6 +22,12 @@ defaults:
     values:
       permalink: "/blog/:title/"
 
+  - scope:
+      path: ""
+      type: categories
+    values:
+      permalink: /categories/:name/
+
 collections:
   portfolio:
     output: true
@@ -62,6 +68,7 @@ pagination:
   enabled: true
   per_page: 4
   permalink: '/:num/'
+
 
 # Exclude from processing.
 # The following items will not be processed, by default.
