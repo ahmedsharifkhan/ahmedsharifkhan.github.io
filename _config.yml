@@ -1,9 +1,11 @@
 
 logo: AHMED'S WORLD
 title: Ahmed world is a portfolio site
-email: 
 start_year: 2023
 current_year: { { site.time | date: "%Y" } }
+address: 43 Raymouth Rd. Baltemoer, London 3910
+email: ahmedsharifkhannoor@gmail.com
+phone: +8801744750096 
 description: 
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
