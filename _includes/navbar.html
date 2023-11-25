@@ -68,10 +68,12 @@
               <span class="icon-search2 mr-2"></span><span>Search</span>
             </a>
             <div class="container">
-              <form action="" class="d-flex" id="search-form">
+              <!-- <form action="" class="d-flex" id="search-form">
                 <input type="text" id="searchInput" class="form-control" placeholder="Enter keyword and hit enter...">
-              </form>
-              <ul id="searchResults"></ul>
+              </form> -->
+              {%- include search-lunr.html -%}
+            
+              <ul id="lunrsearchresults"></ul>
             </div>
           </div>
 

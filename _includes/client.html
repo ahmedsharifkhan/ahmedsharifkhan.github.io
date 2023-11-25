@@ -1,0 +1,27 @@
+<div class="site-section testimonial-section">
+  <div class="container">
+    <div class="row">
+      <div class="col-12 text-center">
+        <span class="section-subtitle">Happy Customers</span>
+        <h2 class="section-title">Testimonials</h2>
+      </div>
+    </div>
+    <div class="row justify-content-center">
+      <div class="col-lg-7">
+        <div class="main-slider owl-single owl-carousel">
+          {% for port in site.data.client.client | reverse | limit: 8 %}
+          <div class="testimonial mx-auto">
+            <figure class="img-wrap">
+              <img src="{{ port.image }}" alt="{{port.name}}" class="img-fluid">
+            </figure>
+            <h3 class="name">{{port.name}}</h3>
+            <blockquote>
+              <p>&ldquo;{{ port.message }}&rdquo;</p>
+            </blockquote>
+          </div>
+          {% endfor %}
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

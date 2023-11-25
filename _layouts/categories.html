@@ -6,7 +6,7 @@ permalink: "/categories"
 <div class="container">
  {% for category in site.categories %}
  <strong><h4 class="mt-5 mb-4 pb-2 border-bottom" id="{{ category[0] | replace: " ","-" }}"></strong>
-    <a href="{{ '/categories/' | append: category[0] | slugify }}">{{ category[0] }}</a>
+    <a href="#">{{ category[0] }}</a>
   </h4>
 
   <div class="row">

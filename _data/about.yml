@@ -1,0 +1,27 @@
+title: About Us
+subtitle: What we do?
+description: |
+    <section id="about">
+        
+        <p>Hello, I'm <strong>Ahmed Sharif Khan Noor</strong>, a passionate digital marketer and graphics designer with a creative flair and a strategic mindset. I thrive on turning innovative ideas into compelling visual stories that resonate with audiences.</p>
+    </section>
+
+    <section id="digital-marketing">
+        <h2>Digital Marketing Expertise</h2>
+        <p>In the ever-evolving landscape of digital marketing, I bring a wealth of experience in creating impactful online campaigns. From social media strategies that engage and grow communities to data-driven insights that optimize marketing performance, my goal is to elevate your brand in the digital sphere.</p>
+    </section>
+
+    <section id="graphics-design">
+        <h2>Graphics Design Creativity</h2>
+        <p>As a graphics designer, I specialize in translating concepts into visually stunning designs. Whether it's crafting eye-catching logos, designing captivating marketing materials, or developing cohesive brand identities, I believe in the power of design to make a lasting impression.</p>
+    </section>
+
+    <section id="why-work-with-me">
+        <h2>Why Work With Me?</h2>
+        <ul>
+            <li><strong>Innovative Solutions:</strong> I approach every project with fresh ideas and a commitment to delivering innovative solutions tailored to your brand.</li>
+            <li><strong>Strategic Approach:</strong> My digital marketing strategies are not only creative but also driven by data and a deep understanding of audience behavior.</li>
+            <li><strong>Visual Excellence:</strong> I bring a keen eye for aesthetics to my graphics design work, ensuring that every design element aligns seamlessly with your brand identity.</li>
+            <li><strong>Collaborative Partnership:</strong> I value collaboration and believe in working closely with clients to bring their visions to life. Your success is my priority.</li>
+        </ul>
+    </section>

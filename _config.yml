@@ -30,6 +30,10 @@ defaults:
     values:
       permalink: /categories/:name/
 
+
+
+paginate: 5 # or the number of posts you want per page
+
 collections:
   portfolio:
     output: true
@@ -61,15 +65,11 @@ gems:
 # Build settings
 theme: minima
 plugins:
+  - jekyll-paginate
   - jekyll-admin
   - jekyll-sitemap
   - jekyll-feed
 
-
-pagination:
-  enabled: true
-  per_page: 4
-  permalink: '/:num/'
 
 
 # Exclude from processing.
@@ -92,8 +92,24 @@ pagination:
 #   - vendor/gems/
 #   - vendor/ruby/
 
-include:
-  - search.json
+# host: 0.0.0.0
+# port: 4000
 
-host: 0.0.0.0
-port: 4000
+exclude: [changelog.md, LICENSE.txt, README.md, Gemfile, Gemfile.lock]
+
+include: ["_pages"]
+
+# Pagination 
+paginate: 6
+paginate_path: /page:num/
+
+
+# Other
+markdown: kramdown
+
+kramdown:
+  input: GFM
+  syntax_highlighter: rouge
+  syntax_highlighter_opts:
+    block:
+      line_numbers: true
