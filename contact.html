@@ -73,7 +73,10 @@ title: Contact
 
 
           <script type="text/javascript">var submitted=false;</script>
-          <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" onload="if(submitted)  {window.location='{{ site.baseurl }}/success';}"></iframe>
+          <!-- <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" onload="if(submitted)  {window.location='{{ site.baseurl }}/success';}"></iframe> -->
+        <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" onload="if(submitted) {window.location='{{ site.baseurl }}/success'; window.location.reload();}"></iframe>
+        
+
 
 
 <!-- <form action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSeo8Dw2zcB_edyl4YtlBmJ543Kspejk--KdPvdA8Voh3NAgeQ/formResponse" method="post" target="hidden_iframe"

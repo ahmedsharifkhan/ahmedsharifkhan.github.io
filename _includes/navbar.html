@@ -49,11 +49,24 @@
       <div class="col-9 col-md-6 col-lg-3 text-right top-menu">
 
         <div class="d-inline-flex align-items-center">
-          <div class="search-wrap">
+          
+          <!-- <div class="search-wrap">
             <a href="#" class="d-inline-flex align-items-center js-search-toggle"><span
                 class="icon-search2 mr-2"></span><span>Search</span></a>
 
-            <!-- search form -->
+           
+            <div class="container">
+              <form action="" class="d-flex" id="search-form">
+                <input type="text" id="searchInput" class="form-control" placeholder="Enter keyword and hit enter...">
+              </form>
+              <ul id="searchResults"></ul>
+            </div>
+          </div> -->
+
+          <div class="search-wrap">
+            <a href="#" class="d-inline-flex align-items-center js-search-toggle">
+              <span class="icon-search2 mr-2"></span><span>Search</span>
+            </a>
             <div class="container">
               <form action="" class="d-flex" id="search-form">
                 <input type="text" id="searchInput" class="form-control" placeholder="Enter keyword and hit enter...">
@@ -61,6 +74,12 @@
               <ul id="searchResults"></ul>
             </div>
           </div>
+
+ 
+        
+
+
+
           <span class="mx-2 d-inline-block d-lg-none"></span>
 
           <a href="#" class="d-inline-flex align-items-center d-inline-block d-lg-none"><span
