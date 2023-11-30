@@ -25,8 +25,8 @@
           <div class="col-12">
             <div class="post-entry horizontal d-md-flex">
               <div class="media">
-                <a href="{{ post.url | relative_url }}"><img src="{{ post.image }}" alt="{{ post.title }}"
-                    class="img-fluid"></a>
+                <a href="{{ post.url | relative_url }}"><img data-src="{{ post.image }}" alt="{{ post.title }}"
+                  class="lazy img-fluid"></a>
               </div>
               <div class="text">
                 <div class="meta">
