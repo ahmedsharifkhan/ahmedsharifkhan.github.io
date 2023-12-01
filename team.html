@@ -1,0 +1,22 @@
+---
+layout: default
+title: Team
+---
+
+<div class="container">
+  <div class="row row-cols-1 row-cols-md-3">
+    {% for client in site.team %}
+      <div class="col mb-4">
+        <div class="card h-100">
+          <a href="{{ client.url }}">
+            <img data-src="{{ client.image }}" class="lazy card-img-top" alt="{{ client.name }}">
+          </a>
+          <div class="card-body">
+            <h5 class="card-title">{{ client.name }}</h5>
+            <p class="card-text">{{ client.message }}</p>
+          </div>
+        </div>
+      </div>
+    {% endfor %}
+  </div>
+</div>

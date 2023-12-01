@@ -39,12 +39,16 @@ defaults:
 
 
 
-paginate: 5 # or the number of posts you want per page
+
 
 collections:
   portfolio:
     output: true
     permalink: /portfolio/:title/
+
+  team:
+    output: true
+    permalink: /team/:name
 
 header_pages:
   - title: Home
@@ -59,6 +63,8 @@ header_pages:
     url: /portfolio
   - title: Noor
     url: /noor
+  - title: Team
+    url: /team
 
 google_analytics_id: G-W5KN8DPXQ9
 facebook_pixel_id: 1234567890
@@ -114,6 +120,7 @@ include:
 paginate: 6
 paginate_path: /page:num/
 
+permalink: pretty
 
 # Other
 # markdown: kramdown
