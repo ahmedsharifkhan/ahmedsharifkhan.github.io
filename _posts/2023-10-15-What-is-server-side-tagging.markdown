@@ -9,15 +9,15 @@ description: The answer is no but it can greatly complement and improve the work
 image: "https://tds-images.thedailystar.net/sites/default/files/styles/big_202/public/images/2023/10/12/online_posts-9.jpg"
 
 team:
-  name: Kayla Bryant
-  subtitle: Digital Marketer and Social Media Manager
-  username: kayla_bryant
+  name: Thomas Crawford
   tag: Chief Editor / Blogger
-  permalink: kayla-bryant
+  subtitle: Digital Marketer and Social Media Manager
+  username: thomas_crawford
+  permalink: thomas-crawford
   date: 2023-10-12 17:35:09 +0600
   message: |
       There live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.
-  image: /assets/images/person_4.jpg
+  image: /assets/images/person_6.jpg
   categories: [Graphic Design, Adobe Photoshop, Banner Design]
 
 social_media:

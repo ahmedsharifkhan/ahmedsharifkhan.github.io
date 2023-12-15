@@ -9,16 +9,15 @@ description:  After that, include the necessary front matter. Take a look at the
 image: "https://tds-images.thedailystar.net/sites/default/files/styles/very_big_201/public/images/2023/10/05/smart_nid_data_of_citizens_leaked_in_bangladesh.png"
 
 team:
-  name: Lukas Devlin
-  subtitle: Digital Marketer and Social Media Manager
-# other front matter fields
-  username: lukas_devlin
+  name: Nora Layman
   tag: Chief Editor / Blogger
-  permalink: lukas-devlin
+  subtitle: Digital Marketer and Social Media Manager
+  username: nora_layman
+  permalink: nora-layman
   date: 2023-10-12 17:35:09 +0600
   message: |
       There live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.
-  image: /assets/images/person_3.jpg
+  image: /assets/images/person_5.jpg
   categories: [Graphic Design, Adobe Photoshop, Banner Design]
 
 social_media:
