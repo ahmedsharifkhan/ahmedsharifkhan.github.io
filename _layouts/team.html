@@ -19,7 +19,7 @@ layout: default
           <h3>{{page.name}}</h3>
           <strong>{{page.tag}}</strong>
         </div>
-        
+
         <!-- <div class="text justify-content-between">
             <ul>
             <a href="{{ site.facebook_username }}" class="d-inline-flex align-items-center" target="_blank"><span
@@ -39,17 +39,19 @@ layout: default
 
         <div class="text justify-content-between">
           <ul>
-              {% for social in page.social_media %}
-              {% if social.username %}
-              <a href="{{ social.username }}" class="d-inline-flex align-items-center" target="_blank">
-                  <span class="icon-{{ social.name }} mr-2"></span>
-              </a>
-              {% endif %}
-              {% endfor %}
+            {% for social in page.social_media %}
+            {% if social.username %}
+            <a href="{{ social.username }}" class="d-inline-flex align-items-center" target="_blank">
+              <span class="icon-{{ social.name }} mr-2"></span>
+            </a>
+            {% endif %}
+            {% endfor %}
+
+
           </ul>
-      </div>
-      
-      
+        </div>
+
+
 
       </div>
     </div>
@@ -59,31 +61,31 @@ layout: default
 
 <div class="container article">
   <div class="row justify-content-center align-items-stretch">
-    
+
     <article class="col-lg-8 order-lg-2 px-lg-5">
       <p>{{content}}</p>
 
- 
-
-          <div class="post-single-navigation d-flex align-items-stretch">
-            {% if page.previous %}
-              <a href="{{ page.previous.url }}" class="mr-auto w-50 pr-4">
-                <span class="d-block">Previous Team Member</span>
-                {{ page.previous.name }}
-              </a>
-            {% endif %}
-            
-            {% if page.next %}
-              <a href="{{ page.next.url }}" class="ml-auto w-50 text-right pl-4">
-                <span class="d-block">Next Team Member</span>
-                {{ page.next.name }}
-              </a>
-            {% endif %}
-          </div>
 
 
-       
-        
+      <div class="post-single-navigation d-flex align-items-stretch">
+        {% if page.previous %}
+        <a href="{{ page.previous.url }}" class="mr-auto w-50 pr-4">
+          <span class="d-block">Previous Team Member</span>
+          {{ page.previous.name }}
+        </a>
+        {% endif %}
+
+        {% if page.next %}
+        <a href="{{ page.next.url }}" class="ml-auto w-50 text-right pl-4">
+          <span class="d-block">Next Team Member</span>
+          {{ page.next.name }}
+        </a>
+        {% endif %}
+      </div>
+
+
+
+
 
     </article>
 
@@ -95,16 +97,16 @@ layout: default
           <span class="play-wrap"><span class="icon-play"></span></span>
           <img src="/assets/images/img_h_5.jpg" alt="Image" class="img-fluid rounded">
         </a>
-      </div>  
+      </div>
 
       <div class="share floating-block sticky-top">
-        
-          <h2 class="mb-3 text-black">Subscribe to Newsletter</h2>
-          <p>Far far away behind the word mountains far from.</p>
-          <form action="#">
-            <input type="email" class="form-control mb-2" placeholder="Enter email">
-            <input type="submit" value="Subscribe" class="btn btn-primary btn-block">
-          </form>
+
+        <h2 class="mb-3 text-black">Subscribe to Newsletter</h2>
+        <p>Far far away behind the word mountains far from.</p>
+        <form action="#">
+          <input type="email" class="form-control mb-2" placeholder="Enter email">
+          <input type="submit" value="Subscribe" class="btn btn-primary btn-block">
+        </form>
       </div>
     </div>
   </div>

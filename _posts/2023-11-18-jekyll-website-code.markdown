@@ -2,14 +2,15 @@
 layout: blog-post
 author: Ahmed Sharif Khan
 
-author_name: Jane Doe
+author_name: Ahmed Sharif Khan
 username: ahmed
 author_bio: Web Developer and Blogger
 author_email: jane.doe@email.com
-author_avatar: /assets/authors/author.png
+author_avatar: /assets/images/profileofnoor.png
+# author_avatar: /assets/authors/author.png
 author_social:
 
-title:  "Jekyll Website Code"
+title:  "Jekyll Build Installation Website Code "
 date:   2023-11-18 17:35:09 +0600
 categories: [Jekyll, Code, Website]
 keywords: Jekyll  Code Website

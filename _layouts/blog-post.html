@@ -49,34 +49,123 @@ layout: default
 
   <div class="container" style="padding-top: 2px;">
     <div class="dropdown">
-      <button class="btn dropdown-toggle" style="color: #A4C639;" type="button" id="dropdownMenu2"
-        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-        <img class="img-fluid" src="{{ site.baseurl }}/assets/images/author.png" width="30" height="30"
-          alt="{{ page.author_name }}" style="border-radius: 50%;" /> <span class="author badge badge-light"
-          padding="2"><b>{{ page.author_name }}</b></span>
-      </button>
+      <!-- {% for client in site.team %}
+      <a href="{{ client.url }}"><img class="img-fluid" src="{{ client.image }}" width="30" height="30"
+        alt="{{ page.author_name }}" style="border-radius: 50%;" /></a>
+        {% endfor %} -->
+
+
+      <!-- 
+      <a href="{{ site.baseurl }}/{{ page.team.permalink }}" target="_blank"><img
+          src="{{ site.baseurl }}{{ page.team.image }}" alt="{{ page.team.name }}" style="border-radius: 50%;"
+          width="30" height="30"></a> -->
+
+
+
+
+
+      <div style="color: #A4C639;" type="button" class="btn-group" role="group" aria-label="Basic example">
+        <img src="{{ site.baseurl }}{{ page.team.image }}" alt="{{ page.team.name }}" style="border-radius: 50%;"
+          width="30" height="30" data-toggle="collapse" data-target="#{{ page.team.username }}" aria-expanded="false"
+          aria-controls="{{ page.team.username }}">
+
+        <!-- <a href="{{ site.baseurl }}/{{ page.team.permalink }}" target="_blank" style="color: initial; text-decoration: none;">
+          <span onmouseover="this.style.color='#A4C639';" onmouseout="this.style.color='initial';">
+            {{ page.team.name }}
+          </span>
+        </a> -->
+
+      </div>
+
+      <a href="{{ site.baseurl }}/{{ page.team.permalink }}" target="_blank"
+        style="color: initial; text-decoration: none;">
+        <span class="author badge badge-light" padding="2" onmouseover="this.style.color='#A4C639';"
+          onmouseout="this.style.color='initial';">
+          <b>{{ page.team.name }}</b>
+        </span>
+      </a>
+
       <span class="badge badge-light" style="font-family: Montserrat, sans-serif;">&nbsp;&nbsp;Published: {{ page.date |
-        date: "%B %d, %Y" }} - {{ page.date | date: "%I:%M %p" }}<br /></span>
+        date: "%B %d, %Y" }} <!-- {{ page.date | date: "%I:%M %p" }}--><br /></span>
+
+
+
+      <!-- collapse -->
+      <div class="collapse mt-2" id="{{ page.team.username }}">
+        <div class="card card-body">
+          <blockquote class="blockquote mb-0">
+            <a href="{{ site.baseurl }}/{{ page.team.permalink }}" target="_blank"><img
+                src="{{ site.baseurl }}{{ page.team.image }}" alt="{{ page.team.name }}" style="border-radius: 50%;"
+                width="40" height="40"></a>
+            <p>{{page.team.name}} <br>
+              {{page.team.subtitle}}<br>
+              {{page.team.message}}</p>
+            <br>
+            <p><b>Contact Me</b>
+              <br>
+              <a href="mailto:{{page.team.author_email}}"><cite
+                  title="Source Title">{{page.team.author_email}}</cite></a>
+            </p>
+
+            <br>
+            <p><b>Find Me</b>
+              <!-- <div class="row justify-content-between align-items-center">
+              <div class="col-lg-3 top-menu"> -->
+
+              <br>
+              {% for social in page.social_media %}
+              {% if social.username %}
+              <a href="{{ social.username }}" class="d-inline-flex align-items-center" target="_blank"
+                style="color: #A4C639;">
+                <span class="icon-{{ social.name }} mr-2"></span>
+              </a>
+              {% endif %}
+              {% endfor %}
+            </p>
+
+            <br>
+            {% for category in page.team.categories %}
+            <span class="badge badge-light">{{ category }}</span>
+            {% endfor %}
+
+
+          </blockquote>
+        </div>
+      </div>
+
+      <!-- collapse end -->
+
       <div class="dropdown-menu" aria-labelledby="dropdownMenu2">
 
-        <div class="card">
-          <div class="card-body">
+        <div class="card bg-primary">
+          <div class="card-body" style="color: #A4C639;">
             <blockquote class="blockquote mb-0">
-              <p>{{page.author_bio}}</p>
-              <cite title="Source Title">{{page.author_email}}</cite>
+              <a href="{{ site.baseurl }}/{{ page.team.permalink }}" target="_blank"><img
+                  src="{{ site.baseurl }}{{ page.team.image }}" alt="{{ page.team.name }}" style="border-radius: 50%;"
+                  width="30" height="30"></a>
+              <p>{{page.team.message}}</p>
+              <a href="mailto:{{page.team.author_email}}"><cite
+                  title="Source Title">{{page.team.author_email}}</cite></a>
+
+              <br>
+              {% for category in page.team.categories %}
+              <span class="category">{{ category }}</span>
+              {% endfor %}
+
               <P>Find Me</P>
               <div class="row justify-content-between align-items-center">
                 <div class="col-lg-3 top-menu">
 
-                  {% if page.social %}
-                  {% for platform_link in page.social %}
-                  {% assign platform = platform_link[0] %}
-                  {% assign link = platform_link[1] %}
-                  <a href="{{ link }}" class="d-inline-flex align-items-center" style="color: #A4C639;" target="_blank">
-                    <span class="icon-{{ platform | downcase }} mr-2"></span>
+
+                  {% for social in page.social_media %}
+                  {% if social.username %}
+                  <a href="{{ social.username }}" class="d-inline-flex align-items-center" target="_blank"
+                    style="color: #A4C639;">
+                    <span class="icon-{{ social.name }} mr-2"></span>
                   </a>
-                  {% endfor %}
                   {% endif %}
+                  {% endfor %}
+
                 </div>
               </div>
 
@@ -84,6 +173,8 @@ layout: default
             </blockquote>
           </div>
         </div>
+
+
 
       </div>
     </div>
@@ -103,12 +194,13 @@ layout: default
 
       <div class="pt-5 categories_tags ">
         {% if page.categories %}
-        <p>Categories: 
+        <p>Categories:
           {% for category in page.categories %}
-            <a href="{{ site.baseurl }}/categories/#{{ category | slugify }}">{{ category }}</a>{% unless forloop.last %}, {% endunless %}
+          <a href="{{ site.baseurl }}/categories/#{{ category | slugify }}">{{ category }}</a>{% unless forloop.last %},
+          {% endunless %}
           {% endfor %}
         </p>
-      {% endif %}
+        {% endif %}
 
       </div>
 
@@ -169,27 +261,29 @@ layout: default
 
 
 
-  <!-- card second -->
-<h3 class="card-text text-black pt-4">Related Post</h3>
-  <div class="row row-cols-1 row-cols-md-3">
-    {% assign popular_posts_limit = 5 %}
-    {% assign popular_posts = site.posts | sort: 'date' | reverse %}
-    {% for post in popular_posts %}
-      {% if forloop.index <= popular_posts_limit %} 
-        <div class="col mb-4">
+      <!-- card second -->
+      <h3 class="card-text text-black pt-4">Related Post</h3>
+      <div class="row row-cols-1 row-cols-md-3">
+        {% assign popular_posts_limit = 5 %}
+        {% assign popular_posts = site.posts | sort: 'date' | reverse %}
+        {% for post in popular_posts %}
+        {% if forloop.index <= popular_posts_limit %} <div class="col mb-4">
           <div class="card" style="height: 100%;">
-            <a href="{{ post.url | relative_url }}"><img src="{{ post.image }}" class="card-img-top" alt="{{ post.title }}"></a>
+            <a href="{{ post.url | relative_url }}"><img src="{{ post.image }}" class="card-img-top"
+                alt="{{ post.title }}"></a>
             <div class="card-body">
-              <a href="{{ post.url | relative_url }}"><h5 class="card-title">{{ post.title | truncate: 15 }}</h5></a>
+              <a href="{{ post.url | relative_url }}">
+                <h5 class="card-title">{{ post.title | truncate: 15 }}</h5>
+              </a>
               <p class="card-text"><small class="text-muted">{{ post.date | date: "%b %-d, %Y %H:%M:%S" }}</small></p>
             </div>
           </div>
-        </div>
+      </div>
       {% endif %}
-    {% endfor %}
+      {% endfor %}
   </div>
-  
-<!-- card end second -->
+
+  <!-- card end second -->
 
 
 
@@ -209,18 +303,18 @@ layout: default
 
 
 
-<!-- <div class="pt-5">
+  <!-- <div class="pt-5">
         <h3 class="mb-5">6 Comments</h3> -->
 
-<!-- Telegram Discussion Widget -->
-<!-- https://t.me/answereverything4_b -->
-<!-- https://t.me/c/2039956533/6 -->
-<!-- https://t.me/c/2039956533/2
+  <!-- Telegram Discussion Widget -->
+  <!-- https://t.me/answereverything4_b -->
+  <!-- https://t.me/c/2039956533/6 -->
+  <!-- https://t.me/c/2039956533/2
 https://t.me/c/2039956533/10
 https://t.me/answereverything4_b/9 -->
 
 
-<!-- <ul class="comment-list">
+  <!-- <ul class="comment-list">
           <li class="comment">
             <div class="vcard bio">
               <img src="{{ site.baseurl }}/assets/images/person_6.jpg" alt="Image placeholder">
@@ -312,9 +406,9 @@ https://t.me/answereverything4_b/9 -->
             </div>
           </li>
         </ul> -->
-<!-- END comment-list -->
+  <!-- END comment-list -->
 
-<!-- <div class="comment-form-wrap pt-5">
+  <!-- <div class="comment-form-wrap pt-5">
           <h3 class="mb-5">Leave a comment</h3>
           <form action="#" class="">
             <div class="form-group">
@@ -343,10 +437,10 @@ https://t.me/answereverything4_b/9 -->
       </div> -->
 
 
-</article>
+  </article>
 
-{%- include sharebutton.html -%}
-<!-- <div class="col-lg-3 mb-5 mb-lg-0 order-lg-3">
+  {%- include sharebutton.html -%}
+  <!-- <div class="col-lg-3 mb-5 mb-lg-0 order-lg-3">
 
       <div class="mb-4 sticky-top">
         <a href="https://vimeo.com/342333493" data-fancybox class="video-wrap">
@@ -366,37 +460,37 @@ https://t.me/answereverything4_b/9 -->
       </div>
     </div> -->
 
-<div class="col-lg-3 mb-5 mb-lg-0 order-lg-3" style="position: relative; z-index: 1;">
-  <div class="mb-4 sticky-top">
-    <a href="https://youtu.be/{{ page.youtubeid }}" data-fancybox class="video-wrap">
-      <span class="play-wrap"><span class="icon-play"></span></span>
-      <img src="{{ site.baseurl }}/assets/images/img_h_5.jpg" alt="Image" class="img-fluid rounded">
-    </a>
-    <div class="share floating-block">
-      <h2 class="mb-3 text-black">Watch the Video</h2>
-      <p>Far far away behind the word mountains far from.</p>
+  <div class="col-lg-3 mb-5 mb-lg-0 order-lg-3" style="position: relative; z-index: 1;">
+    <div class="mb-4 sticky-top">
+      <a href="https://youtu.be/{{ page.youtubeid }}" data-fancybox class="video-wrap">
+        <span class="play-wrap"><span class="icon-play"></span></span>
+        <img src="{{ site.baseurl }}/assets/images/img_h_5.jpg" alt="Image" class="img-fluid rounded">
+      </a>
+      <div class="share floating-block">
+        <h2 class="mb-3 text-black">Watch the Video</h2>
+        <p>Far far away behind the word mountains far from.</p>
 
-    </div>
-    <div class="share floating-block">
-      <h2 class="mb-3 text-black">Popular Posts</h2>
-      {% assign popular_posts_limit = 7 %}
-      {% assign popular_posts = site.posts | sort: 'date' | reverse %}
+      </div>
+      <div class="share floating-block">
+        <h2 class="mb-3 text-black">Popular Posts</h2>
+        {% assign popular_posts_limit = 7 %}
+        {% assign popular_posts = site.posts | sort: 'date' | reverse %}
 
-      {% for post in popular_posts %}
-      {% if forloop.index <= popular_posts_limit %} <div class="media post_item">
-        <img style="border-radius: .5rem;" width="80" height="40" src="{{ post.image }}" alt="{{ post.title }}">
-        <div class="media-body">
-          <a href="{{ post.url | relative_url }}">
-            <h3 class="ml-3 text-black"><b>{{ post.title | truncate: 20 }}</b></h3>
-          </a>
-          <p class="ml-3 text-black">{{ post.date | date: "%b %-d, %Y" }}</p>
-        </div>
+        {% for post in popular_posts %}
+        {% if forloop.index <= popular_posts_limit %} <div class="media post_item">
+          <img style="border-radius: .5rem;" width="80" height="40" src="{{ post.image }}" alt="{{ post.title }}">
+          <div class="media-body">
+            <a href="{{ post.url | relative_url }}">
+              <h3 class="ml-3 text-black"><b>{{ post.title | truncate: 20 }}</b></h3>
+            </a>
+            <p class="ml-3 text-black">{{ post.date | date: "%b %-d, %Y" }}</p>
+          </div>
+      </div>
+      {% endif %}
+      {% endfor %}
+      <div class="br"></div>
     </div>
-    {% endif %}
-    {% endfor %}
-    <div class="br"></div>
   </div>
-</div>
 
 </div>
 
