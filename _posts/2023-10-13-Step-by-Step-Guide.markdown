@@ -1,17 +1,40 @@
 ---
 layout: blog-post
-username: ahmed-sharif-khan
-author_name: Ahmed Sharif Khan
-author_bio: Web Developer and Blogger
-author_email: jane.doe@email.com
-author_avatar: /assets/authors/jane_doe.jpg
-author_social:
+
 title:  "Step-by-Step Guide: Installing Jekyll and Hosting Your Site on GitHub Pages"
 date:   2023-10-12 17:35:09 +0600
 categories: [Code, Jekyll, github pages]
 keywords: Health  Travel Life Style
 description: Have you ever wanted to create a simple and elegant website or blog without the complexities of traditional content management systems? Jekyll is the answer
 image: "https://tds-images.thedailystar.net/sites/default/files/styles/big_202/public/images/2023/10/10/importance_of_independent_judiciary.jpg"
+
+team:
+  name: Lukas Devlin
+  subtitle: Digital Marketer and Social Media Manager
+# other front matter fields
+  username: lukas_devlin
+  tag: Chief Editor / Blogger
+  permalink: lukas-devlin
+  date: 2023-10-12 17:35:09 +0600
+  message: |
+      There live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.
+  image: /assets/images/person_3.jpg
+  categories: [Graphic Design, Adobe Photoshop, Banner Design]
+
+social_media:
+  - name: facebook
+    username: https://www.facebook.com/ahmedsharifkhannoor
+  - name: twitter
+    username: https://www.twitter.com/maxnoor87
+  - name: instagram
+    username: https://www.instagram.com/ahmedsharifkhannoor
+  - name: linkedin
+    username: https://www.linkedin.com/in/ahmedsharifkhannoor
+  - name: behance
+    username: https://www.behance.net/ahmedsharifkhannoor
+  - name: dribble
+    username: https://dribble.com/ahmedsharifkhannoor
+  - name: pinterest
 ---
 
 ### Step-by-Step Guide: Installing Jekyll and Hosting Your Site on GitHub Pages

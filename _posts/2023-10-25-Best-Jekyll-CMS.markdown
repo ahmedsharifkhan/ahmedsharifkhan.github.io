@@ -1,12 +1,6 @@
 ---
-title: TikTok recently organised an educational workshop in Dhaka
 layout: blog-post
-author_name: Ahmed Sharif Khan Noor
-username: Ahmed-Sharif-Khan-Noor
-author_bio: Digital Marketer and SEO Specialist
-author_email: jane.doe@email.com
-author_avatar: "/assets/authors/jane_doe.jpg"
-author_social: null
+
 keywords: Health  Travel  Life Style
 date: '2023-10-25 02:33:00 +0600'
 categories:
@@ -14,9 +8,38 @@ categories:
 - Marketing
 - SEO
 youtubeid: OTxz8hqdtEk
+title: TikTok recently organised an educational workshop in Dhaka
 description: A Jekyll plugin that provides users with a traditional CMS-style graphical
   interface to author content and administer Jekyll sites.
 image: https://tds-images.thedailystar.net/sites/default/files/styles/big_202/public/images/2023/10/19/dalle_2023-10-19_19.19.51_-_vibrant_landscape_image_of_two_brown-skinned_urban_bangladeshi_girls_in_their_teens_sitting_on_a_city_bench._one_holds_a_smartphone_and_they_both_dan.png
+
+team:
+  name: Kayla Bryant
+  subtitle: Digital Marketer and Social Media Manager
+  username: kayla_bryant
+  tag: Chief Editor / Blogger
+  permalink: kayla-bryant
+  date: 2023-10-12 17:35:09 +0600
+  message: |
+      There live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.
+  image: /assets/images/person_4.jpg
+  categories: [Graphic Design, Adobe Photoshop, Banner Design]
+
+social_media:
+  - name: facebook
+    username: https://www.facebook.com/ahmedsharifkhannoor
+  - name: twitter
+    username: https://www.twitter.com/maxnoor87
+  - name: instagram
+    username: https://www.instagram.com/ahmedsharifkhannoor
+  - name: linkedin
+    username: https://www.linkedin.com/in/ahmedsharifkhannoor
+  - name: behance
+    username: https://www.behance.net/ahmedsharifkhannoor
+  - name: dribble
+    username: https://dribble.com/ahmedsharifkhannoor
+  - name: pinterest
+
 ---
 
 **Best Jekyll CMS**

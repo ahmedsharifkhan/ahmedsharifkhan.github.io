@@ -1,17 +1,40 @@
 ---
 layout: blog-post
-username: ahmed-sharif-khan
-author_name: Ahmed Sharif Khan
-author_bio: Web Developer and Blogger
-author_email: jane.doe@email.com
-author_avatar: /assets/authors/jane_doe.jpg
-author_social:
+
 title:  "How Algorithmic Trading Systems Work"
 date:   2023-10-12 17:35:09 +0600
 categories: [Health,  Travel, Life Style]
 keywords: Health  Travel Life Style
 description: It is distressing to see the widening gulf between what people expect from parliament and what our parliamentarians actually deliver.
 image: "https://tds-images.thedailystar.net/sites/default/files/styles/big_202/public/images/2023/10/11/dalle_2023-10-11_19.24.36_-_illustration_of_a_bangladeshi_man_on_a_riverbank_gazing_at_the_sunset_with_holographic_screens_floating_around_him_showcasing_his_passive_income_ea.png"
+
+team:
+  name: Kayla Bryant
+  subtitle: Digital Marketer and Social Media Manager
+  username: kayla_bryant
+  tag: Chief Editor / Blogger
+  permalink: kayla-bryant
+  date: 2023-10-12 17:35:09 +0600
+  message: |
+      There live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.
+  image: /assets/images/person_4.jpg
+  categories: [Graphic Design, Adobe Photoshop, Banner Design]
+
+social_media:
+  - name: facebook
+    username: https://www.facebook.com/ahmedsharifkhannoor
+  - name: twitter
+    username: https://www.twitter.com/maxnoor87
+  - name: instagram
+    username: https://www.instagram.com/ahmedsharifkhannoor
+  - name: linkedin
+    username: https://www.linkedin.com/in/ahmedsharifkhannoor
+  - name: behance
+    username: https://www.behance.net/ahmedsharifkhannoor
+  - name: dribble
+    username: https://dribble.com/ahmedsharifkhannoor
+  - name: pinterest
+
 ---
 
 In India, the popularity of online trading has helped transform the financial landscape. This has led to over 20% of all trading is now done via mobile through trading apps. In line with this, another development many traders have highlighted is the use of algorithmic trading systems to take advantage of ever-changing market opportunities. To date, algorithmic trading systems are used in up to 60% of all trading volume.

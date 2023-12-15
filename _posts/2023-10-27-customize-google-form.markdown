@@ -1,12 +1,6 @@
 ---
-title: Customizing Google Forms is important for someone who trusts Google
 layout: blog-post
-author_name: Ahmed Sharif Khan Noor
-username: Ahmed-Sharif-Khan-Noor
-author_bio: Digital Marketer and SEO Specialist
-author_email: jane.doe@email.com
-author_avatar: "/assets/authors/jane_doe.jpg"
-author_social: null
+
 keywords: SEO  Contact FORM  WEBSITE
 date: '2023-10-25 02:33:00 +0600'
 categories:
@@ -14,20 +8,42 @@ categories:
 - Marketing
 - SEO
 youtubeid: Qgp2LBoJWls
+title: Customizing Google Forms is important for someone who trusts Google
 description: Customizing Google Forms is important for someone who trusts Google
 image: https://lh3.googleusercontent.com/pw/ADCreHcyayhneTSDtps_4OFoSA4FnwOIo6eoee9Sr-GcNo2adwglHS9n1RV3q5rzlDA2B1SH_M3SAt1Z9LLYN1EPeO0UYB5oh2Yd4Hs9_putut1BLjn8Zj_Euz6STJPcSgqk7RHE1bDvE2CppejlQ2wnlFi3=w860-h484-s-no-gm?authuser=0
 
 telegram_channel: answereverything4_b
 telegram_message_id: 3
 
+team:
+  name: Ahmed Sharif Khan Noor
+  tag: Chief Editor / Blogger
+  subtitle: Digital Marketer and Social Media Manager
+  username: ahmed_sharif_khan
+  permalink: ahmed-sharif-khan
+  date: 2023-10-12 17:35:09 +0600
+  message: |
+        There live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.
+  image: https://lh3.googleusercontent.com/pw/ADCreHd8bz4D53_B3dnZqgyI6lKQ8guUguy3xrJpukvzeMa3s2Ea1-4FSCoAB4TGGJ2PVh2VWacgpBdyAP6Lm4xdU1Stdff6PvXlO5Uuko9dsEGh5mkNBPhAJmeAhpWyOJlzRjv5Ahag3bBo7RBfa4o1UfD6=w480-h480-s-no-gm?authuser=0
+  categories: [Graphic Design, Photoshop, Adobe Photoshop, Social Media Banner Design]
 
-social:
-    facebook: "https://facebook.com/ahmedsharifkhannoor"
-    twitter: "https://twitter.com/maxnoor87"
-    instagram: "https://instagram.com/ahmedsharifkhannoor"
-    linkedin: "https://linkedin.com/in/ahmedsharifkhannoor"
-    github: "https://github.com/ahmedsharifkhan"
-    youtube: "https://youtube.com/johndoe"
+social_media:
+  - name: facebook
+    username: https://www.facebook.com/ahmedsharifkhannoor
+  - name: twitter
+    username: https://www.twitter.com/maxnoor87
+  - name: instagram
+    username: https://www.instagram.com/ahmedsharifkhannoor
+  - name: linkedin
+    username: https://www.linkedin.com/in/ahmedsharifkhannoor
+  - name: behance
+    username: https://www.behance.net/ahmedsharifkhannoor
+  - name: dribble
+    username: https://dribble.com/ahmedsharifkhannoor
+  - name: pinterest
+    username: https://ar.pinterest.com/ahmedsharifkhannoor
+  - name: web
+
 ---
 
 

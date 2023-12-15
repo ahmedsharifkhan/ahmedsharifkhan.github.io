@@ -1,18 +1,40 @@
 ---
 layout: blog-post
-author_name: Ahmed Sharif Khan Noor
-username: Ahmed-Sharif-Khan-Noor
-author_bio: Digital Marketer and SEO Specialist
-author_email: jane.doe@email.com
-author_avatar: /assets/authors/jane_doe.jpg
-author_social:
+
 keywords: Health  Travel Life Style
 title:  "Google Guide line"
 date:   2023-10-20 #17:35:09 +0600
 categories: [Marketing, Digital Marketing, SEO]
 description: Seo এক্সপার্টরা যেন ভালোভাবে কাজ করতে পারে সেজন্য গুগল তো গাইডলাইন দিচ্ছি তার সাথে সাথে কিছু থার্ড
-
 image: "https://tds-images.thedailystar.net/sites/default/files/styles/big_202/public/images/2023/07/28/editors_note_picture.png"
+
+team:
+  name: Kayla Bryant
+  subtitle: Digital Marketer and Social Media Manager
+  username: kayla_bryant
+  tag: Chief Editor / Blogger
+  permalink: kayla-bryant
+  date: 2023-10-12 17:35:09 +0600
+  message: |
+      There live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.
+  image: /assets/images/person_4.jpg
+  categories: [Graphic Design, Adobe Photoshop, Banner Design]
+
+social_media:
+  - name: facebook
+    username: https://www.facebook.com/ahmedsharifkhannoor
+  - name: twitter
+    username: https://www.twitter.com/maxnoor87
+  - name: instagram
+    username: https://www.instagram.com/ahmedsharifkhannoor
+  - name: linkedin
+    username: https://www.linkedin.com/in/ahmedsharifkhannoor
+  - name: behance
+    username: https://www.behance.net/ahmedsharifkhannoor
+  - name: dribble
+    username: https://dribble.com/ahmedsharifkhannoor
+  - name: pinterest
+
 ---
 
 # Google Guide line

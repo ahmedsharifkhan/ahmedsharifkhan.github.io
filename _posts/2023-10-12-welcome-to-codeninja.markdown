@@ -1,17 +1,40 @@
 ---
 layout: blog-post
-username: ahmed-sharif-khan
-author_name: Ahmed Sharif Khan
-author_bio: Web Developer and Blogger
-author_email: jane.doe@email.com
-author_avatar: /assets/authors/jane_doe.jpg
-author_social:
+
 title:  "Jekyll requires blog post files to be named according to the following format:"
 date:   2023-10-12 17:35:09 +0600
 categories: [Health, Life Style]
 keywords: Health  Travel Life Style
 description: You’ll find this post in your `_posts` directory. Go ahead and edit it and re-build the site to see your changes
 image: "https://tds-images.thedailystar.net/sites/default/files/styles/very_big_201/public/images/2023/10/03/default_loans_hit_all-time_high_in_bangladesh_0.png"
+
+team:
+  name: Lukas Devlin
+  subtitle: Digital Marketer and Social Media Manager
+# other front matter fields
+  username: lukas_devlin
+  tag: Chief Editor / Blogger
+  permalink: lukas-devlin
+  date: 2023-10-12 17:35:09 +0600
+  message: |
+      There live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.
+  image: /assets/images/person_3.jpg
+  categories: [Graphic Design, Adobe Photoshop, Banner Design]
+
+social_media:
+  - name: facebook
+    username: https://www.facebook.com/ahmedsharifkhannoor
+  - name: twitter
+    username: https://www.twitter.com/maxnoor87
+  - name: instagram
+    username: https://www.instagram.com/ahmedsharifkhannoor
+  - name: linkedin
+    username: https://www.linkedin.com/in/ahmedsharifkhannoor
+  - name: behance
+    username: https://www.behance.net/ahmedsharifkhannoor
+  - name: dribble
+    username: https://dribble.com/ahmedsharifkhannoor
+  - name: pinterest
 ---
 You’ll find this post in your `_posts` directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run `jekyll serve`, which launches a web server and auto-regenerates your site when a file is updated.
 

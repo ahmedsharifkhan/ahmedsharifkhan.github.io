@@ -1,19 +1,41 @@
 ---
 layout: blog-post
-author: Ahmed Sharif Khan
 
-author_name: Jane Doe
-username: ahmed
-author_bio: Web Developer and Blogger
-author_email: jane.doe@email.com
-author_avatar: /assets/authors/author.png
-author_social:
 title:  "BDIX CONNECTED MEDIA FTP & LIVE TV SERVERS LIST BD ISP"
 date:   2023-11-18 17:35:09 +0600
 categories: [Jekyll, Code, Website]
 keywords: Jekyll  Code Website
 description:  BDIX CONNECTED MEDIA & FTP SERVERS - TOP 50 ACTIVE SERVERS
 image: "https://tds-images.thedailystar.net/sites/default/files/styles/big_202/public/images/2023/05/22/facebook_thumbnail_7_8.png"
+
+team:
+  name: Ahmed Sharif Khan Noor
+  tag: Chief Editor / Blogger
+  subtitle: Digital Marketer and Social Media Manager
+  username: ahmed_sharif_khan
+  permalink: ahmed-sharif-khan
+  date: 2023-10-12 17:35:09 +0600
+  message: |
+        There live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.
+  image: https://lh3.googleusercontent.com/pw/ADCreHd8bz4D53_B3dnZqgyI6lKQ8guUguy3xrJpukvzeMa3s2Ea1-4FSCoAB4TGGJ2PVh2VWacgpBdyAP6Lm4xdU1Stdff6PvXlO5Uuko9dsEGh5mkNBPhAJmeAhpWyOJlzRjv5Ahag3bBo7RBfa4o1UfD6=w480-h480-s-no-gm?authuser=0
+  categories: [Graphic Design, Photoshop, Adobe Photoshop, Social Media Banner Design]
+
+social_media:
+  - name: facebook
+    username: https://www.facebook.com/ahmedsharifkhannoor
+  - name: twitter
+    username: https://www.twitter.com/maxnoor87
+  - name: instagram
+    username: https://www.instagram.com/ahmedsharifkhannoor
+  - name: linkedin
+    username: https://www.linkedin.com/in/ahmedsharifkhannoor
+  - name: behance
+    username: https://www.behance.net/ahmedsharifkhannoor
+  - name: dribble
+    username: https://dribble.com/ahmedsharifkhannoor
+  - name: pinterest
+    username: https://ar.pinterest.com/ahmedsharifkhannoor
+  - name: web
 ---
 
 
