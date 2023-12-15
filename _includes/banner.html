@@ -1,4 +1,4 @@
-<div class="container mb-5">
+<!-- <div class="container mb-5">
     <div class="main-slider owl-single owl-carousel">
       {% for post in site.posts | reverse | limit: 40 %}
       <div class="huge-article d-md-flex">
@@ -26,6 +26,42 @@
         </div>
       </div>
       {% endfor %}
-      <!-- item -->
     </div>
-  </div>
+  </div> -->
+
+  <div class="container mb-5">
+    <div class="main-slider owl-single owl-carousel">
+        {% for post in site.posts | reverse | limit: 80 %}
+            <div class="huge-article d-md-flex">
+                <div class="img-wrap">
+                    <a href="{{ post.url | relative_url }}">
+                        <img src="{{ post.image }}" alt="{{ post.title }}" class="img-fluid">
+                    </a>
+                </div>
+                <div class="text-wrap">
+                    <div class="meta">
+                        <span class="d-inline-block">{{ post.date | date: "%I:%M %p" }}</span>
+                        <span class="mx-2">&bullet;</span>
+                        <span><a href="#">8 Comments</a></span>
+                    </div>
+                    <h3><a href="{{ post.url | relative_url }}">{{ post.title | truncate: 30 }}</a></h3>
+                    <p>{{ post.description | truncate: 150 }}</p>
+                    <div class="author d-flex align-items-center">
+                        {% if post.team %}
+                            <div class="img mr-3">
+                                {% if post.team %}
+                                    <img src="{{ site.baseurl }}{{ post.team.image }}" alt="{{ post.team.name }}" class="img-fluid">
+                                {% endif %}
+                            </div>
+                            <div class="text">
+                                <h3><a href="{{ site.baseurl }}/{{ post.team.permalink }}" target="_blank">{{ post.team.name }}</a></h3>
+                                <strong>{{ post.team.message }}</strong>
+                            </div>
+                        {% endif %}
+                    </div>
+                </div>
+            </div>
+        {% endfor %}
+    </div>
+</div>
+

@@ -1,4 +1,4 @@
-<div class="site-section slider-team-wrap">
+<!-- <div class="site-section slider-team-wrap">
     <div class="container">
   
       <div class="row mb-5 align-items-center">
@@ -11,7 +11,7 @@
             <a href="#" class="js-prev js-custom-prev-v2"><span class="icon-arrow_back"></span></a>
             <a href="#" class="js-next js-custom-next-v2"><span class="icon-arrow_forward"></span></a>
   
-          </div> <!-- /.slider-nav -->
+          </div> 
         </div>
       </div>
   
@@ -28,5 +28,36 @@
         </div>
         {% endfor %}
       </div>
-    </div> <!-- /.container -->
-  </div> <!-- /.untree_co-section -->
+    </div> 
+  </div>  -->
+
+
+<div class="site-section slider-team-wrap">
+  <div class="container">
+    <div class="row mb-5 align-items-center">
+      <div class="col-md-6">
+        <span class="section-subtitle">Team</span>
+        <h2 class="section-title">Our Awesome Team</h2>
+      </div>
+      <div class="col-md-6 text-left text-md-right">
+        <div class="slider-nav">
+          <a href="#" class="js-prev js-custom-prev-v2"><span class="icon-arrow_back"></span></a>
+          <a href="#" class="js-next js-custom-next-v2"><span class="icon-arrow_forward"></span></a>
+        </div>
+      </div>
+    </div>
+    <div class="slider-team owl-carousel owl-3-slider">
+      {% for client in site.team | reverse | limit: 80 %}
+      <div class="team">
+        <div class="pic">
+          <img data-src="{{ site.baseurl }}{{ client.image }}" alt="{{ client.name }}" class="lazy img-fluid">
+        </div>
+        <h3 class><a href="{{ client.url }}"><span class="">{{ client.name }}</span></a></h3>
+        <span class="d-block position">{{ port.categories }}</span>
+        <p>{{ client.message }}</p>
+        <p class="mb-0"><a href="{{ client.url }}" class="more dark">Learn More <span class="icon-arrow_forward"></span></a></p>
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+</div>

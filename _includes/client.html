@@ -9,14 +9,14 @@
     <div class="row justify-content-center">
       <div class="col-lg-7">
         <div class="main-slider owl-single owl-carousel">
-          {% for port in site.data.client.client | reverse | limit: 8 %}
+          {% for client in site.team | reverse | limit: 8 %}
           <div class="testimonial mx-auto">
             <figure class="img-wrap">
-              <img src="{{ port.image }}" alt="{{port.name}}" class="img-fluid">
+              <img src="{{ client.image }}" alt="{{client.name}}" class="img-fluid">
             </figure>
-            <h3 class="name">{{port.name}}</h3>
+            <h3 class="name">{{client.name}}</h3>
             <blockquote>
-              <p>&ldquo;{{ port.message }}&rdquo;</p>
+              <p>&ldquo;{{ client.message }}&rdquo;</p>
             </blockquote>
           </div>
           {% endfor %}
