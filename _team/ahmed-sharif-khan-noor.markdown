@@ -8,6 +8,10 @@ permalink: ahmed-sharif-khan
 date: 2023-10-12 17:35:09 +0600
 message: |
       There live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.
+
+youtubeid: 5SfFwfyw8YE
+video_title: Digital Marketing Expert | Google Ads & SEO Specialist
+video_shortdes: I am a passionate and results-driven digital marketing specialist with 2 years of hands-on experience in various advertising platforms including Google Ads, Meta Ads, and LinkedIn Ads. My expertise extends to search engine optimization (SEO), as well as setting up tracking and conversion APIs to measure campaign success accurately.
 image: https://lh3.googleusercontent.com/pw/ADCreHd8bz4D53_B3dnZqgyI6lKQ8guUguy3xrJpukvzeMa3s2Ea1-4FSCoAB4TGGJ2PVh2VWacgpBdyAP6Lm4xdU1Stdff6PvXlO5Uuko9dsEGh5mkNBPhAJmeAhpWyOJlzRjv5Ahag3bBo7RBfa4o1UfD6=w480-h480-s-no-gm?authuser=0
 categories: [Graphic Design, Photoshop, Adobe Photoshop, Social Media Banner Design]
 
