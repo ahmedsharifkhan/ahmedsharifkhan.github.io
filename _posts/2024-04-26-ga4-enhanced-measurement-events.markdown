@@ -176,8 +176,11 @@ when a user clicks a link leading to a file (with a common file extension) of th
 
 File extensions that match the following regex will trigger the event:
 
-pdf|xlsx?|docx?|txt|rtf|csv|exe|key|pp(s|t|tx)|  
-7z|pkg|rar|gz|zip|avi|mov|mp4|mpe?g|wmv|midi?|mp3|wav|wma
+pdf|xlsx?|docx?|txt|rtf|
+|csv|exe|key|pp(s|t|tx)|  
+7z|pkg|rar|gz|zip|avi|mov|
+|mp4|mpe?g|wmv|
+|midi?|mp3|wav|wma
 
 The parameters populate the following dimensions:
 
