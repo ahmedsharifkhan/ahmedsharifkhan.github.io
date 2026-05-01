@@ -1,14 +1,16 @@
 
-logo: AHMED'S WORLD
-title: Ahmed world is a portfolio site
+logo: Ahmed Sharif Khan Noor
+title: "Ahmed Sharif Khan Noor — Digital Marketing Specialist & Media Buyer"
+description: "Results-driven Digital Marketing Specialist & Media Buyer with 4+ years of experience. I help brands grow with high-ROAS Meta, Google, TikTok, and LinkedIn ad campaigns."
+keywords: "digital marketing specialist, media buyer, Facebook Ads, Google Ads, TikTok Ads, LinkedIn Ads, paid advertising, ROAS, Meta Ads, Bangladesh"
+author_name: "Ahmed Sharif Khan Noor"
 start_year: 2023
 current_year: 2025
 address: Mirpur, Dhaka, Bangladesh
 email: ahmedsharifkhannoor@gmail.com
-phone: +8801744750096 
-description: 
+phone: +8801744750096
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "" # the base hostname & protocol for your site, e.g. http://example.com
+url: "https://ahmedsharifkhan.github.io" # the base hostname & protocol for your site
 
 facebook_username: https://www.facebook.com/ahmedsharifkhannoor
 twitter_username: https://www.twitter.com/maxnoor87

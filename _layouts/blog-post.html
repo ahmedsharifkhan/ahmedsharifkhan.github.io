@@ -2,6 +2,42 @@
 layout: default
 ---
 
+{% if page.date %}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": {{ page.title | jsonify }},
+  "description": {{ page.description | default: page.excerpt | strip_html | truncate: 160 | jsonify }},
+  "image": "{{ page.image | absolute_url }}",
+  "datePublished": "{{ page.date | date_to_xmlschema }}",
+  "dateModified": "{{ page.last_modified_at | default: page.date | date_to_xmlschema }}",
+  "author": {
+    "@type": "Person",
+    "name": "Ahmed Sharif Khan Noor",
+    "url": "https://ahmedsharifkhan.github.io/about"
+  },
+  "publisher": {
+    "@type": "Person",
+    "name": "Ahmed Sharif Khan Noor",
+    "logo": { "@type": "ImageObject", "url": "https://ahmedsharifkhan.github.io/assets/images/profileofnoor.png" }
+  },
+  "mainEntityOfPage": { "@type": "WebPage", "@id": "{{ page.url | absolute_url }}" }
+}
+</script>
+
+<script>
+window.dataLayer = window.dataLayer || [];
+window.dataLayer.push({
+  event: 'blog_post_view',
+  post_title:    {{ page.title | jsonify }},
+  post_category: {{ page.categories | first | default: '' | jsonify }},
+  post_date:     '{{ page.date | date: "%Y-%m-%d" }}',
+  post_url:      '{{ page.url | absolute_url }}'
+});
+</script>
+{% endif %}
+
 <div class="site-hero py-5 bg-light mb-1">
 
   <div class="container">

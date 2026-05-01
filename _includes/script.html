@@ -10,82 +10,37 @@
 <script src="{{ site.baseurl }}/assets/js/jquery.fancybox.min.js"></script>
 <script src="{{ site.baseurl }}/assets/js/custom.js"></script>
 
-
-<!-- and it's easy to individually load additional languages -->
+<!-- Highlight.js (core + go language) -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/languages/go.min.js"></script>
-
 <script>hljs.highlightAll();</script>
 
-<!-- <script>
-document.addEventListener('DOMContentLoaded', (event) => {
-    const codeBlocks = document.querySelectorAll('pre code');
-
-    codeBlocks.forEach((codeBlock) => {
-        const button = document.createElement('button');
-        button.className = 'copy-code-button';
-        button.textContent = 'Copy Code';
-
-        button.addEventListener('click', () => {
-            const textArea = document.createElement('textarea');
-            textArea.value = codeBlock.innerText;
-            document.body.appendChild(textArea);
-            textArea.select();
-            document.execCommand('copy');
-            document.body.removeChild(textArea);
-        });
-
-        codeBlock.parentNode.insertBefore(button, codeBlock.nextSibling);
-    });
-});
-</script> -->
+<!-- Code copy button -->
 <script>
-  document.addEventListener('DOMContentLoaded', (event) => {
-    const codeBlocks = document.querySelectorAll('pre code');
-
-    codeBlocks.forEach((codeBlock) => {
-      const container = document.createElement('div');
-      container.className = 'copy-code-container';
-
-      const button = document.createElement('button');
-      button.className = 'copy-code-button primary_btn'; // Add the 'primary_btn' class here
-      button.textContent = 'Copy Code';
-
-      button.addEventListener('click', () => {
-        navigator.clipboard.writeText(codeBlock.innerText).then(() => {
-          const originalText = button.textContent;
-          button.textContent = 'Copied!';
-          setTimeout(() => {
-            button.textContent = originalText;
-          }, 1000);
-        });
+document.addEventListener('DOMContentLoaded', function() {
+  document.querySelectorAll('pre code').forEach(function(codeBlock) {
+    var container = document.createElement('div');
+    container.className = 'copy-code-container';
+    var button = document.createElement('button');
+    button.className = 'copy-code-button';
+    button.textContent = 'Copy Code';
+    button.addEventListener('click', function() {
+      navigator.clipboard.writeText(codeBlock.innerText).then(function() {
+        button.textContent = 'Copied!';
+        setTimeout(function() { button.textContent = 'Copy Code'; }, 1000);
       });
-
-      container.appendChild(button);
-      codeBlock.parentNode.insertBefore(container, codeBlock.nextSibling);
     });
+    container.appendChild(button);
+    codeBlock.parentNode.insertBefore(container, codeBlock.nextSibling);
   });
+});
 </script>
 
-
-
-
-<!-- <script src="https://unpkg.com/htmx.org@1.9.6"></script> -->
-<script src="https://unpkg.com/htmx.org@1.7.0/dist/htmx.min.js"></script>
-
-
-<!-- Search form -->
-
-
-  <!-- <script src="{{ site.baseurl }}/assets/js/search.js"></script> -->
-
-
-
-
+<!-- Search -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/lunr.js/2.3.7/lunr.min.js"></script>
 
-<!-- share button -->
+<!-- HTMX -->
+<script defer src="https://unpkg.com/htmx.org@1.9.6/dist/htmx.min.js"></script>
+
+<!-- AddToAny share buttons -->
 <script async src="https://static.addtoany.com/menu/page.js"></script>
-
-<!-- google Search form -->
-<!-- <script async src="https://cse.google.com/cse.js?cx=64de1af6db3cd4f03"></script> -->
-

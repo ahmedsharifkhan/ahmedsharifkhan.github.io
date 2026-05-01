@@ -1,6 +1,9 @@
 ---
 layout: default
 title: Home
+description: "Ahmed Sharif Khan Noor — Digital Marketing Specialist & Media Buyer with 4+ years of experience in Dhaka, Bangladesh. I help brands achieve 700%+ ROAS through 1,000+ campaigns on Meta, Google, TikTok, and LinkedIn."
+keywords: "digital marketing specialist Bangladesh, media buyer, Facebook Ads expert, Google Ads specialist, TikTok Ads, ROAS optimization, paid advertising Dhaka"
+image: "/assets/images/ahmed sharif Khan noor.png"
 ---
 
 {% assign h = site.data.home %}
@@ -161,7 +164,7 @@ title: Home
       {% for project in folio_items limit:6 %}
       <div class="col-6 col-md-4" data-aos="fade-up" data-aos-delay="{{ forloop.index | times: 60 }}">
         <a href="{{ project.lazy_image }}" data-fancybox="hp-gal" class="hp-folio-item">
-          <img src="{{ project.lazy_image }}" alt="{{ project.title }}" class="hp-folio-img">
+          <img src="{{ project.lazy_image }}" alt="{{ project.title }}" class="hp-folio-img" loading="lazy" decoding="async">
           <div class="hp-folio-overlay">
             <span class="hp-folio-cat">{{ project.category }}</span>
             <span class="hp-folio-name">{{ project.title }}</span>
@@ -216,7 +219,7 @@ title: Home
           </div>
           <p class="hp-testimonial-msg">&ldquo;{{ client.message }}&rdquo;</p>
           <div class="hp-testimonial-author">
-            <img src="{{ client.image }}" alt="{{ client.name }}" class="hp-testimonial-avatar">
+            <img src="{{ client.image }}" alt="{{ client.name }}" class="hp-testimonial-avatar" loading="lazy" decoding="async">
             <div>
               <div class="hp-testimonial-name">{{ client.name }}</div>
               <div class="hp-testimonial-role">{{ client.keywords | truncate: 30 }}</div>
@@ -266,7 +269,7 @@ title: Home
         <a href="{{ post.url | relative_url }}" class="hp-blog-card">
           {% if post.image %}
           <div class="hp-blog-img-wrap">
-            <img src="{{ post.image }}" alt="{{ post.title }}" class="hp-blog-img">
+            <img src="{{ post.image }}" alt="{{ post.title }}" class="hp-blog-img" loading="lazy" decoding="async">
           </div>
           {% endif %}
           <div class="hp-blog-body">
@@ -550,6 +553,7 @@ title: Home
 @media(max-width:991px){
   .hp-hero-title{font-size:2.2rem}
   .hp-hero-photo{width:180px;height:180px}
+  .hp-hero-photo-ring{inset:-8px}
 }
 @media(max-width:767px){
   .hp-hero{padding:60px 0 50px}
@@ -558,6 +562,28 @@ title: Home
   .hp-section-title{font-size:1.5rem}
   .hp-hero-stats-grid{grid-template-columns:repeat(4,1fr)}
   .hp-contact-form-card{padding:24px 18px}
+  .hp-about{padding:60px 0}
+  .hp-services,.hp-results,.hp-process,.hp-tools,.hp-blog,.hp-portfolio,.hp-faq,.hp-contact{padding:60px 0}
+  .hp-testimonials{padding:60px 0}
+  .hp-audit{padding:70px 0}
+}
+@media(max-width:575px){
+  .hp-hero-photo{width:140px;height:140px}
+  .hp-hero-stats-grid{grid-template-columns:repeat(2,1fr)}
+  .hp-hero-platforms{gap:6px}
+  .hp-platform-pill{font-size:.72rem;padding:5px 10px}
+  .hp-hero-actions{flex-direction:column;gap:10px}
+  .hp-hero-actions .hp-btn-primary,
+  .hp-hero-actions .hp-btn-secondary{width:100%;justify-content:center}
+  .hp-btn-primary.hp-btn-large{padding:14px 24px;font-size:.9rem}
+  .hp-audit-perks{flex-direction:column;align-items:center;gap:8px}
+  .hp-result-number{font-size:1.7rem}
+  .hp-tools-grid{gap:8px}
+  .hp-tool-pill{font-size:.78rem;padding:8px 14px}
+  .hp-faq-q{font-size:.88rem;padding:16px 16px}
+  .hp-section-title{font-size:1.35rem}
+  .hp-contact-form-card{padding:20px 16px}
+  .hp-hero-desc{font-size:.9rem}
 }
 </style>
 

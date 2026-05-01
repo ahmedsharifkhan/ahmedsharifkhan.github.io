@@ -1,0 +1,126 @@
+<script>
+(function () {
+  'use strict';
+  window.dataLayer = window.dataLayer || [];
+
+  function dl(obj) { window.dataLayer.push(obj); }
+
+  function ready(fn) {
+    if (document.readyState !== 'loading') fn();
+    else document.addEventListener('DOMContentLoaded', fn);
+  }
+
+  // ── Phone / Email / WhatsApp clicks (all pages) ──────────────────────────
+  document.addEventListener('click', function (e) {
+    var a = e.target.closest('a');
+    if (!a) return;
+    var href = a.getAttribute('href') || '';
+    if (href.startsWith('tel:')) {
+      dl({ event: 'contact_click', contact_type: 'phone', page_path: location.pathname });
+    } else if (href.startsWith('mailto:')) {
+      dl({ event: 'contact_click', contact_type: 'email', page_path: location.pathname });
+    } else if (href.includes('wa.me')) {
+      dl({ event: 'contact_click', contact_type: 'whatsapp', page_path: location.pathname });
+    }
+    // Outbound links
+    if (href.startsWith('http') && a.hostname && a.hostname !== location.hostname) {
+      dl({ event: 'outbound_click', link_url: a.href, link_domain: a.hostname, link_text: (a.innerText || '').trim().slice(0, 60) });
+    }
+  });
+
+  ready(function () {
+
+    // ── CTA button clicks ───────────────────────────────────────────────────
+    document.querySelectorAll(
+      '.hp-btn-primary, .hp-btn-secondary, .hp-btn-outline, ' +
+      '.about-btn-primary, .about-btn-secondary, ' +
+      '.contact-submit-btn, .consultancy-card .btn'
+    ).forEach(function (btn) {
+      btn.addEventListener('click', function () {
+        dl({ event: 'cta_click', cta_text: (this.innerText || '').trim().slice(0, 80), cta_page: location.pathname });
+      });
+    });
+
+    // ── FAQ accordion ───────────────────────────────────────────────────────
+    document.querySelectorAll('.hp-faq-q').forEach(function (btn) {
+      btn.addEventListener('click', function () {
+        var q = (this.innerText || '').replace(/[\n\r]+/g, ' ').trim();
+        dl({ event: 'faq_expand', faq_question: q.slice(0, 120) });
+      });
+    });
+
+    // ── Resume PDF download ─────────────────────────────────────────────────
+    var pdfBtn = document.querySelector('.pdf-fab-btn');
+    if (pdfBtn) {
+      pdfBtn.addEventListener('click', function () {
+        dl({ event: 'file_download', file_name: 'ahmed-sharif-khan-noor-resume', file_extension: 'pdf', page_path: location.pathname });
+      });
+    }
+
+    // ── Portfolio item clicks (portfolio page + home page grid) ────────────
+    document.querySelectorAll('[data-fancybox="gal"], [data-fancybox="hp-gal"]').forEach(function (a, idx) {
+      a.addEventListener('click', function () {
+        var nameEl = this.querySelector('h3, .hp-folio-name, .contents h3');
+        var catEl  = this.querySelector('.cat, .hp-folio-cat');
+        dl({
+          event: 'portfolio_item_click',
+          item_name:     nameEl ? nameEl.innerText.trim() : 'Item ' + (idx + 1),
+          item_category: catEl  ? catEl.innerText.trim()  : '',
+          item_index: idx + 1,
+          page_path: location.pathname
+        });
+      });
+    });
+
+    // ── Portfolio filter clicks ─────────────────────────────────────────────
+    document.querySelectorAll('.filters li').forEach(function (li) {
+      li.addEventListener('click', function () {
+        dl({ event: 'portfolio_filter', filter_value: (this.innerText || '').trim() });
+      });
+    });
+
+    // ── Contact form tracking ───────────────────────────────────────────────
+    document.querySelectorAll('form[action*="docs.google.com"]').forEach(function (form) {
+      var started = false;
+      var formId  = form.id || 'contact_form';
+
+      form.querySelectorAll('input, textarea, select').forEach(function (field) {
+        field.addEventListener('focus', function () {
+          if (started) return;
+          started = true;
+          dl({ event: 'form_start', form_name: formId, page_path: location.pathname });
+        });
+      });
+
+      form.addEventListener('submit', function () {
+        dl({ event: 'form_submit', form_name: formId, page_path: location.pathname });
+      });
+    });
+
+    // ── Share button clicks ─────────────────────────────────────────────────
+    document.querySelectorAll('.sp-btn[data-network]').forEach(function (btn) {
+      btn.addEventListener('click', function () {
+        dl({ event: 'share', share_method: this.dataset.network, content_type: 'article', item_id: location.pathname });
+      });
+    });
+
+    // ── Blog scroll depth (only on blog post pages) ─────────────────────────
+    if (document.querySelector('.article')) {
+      var fired = {};
+      window.addEventListener('scroll', function () {
+        var docH = document.documentElement.scrollHeight - window.innerHeight;
+        if (docH <= 0) return;
+        var pct = Math.round((window.pageYOffset / docH) * 100);
+        [25, 50, 75, 90].forEach(function (m) {
+          if (pct >= m && !fired[m]) {
+            fired[m] = true;
+            dl({ event: 'scroll_depth', percent_scrolled: m, page_path: location.pathname });
+          }
+        });
+      }, { passive: true });
+    }
+
+  }); // end ready()
+
+})();
+</script>

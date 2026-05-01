@@ -1,7 +1,8 @@
 ---
 layout: default
-
 title: Portfolio
+description: "Portfolio of Ahmed Sharif Khan Noor — real digital marketing campaigns delivering 600–800% ROAS. Browse Meta Ads, Google Ads, TikTok Ads, and LinkedIn Ads results."
+keywords: "digital marketing portfolio, Meta Ads campaigns, Google Ads results, paid advertising case studies, ROAS portfolio Bangladesh"
 ---
 
 <div class="site-hero py-5 bg-light mb-5">
@@ -63,7 +64,7 @@ title: Portfolio
           {% for project in site.data.folio.portfolio %}
             <div class="isotope-card col-sm-4 all {{ project.category | slugify }}">
               <a href="{{ project.lazy_image }}" data-fancybox="gal">
-                <img src="{{ project.lazy_image }}" alt="{{ project.title }}" class="img-fluid" style="width:100%; display:block;">
+                <img src="{{ project.lazy_image }}" alt="{{ project.title }}" class="img-fluid" style="width:100%; display:block;" loading="lazy" decoding="async">
                 <div class="contents">
                   <h3>{{ project.title }}</h3>
                   <div class="cat">{{ project.category }}</div>
@@ -79,6 +80,10 @@ title: Portfolio
   
 
 <!-- end banner portfolio -->
+<script>
+window.dataLayer = window.dataLayer || [];
+window.dataLayer.push({ event: 'portfolio_view', page_path: location.pathname });
+</script>
 
 
 

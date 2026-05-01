@@ -28,9 +28,9 @@ hero:
   stats:
     - number: "700%+"
       label: "Peak ROAS"
-    - number: "3+"
+    - number: "4+"
       label: "Years Experience"
-    - number: "200+"
+    - number: "1,000+"
       label: "Campaigns Run"
     - number: "50+"
       label: "Happy Clients"
@@ -40,7 +40,7 @@ about:
   eyebrow: "WHO I AM"
   title: "Ahmed Sharif Khan Noor"
   role: "Digital Marketing Specialist"
-  description: "Based in Mirpur, Dhaka — I'm a results-driven media buyer and digital marketing strategist with 3+ years of experience. I've managed campaigns for businesses in the US, UK, UAE, and Bangladesh, consistently delivering measurable ROI."
+  description: "Based in Mirpur, Dhaka — I'm a results-driven media buyer and digital marketing strategist with 4+ years of experience. I've managed campaigns for businesses in the US, UK, UAE, and Bangladesh, consistently delivering measurable ROI."
   highlights:
     - icon: fas fa-trophy
       text: "Best Employee of Brand & Promotion 2024 — Business Globalizer"

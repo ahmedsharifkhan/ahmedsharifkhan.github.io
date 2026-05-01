@@ -1,22 +1,515 @@
 ---
 layout: default
 title: Blog
+description: "Digital marketing insights, paid advertising strategies, and tutorials by Ahmed Sharif Khan Noor — covering Meta Ads, Google Ads, TikTok Ads, GTM, GA4, and more."
+keywords: "digital marketing blog, Facebook Ads tutorial, Google Ads guide, TikTok Ads tips, GTM GA4 tracking, paid advertising Bangladesh"
 ---
 
-<div class="section-latest">
+<!-- ══════════════════════════ HERO ══════════════════════════ -->
+<section class="bl-hero">
+  <div class="bl-hero-glow"></div>
   <div class="container">
-    <div class="row gutter-v1 align-items-stretch mb-5">
-      <div class="col-12">
-        <h2 class="section-title">{{ site.logo }} Editorial</h2>
-      </div>
-      <div class="col-md-9 pr-md-5">
-        <div class="row">
-          {% include postbox.html %}
+    <div class="row justify-content-center text-center">
+      <div class="col-lg-7">
+        <span class="bl-eyebrow">LATEST ARTICLES</span>
+        <h1 class="bl-hero-title">Digital Marketing <span class="bl-hero-accent">Insights</span></h1>
+        <p class="bl-hero-sub">Paid advertising strategies, platform guides, and campaign tips — written from real experience running 1,000+ campaigns.</p>
+        <div class="bl-hero-stats">
+          <div class="bl-hero-stat">
+            <span class="bl-hero-stat-num">{{ site.posts | size }}+</span>
+            <span class="bl-hero-stat-lbl">Articles</span>
+          </div>
+          <div class="bl-hero-stat-div"></div>
+          <div class="bl-hero-stat">
+            <span class="bl-hero-stat-num">{{ site.categories | size }}</span>
+            <span class="bl-hero-stat-lbl">Categories</span>
+          </div>
+          <div class="bl-hero-stat-div"></div>
+          <div class="bl-hero-stat">
+            <span class="bl-hero-stat-num">Free</span>
+            <span class="bl-hero-stat-lbl">Always</span>
+          </div>
         </div>
-        {% include pagination.html %}
       </div>
-      <br>
-      {% include sidebar.html %}
     </div>
   </div>
-</div>
+</section>
+
+<!-- ══════════════════════════ MAIN ══════════════════════════ -->
+<section class="bl-main">
+  <div class="container">
+    <div class="row g-5 align-items-start">
+
+      <!-- ── LEFT: Post Feed ─────────────────────────────────── -->
+      <div class="col-lg-8">
+
+        {% assign all_posts = site.posts %}
+
+        <!-- Featured Post (latest) -->
+        {% assign feat = all_posts.first %}
+        {% if feat %}
+        <a href="{{ feat.url | relative_url }}" class="bl-featured">
+          {% if feat.image %}
+          <div class="bl-featured-img-wrap">
+            <img src="{{ feat.image }}" alt="{{ feat.title }}" class="bl-featured-img">
+            <span class="bl-featured-badge"><i class="fas fa-fire me-1"></i>Featured</span>
+          </div>
+          {% endif %}
+          <div class="bl-featured-body">
+            <div class="bl-meta-row">
+              {% if feat.categories.first %}
+              <span class="bl-cat">{{ feat.categories.first }}</span>
+              {% endif %}
+              <span class="bl-date"><i class="fas fa-calendar-alt me-1"></i>{{ feat.date | date: "%b %d, %Y" }}</span>
+              <span class="bl-read-time"><i class="fas fa-clock me-1"></i>{{ feat.content | number_of_words | divided_by: 200 | plus: 1 }} min read</span>
+            </div>
+            <h2 class="bl-featured-title">{{ feat.title }}</h2>
+            <p class="bl-featured-desc">{{ feat.description | default: feat.excerpt | strip_html | truncate: 160 }}</p>
+            <span class="bl-read-btn">Read Article <i class="fas fa-arrow-right ms-1"></i></span>
+          </div>
+        </a>
+        {% endif %}
+
+        <!-- Post Grid -->
+        {% if all_posts.size > 1 %}
+        <div class="bl-grid-heading">
+          <h3 class="bl-grid-title">All Articles</h3>
+          <span class="bl-grid-count">{{ all_posts.size }} posts</span>
+        </div>
+        <div class="row g-4">
+          {% for post in all_posts offset:1 %}
+          <div class="col-sm-6" data-aos="fade-up" data-aos-delay="{{ forloop.index | times: 60 }}">
+            <a href="{{ post.url | relative_url }}" class="bl-card">
+              {% if post.image %}
+              <div class="bl-card-img-wrap">
+                <img src="{{ post.image }}" alt="{{ post.title }}" class="bl-card-img" loading="lazy" decoding="async">
+              </div>
+              {% else %}
+              <div class="bl-card-img-placeholder">
+                <i class="fas fa-newspaper"></i>
+              </div>
+              {% endif %}
+              <div class="bl-card-body">
+                <div class="bl-meta-row">
+                  {% if post.categories.first %}
+                  <span class="bl-cat">{{ post.categories.first }}</span>
+                  {% endif %}
+                  <span class="bl-date">{{ post.date | date: "%b %d, %Y" }}</span>
+                </div>
+                <h4 class="bl-card-title">{{ post.title | truncate: 65 }}</h4>
+                <p class="bl-card-desc">{{ post.description | default: post.excerpt | strip_html | truncate: 100 }}</p>
+                <span class="bl-card-read">Read More <i class="fas fa-arrow-right ms-1"></i></span>
+              </div>
+            </a>
+          </div>
+          {% endfor %}
+        </div>
+        {% endif %}
+
+        <!-- Pagination -->
+        <div class="bl-pagination-wrap">
+          {% if paginator.total_pages > 1 %}
+          <div class="bl-pagination">
+            {% if paginator.previous_page %}
+            <a href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}" class="bl-page-btn">
+              <i class="fas fa-chevron-left"></i> Prev
+            </a>
+            {% else %}
+            <span class="bl-page-btn bl-page-btn--disabled"><i class="fas fa-chevron-left"></i> Prev</span>
+            {% endif %}
+
+            {% for p in (1..paginator.total_pages) %}
+            {% if p == paginator.page %}
+            <span class="bl-page-num bl-page-num--active">{{ p }}</span>
+            {% elsif p == 1 %}
+            <a href="{{ '/' | prepend: site.baseurl }}" class="bl-page-num">{{ p }}</a>
+            {% else %}
+            <a href="{{ site.paginate_path | prepend: site.baseurl | replace: '//', '/' | replace: ':num', p }}" class="bl-page-num">{{ p }}</a>
+            {% endif %}
+            {% endfor %}
+
+            {% if paginator.next_page %}
+            <a href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}" class="bl-page-btn">
+              Next <i class="fas fa-chevron-right"></i>
+            </a>
+            {% else %}
+            <span class="bl-page-btn bl-page-btn--disabled">Next <i class="fas fa-chevron-right"></i></span>
+            {% endif %}
+          </div>
+          {% endif %}
+        </div>
+
+      </div><!-- /col-lg-8 -->
+
+      <!-- ── RIGHT: Sidebar ──────────────────────────────────── -->
+      <div class="col-lg-4">
+        <div class="bl-sidebar">
+
+          <!-- Consultancy CTA -->
+          <div class="bl-cta-card">
+            <div class="bl-cta-glow"></div>
+            <div class="bl-cta-icon"><i class="fas fa-rocket"></i></div>
+            <span class="bl-cta-badge">FREE</span>
+            <h4 class="bl-cta-title">Get a Free Campaign Audit</h4>
+            <p class="bl-cta-desc">Not happy with your ad results? I'll review your Meta or Google campaigns and send you a detailed action plan.</p>
+            <ul class="bl-cta-perks">
+              <li><i class="fas fa-check-circle"></i>Campaign structure review</li>
+              <li><i class="fas fa-check-circle"></i>Creative & copy feedback</li>
+              <li><i class="fas fa-check-circle"></i>Tracking & attribution check</li>
+            </ul>
+            <a href="{{ site.baseurl }}/contact" class="bl-cta-btn">
+              <i class="fas fa-calendar-check me-2"></i>Claim Free Audit
+            </a>
+            <p class="bl-cta-note">No commitment. 100% free.</p>
+          </div>
+
+          <!-- Categories -->
+          {% if site.categories.size > 0 %}
+          <div class="bl-sidebar-box">
+            <h5 class="bl-sidebar-heading"><i class="fas fa-folder-open me-2"></i>Categories</h5>
+            <div class="bl-cat-list">
+              {% for cat in site.categories %}
+              <a href="{{ site.baseurl }}/categories/#{{ cat[0] | slugify }}" class="bl-cat-link">
+                <span>{{ cat[0] }}</span>
+                <span class="bl-cat-count">{{ cat[1].size }}</span>
+              </a>
+              {% endfor %}
+            </div>
+          </div>
+          {% endif %}
+
+          <!-- Recent Posts -->
+          <div class="bl-sidebar-box">
+            <h5 class="bl-sidebar-heading"><i class="fas fa-clock me-2"></i>Recent Posts</h5>
+            <div class="bl-recent-list">
+              {% for post in site.posts limit:5 %}
+              <a href="{{ post.url | relative_url }}" class="bl-recent-item">
+                {% if post.image %}
+                <img src="{{ post.image }}" alt="{{ post.title }}" class="bl-recent-thumb" loading="lazy">
+                {% else %}
+                <div class="bl-recent-thumb bl-recent-thumb--placeholder"><i class="fas fa-file-alt"></i></div>
+                {% endif %}
+                <div class="bl-recent-info">
+                  <div class="bl-recent-title">{{ post.title | truncate: 55 }}</div>
+                  <div class="bl-recent-date">{{ post.date | date: "%b %d, %Y" }}</div>
+                </div>
+              </a>
+              {% endfor %}
+            </div>
+          </div>
+
+          <!-- Tags cloud -->
+          {% if site.tags.size > 0 %}
+          <div class="bl-sidebar-box">
+            <h5 class="bl-sidebar-heading"><i class="fas fa-tags me-2"></i>Tags</h5>
+            <div class="bl-tags-cloud">
+              {% for tag in site.tags %}
+              <a href="{{ site.baseurl }}/categories/#{{ tag[0] | slugify }}" class="bl-tag">{{ tag[0] }}</a>
+              {% endfor %}
+            </div>
+          </div>
+          {% endif %}
+
+        </div>
+      </div><!-- /col-lg-4 -->
+
+    </div>
+  </div>
+</section>
+
+<style>
+/* ══════════════════════════════════════════════════════════════
+   BLOG PAGE
+   ══════════════════════════════════════════════════════════════ */
+:root {
+  --bl-dark:  #0f1623;
+  --bl-dark2: #1e2a3a;
+  --bl-dark3: #2c3d55;
+  --bl-blue:  #4a9eff;
+  --bl-blue2: #2c7be5;
+  --bl-text:  #3d4f65;
+  --bl-muted: #6c757d;
+  --bl-light: #f8f9fb;
+  --bl-white: #ffffff;
+  --bl-border:#e8edf5;
+}
+
+/* ── Hero ─────────────────────────────────────────────────── */
+.bl-hero {
+  background: linear-gradient(135deg, var(--bl-dark) 0%, var(--bl-dark2) 50%, var(--bl-dark3) 100%);
+  padding: 70px 0 60px;
+  position: relative;
+  overflow: hidden;
+}
+.bl-hero-glow {
+  position: absolute;
+  top: -120px; right: -120px;
+  width: 500px; height: 500px;
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(74,158,255,.09) 0%, transparent 70%);
+  pointer-events: none;
+}
+.bl-eyebrow {
+  display: block;
+  font-size: .68rem; font-weight: 800; letter-spacing: .15rem;
+  color: var(--bl-blue); text-transform: uppercase; margin-bottom: 12px;
+}
+.bl-hero-title {
+  font-size: 2.6rem; font-weight: 900; color: #fff;
+  line-height: 1.15; margin-bottom: 14px;
+}
+.bl-hero-accent { color: var(--bl-blue); }
+.bl-hero-sub {
+  font-size: .95rem; color: rgba(255,255,255,.6);
+  line-height: 1.75; max-width: 520px; margin: 0 auto 28px;
+}
+.bl-hero-stats {
+  display: inline-flex; align-items: center; gap: 20px;
+  background: rgba(255,255,255,.07);
+  border: 1px solid rgba(255,255,255,.1);
+  border-radius: 40px; padding: 12px 28px;
+}
+.bl-hero-stat { text-align: center; }
+.bl-hero-stat-num { display: block; font-size: 1.15rem; font-weight: 900; color: #fff; line-height: 1; }
+.bl-hero-stat-lbl { display: block; font-size: .68rem; color: rgba(255,255,255,.45); margin-top: 3px; }
+.bl-hero-stat-div { width: 1px; height: 36px; background: rgba(255,255,255,.15); }
+
+/* ── Main Section ─────────────────────────────────────────── */
+.bl-main { padding: 60px 0 80px; background: var(--bl-light); }
+
+/* ── Shared meta row ──────────────────────────────────────── */
+.bl-meta-row { display: flex; align-items: center; gap: 12px; flex-wrap: wrap; margin-bottom: 10px; }
+.bl-cat {
+  display: inline-block; font-size: .68rem; font-weight: 800;
+  letter-spacing: .08rem; text-transform: uppercase;
+  background: linear-gradient(135deg, var(--bl-blue), var(--bl-blue2));
+  color: #fff; padding: 3px 10px; border-radius: 20px;
+}
+.bl-date, .bl-read-time {
+  font-size: .75rem; color: var(--bl-muted); display: flex; align-items: center; gap: 4px;
+}
+
+/* ── Featured Post ────────────────────────────────────────── */
+.bl-featured {
+  display: block; background: #fff; border-radius: 16px;
+  overflow: hidden; text-decoration: none !important;
+  border: 1.5px solid var(--bl-border);
+  box-shadow: 0 4px 20px rgba(0,0,0,.05);
+  transition: transform .25s, box-shadow .25s;
+  margin-bottom: 40px;
+}
+.bl-featured:hover { transform: translateY(-4px); box-shadow: 0 14px 40px rgba(74,158,255,.12); }
+.bl-featured-img-wrap { position: relative; aspect-ratio: 16/7; overflow: hidden; }
+.bl-featured-img { width: 100%; height: 100%; object-fit: cover; transition: transform .4s; }
+.bl-featured:hover .bl-featured-img { transform: scale(1.03); }
+.bl-featured-badge {
+  position: absolute; top: 14px; left: 14px;
+  background: linear-gradient(135deg, #ff6b35, #f7c59f);
+  color: #fff; font-size: .7rem; font-weight: 800;
+  padding: 4px 12px; border-radius: 20px;
+}
+.bl-featured-body { padding: 28px 30px; }
+.bl-featured-title {
+  font-size: 1.45rem; font-weight: 900; color: #1e2736;
+  line-height: 1.3; margin-bottom: 10px;
+}
+.bl-featured-desc {
+  font-size: .9rem; color: var(--bl-muted);
+  line-height: 1.75; margin-bottom: 18px;
+}
+.bl-read-btn {
+  display: inline-flex; align-items: center;
+  font-size: .85rem; font-weight: 700; color: var(--bl-blue2);
+}
+
+/* ── Grid heading ─────────────────────────────────────────── */
+.bl-grid-heading {
+  display: flex; align-items: center; justify-content: space-between;
+  margin-bottom: 20px; padding-bottom: 14px;
+  border-bottom: 2px solid var(--bl-border);
+}
+.bl-grid-title { font-size: 1.1rem; font-weight: 800; color: #1e2736; margin: 0; }
+.bl-grid-count {
+  font-size: .75rem; font-weight: 700; color: var(--bl-muted);
+  background: var(--bl-border); padding: 3px 10px; border-radius: 20px;
+}
+
+/* ── Post Card ────────────────────────────────────────────── */
+.bl-card {
+  display: block; background: #fff; border-radius: 14px;
+  overflow: hidden; text-decoration: none !important;
+  border: 1.5px solid var(--bl-border); height: 100%;
+  transition: transform .22s, box-shadow .22s, border-color .22s;
+}
+.bl-card:hover { transform: translateY(-5px); box-shadow: 0 12px 32px rgba(74,158,255,.1); border-color: var(--bl-blue); }
+.bl-card-img-wrap { aspect-ratio: 16/9; overflow: hidden; }
+.bl-card-img { width: 100%; height: 100%; object-fit: cover; transition: transform .35s; display: block; }
+.bl-card:hover .bl-card-img { transform: scale(1.05); }
+.bl-card-img-placeholder {
+  aspect-ratio: 16/9; background: linear-gradient(135deg, #e8f1ff, #d0e5ff);
+  display: flex; align-items: center; justify-content: center;
+  font-size: 2rem; color: var(--bl-blue);
+}
+.bl-card-body { padding: 20px; }
+.bl-card-title {
+  font-size: .98rem; font-weight: 800; color: #1e2736;
+  line-height: 1.4; margin-bottom: 8px; margin-top: 0;
+}
+.bl-card-desc {
+  font-size: .82rem; color: var(--bl-muted);
+  line-height: 1.65; margin-bottom: 14px;
+}
+.bl-card-read {
+  display: inline-flex; align-items: center;
+  font-size: .8rem; font-weight: 700; color: var(--bl-blue2);
+}
+
+/* ── Pagination ───────────────────────────────────────────── */
+.bl-pagination-wrap { margin-top: 40px; }
+.bl-pagination { display: flex; align-items: center; gap: 6px; justify-content: center; flex-wrap: wrap; }
+.bl-page-btn {
+  display: inline-flex; align-items: center; gap: 6px;
+  background: #fff; border: 1.5px solid var(--bl-border); color: var(--bl-text) !important;
+  font-size: .85rem; font-weight: 600; padding: 9px 18px; border-radius: 8px;
+  text-decoration: none !important; transition: border-color .2s, color .2s;
+}
+.bl-page-btn:hover { border-color: var(--bl-blue); color: var(--bl-blue) !important; }
+.bl-page-btn--disabled { opacity: .4; pointer-events: none; }
+.bl-page-num {
+  display: inline-flex; align-items: center; justify-content: center;
+  width: 38px; height: 38px; border-radius: 8px;
+  border: 1.5px solid var(--bl-border); background: #fff;
+  font-size: .88rem; font-weight: 600; color: var(--bl-text) !important;
+  text-decoration: none !important; transition: all .2s;
+}
+.bl-page-num:hover { border-color: var(--bl-blue); color: var(--bl-blue) !important; }
+.bl-page-num--active {
+  background: linear-gradient(135deg, var(--bl-blue), var(--bl-blue2));
+  border-color: transparent; color: #fff !important;
+}
+
+/* ── Sidebar ──────────────────────────────────────────────── */
+.bl-sidebar { display: flex; flex-direction: column; gap: 24px; }
+
+/* Consultancy CTA Card */
+.bl-cta-card {
+  background: linear-gradient(135deg, var(--bl-dark) 0%, var(--bl-dark2) 60%, var(--bl-dark3) 100%);
+  border-radius: 16px; padding: 32px 26px;
+  position: relative; overflow: hidden; text-align: center;
+}
+.bl-cta-glow {
+  position: absolute; top: -60px; right: -60px;
+  width: 200px; height: 200px; border-radius: 50%;
+  background: radial-gradient(circle, rgba(74,158,255,.15) 0%, transparent 70%);
+  pointer-events: none;
+}
+.bl-cta-icon {
+  width: 54px; height: 54px; border-radius: 14px; margin: 0 auto 10px;
+  background: linear-gradient(135deg, var(--bl-blue), var(--bl-blue2));
+  color: #fff; font-size: 1.3rem;
+  display: flex; align-items: center; justify-content: center;
+}
+.bl-cta-badge {
+  display: inline-block; background: linear-gradient(135deg, #fbbf24, #f59e0b);
+  color: #1e2736; font-size: .62rem; font-weight: 900;
+  letter-spacing: .1rem; padding: 3px 10px; border-radius: 20px; margin-bottom: 12px;
+}
+.bl-cta-title { font-size: 1.05rem; font-weight: 900; color: #fff; margin-bottom: 8px; line-height: 1.35; }
+.bl-cta-desc { font-size: .82rem; color: rgba(255,255,255,.55); line-height: 1.65; margin-bottom: 16px; }
+.bl-cta-perks { list-style: none; padding: 0; margin: 0 0 20px; text-align: left; }
+.bl-cta-perks li {
+  display: flex; align-items: center; gap: 8px;
+  font-size: .8rem; color: rgba(255,255,255,.7); margin-bottom: 7px;
+}
+.bl-cta-perks li i { color: var(--bl-blue); font-size: .75rem; flex-shrink: 0; }
+.bl-cta-btn {
+  display: flex; align-items: center; justify-content: center;
+  background: linear-gradient(135deg, var(--bl-blue), var(--bl-blue2));
+  color: #fff !important; font-size: .88rem; font-weight: 700;
+  padding: 12px 20px; border-radius: 10px; text-decoration: none !important;
+  box-shadow: 0 6px 20px rgba(74,158,255,.3); transition: transform .2s, box-shadow .2s;
+}
+.bl-cta-btn:hover { transform: translateY(-2px); box-shadow: 0 10px 28px rgba(74,158,255,.4); color: #fff !important; }
+.bl-cta-note { font-size: .7rem; color: rgba(255,255,255,.3); margin: 10px 0 0; }
+
+/* Sidebar Boxes */
+.bl-sidebar-box {
+  background: #fff; border-radius: 14px; padding: 22px;
+  border: 1.5px solid var(--bl-border);
+}
+.bl-sidebar-heading {
+  font-size: .82rem; font-weight: 800; color: #1e2736;
+  text-transform: uppercase; letter-spacing: .06rem;
+  margin-bottom: 16px; display: flex; align-items: center;
+}
+.bl-sidebar-heading i { color: var(--bl-blue); }
+
+/* Categories */
+.bl-cat-list { display: flex; flex-direction: column; gap: 6px; }
+.bl-cat-link {
+  display: flex; align-items: center; justify-content: space-between;
+  padding: 9px 12px; border-radius: 8px;
+  background: var(--bl-light); border: 1px solid var(--bl-border);
+  font-size: .84rem; font-weight: 600; color: var(--bl-text) !important;
+  text-decoration: none !important; transition: background .2s, border-color .2s, color .2s;
+}
+.bl-cat-link:hover { background: #e8f1ff; border-color: var(--bl-blue); color: var(--bl-blue2) !important; }
+.bl-cat-count {
+  font-size: .72rem; font-weight: 700; background: var(--bl-border);
+  color: var(--bl-muted); padding: 2px 8px; border-radius: 20px;
+}
+
+/* Recent Posts */
+.bl-recent-list { display: flex; flex-direction: column; gap: 14px; }
+.bl-recent-item {
+  display: flex; align-items: center; gap: 12px;
+  text-decoration: none !important; transition: opacity .2s;
+}
+.bl-recent-item:hover { opacity: .8; }
+.bl-recent-thumb {
+  width: 60px; height: 48px; border-radius: 8px;
+  object-fit: cover; flex-shrink: 0;
+}
+.bl-recent-thumb--placeholder {
+  width: 60px; height: 48px; border-radius: 8px; flex-shrink: 0;
+  background: linear-gradient(135deg, #e8f1ff, #d0e5ff);
+  display: flex; align-items: center; justify-content: center;
+  font-size: .9rem; color: var(--bl-blue);
+}
+.bl-recent-info { flex: 1; min-width: 0; }
+.bl-recent-title {
+  font-size: .82rem; font-weight: 700; color: #1e2736;
+  line-height: 1.35; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;
+}
+.bl-recent-date { font-size: .72rem; color: var(--bl-muted); margin-top: 3px; }
+
+/* Tags */
+.bl-tags-cloud { display: flex; flex-wrap: wrap; gap: 7px; }
+.bl-tag {
+  display: inline-block; font-size: .75rem; font-weight: 600;
+  background: var(--bl-light); border: 1px solid var(--bl-border);
+  color: var(--bl-text) !important; padding: 5px 12px; border-radius: 20px;
+  text-decoration: none !important; transition: all .2s;
+}
+.bl-tag:hover { background: #e8f1ff; border-color: var(--bl-blue); color: var(--bl-blue2) !important; }
+
+/* ── Responsive ───────────────────────────────────────────── */
+@media(max-width: 991px) {
+  .bl-sidebar { position: static; }
+  .bl-cta-card { padding: 24px 20px; }
+}
+@media(max-width: 767px) {
+  .bl-hero { padding: 50px 0 44px; }
+  .bl-hero-title { font-size: 1.9rem; }
+  .bl-hero-stats { gap: 14px; padding: 10px 20px; }
+  .bl-main { padding: 40px 0 60px; }
+  .bl-featured-body { padding: 20px; }
+  .bl-featured-title { font-size: 1.2rem; }
+}
+@media(max-width: 575px) {
+  .bl-hero-title { font-size: 1.6rem; }
+  .bl-hero-stats { flex-direction: column; gap: 10px; }
+  .bl-hero-stat-div { width: 60px; height: 1px; }
+  .bl-featured-img-wrap { aspect-ratio: 16/9; }
+}
+</style>

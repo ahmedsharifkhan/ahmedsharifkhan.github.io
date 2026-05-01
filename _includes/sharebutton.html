@@ -1,29 +1,98 @@
+{% assign share_url = page.url | absolute_url | url_encode %}
+{% assign share_title = page.title | url_encode %}
+
 <div class="col-md-12 col-lg-1 order-lg-1">
-    <div class="share sticky-top">
-      <h3>Share</h3>
-      <!-- <ul class="list-unstyled share-article">
-            
-            <li><a href="#"><span class="icon-facebook"></span></a></li>
-            <li><a href="#"><span class="icon-twitter"></span></a></li>
-            <li><a href="#"><span class="icon-whatsapp"></span></a></li>
-            <li><a href="#"><span class="icon-linkedin"></span></a></li>
-            <li><a href="#"><span class="icon-pinterest"></span></a></li>
-            </ul> -->
-      <!-- AddToAny BEGIN -->
-      <div class="a2a_kit a2a_kit_size_32 a2a_default_style list-unstyled share-article">
-  
-        <li><a class="a2a_button_facebook"><span class="icon-facebook"></span></a></li>
-        <li><a class="a2a_button_whatsapp"><span class="icon-whatsapp"></span></a></li>
-        <li><a class="a2a_button_pinterest"><span class="icon-pinterest"></span></a></li>
-        <li><a class="a2a_button_linkedin"><span class="icon-linkedin"></span></a></li>
-        <li><a class="a2a_button_x"><span class="icon-twitter"></span></a></li>
-        <li><a class="a2a_button_copy_link"><span class="icon-link"></span></a></li>
-        <li><a class="a2a_dd"><span class="icon-share"></span></a></li>
-      </div>
-  
-      <!-- <script async src="https://static.addtoany.com/menu/page.js"></script> -->
-      <!-- AddToAny END -->
-  
-      </ul>
-    </div>
+  <div class="share-panel sticky-top">
+    <p class="share-panel-label">Share</p>
+    <ul class="share-panel-list list-unstyled">
+
+      <li>
+        <a href="https://www.facebook.com/sharer/sharer.php?u={{ share_url }}"
+           target="_blank" rel="noopener noreferrer"
+           class="sp-btn sp-fb" title="Share on Facebook"
+           data-network="facebook">
+          <i class="fab fa-facebook-f"></i>
+        </a>
+      </li>
+
+      <li>
+        <a href="https://wa.me/?text={{ share_title }}%20{{ share_url }}"
+           target="_blank" rel="noopener noreferrer"
+           class="sp-btn sp-wa" title="Share on WhatsApp"
+           data-network="whatsapp">
+          <i class="fab fa-whatsapp"></i>
+        </a>
+      </li>
+
+      <li>
+        <a href="https://twitter.com/intent/tweet?url={{ share_url }}&text={{ share_title }}"
+           target="_blank" rel="noopener noreferrer"
+           class="sp-btn sp-tw" title="Share on X / Twitter"
+           data-network="twitter">
+          <i class="fab fa-x-twitter"></i>
+        </a>
+      </li>
+
+      <li>
+        <a href="https://www.linkedin.com/sharing/share-offsite/?url={{ share_url }}"
+           target="_blank" rel="noopener noreferrer"
+           class="sp-btn sp-li" title="Share on LinkedIn"
+           data-network="linkedin">
+          <i class="fab fa-linkedin-in"></i>
+        </a>
+      </li>
+
+      <li>
+        <button class="sp-btn sp-copy" title="Copy link"
+                data-network="copy_link"
+                onclick="spCopyLink(this,'{{ page.url | absolute_url }}')">
+          <i class="fas fa-link"></i>
+        </button>
+      </li>
+
+    </ul>
   </div>
+</div>
+
+<style>
+.share-panel { text-align:center; padding-top:12px; }
+.share-panel-label {
+  font-size:.68rem;font-weight:700;color:#adb5bd;
+  text-transform:uppercase;letter-spacing:.1rem;margin-bottom:12px;
+}
+.share-panel-list { margin:0;padding:0;display:flex;flex-direction:column;gap:8px;align-items:center; }
+.sp-btn {
+  display:inline-flex;align-items:center;justify-content:center;
+  width:38px;height:38px;border-radius:50%;border:none;cursor:pointer;
+  font-size:.92rem;color:#fff;text-decoration:none!important;
+  transition:transform .2s,box-shadow .2s;
+}
+.sp-btn:hover { transform:scale(1.12);box-shadow:0 4px 14px rgba(0,0,0,.2);color:#fff; }
+.sp-fb { background:#1877f2; }
+.sp-wa { background:#25d366; }
+.sp-tw { background:#000; }
+.sp-li { background:#0077b5; }
+.sp-copy { background:#6c757d; }
+.sp-copy.copied { background:#059669; }
+
+@media(max-width:991px) {
+  .share-panel-list { flex-direction:row;justify-content:center; }
+  .share-panel { padding:16px 0; border-top:1px solid #eee; }
+}
+</style>
+
+<script>
+function spCopyLink(btn, url) {
+  navigator.clipboard.writeText(url).then(function() {
+    btn.classList.add('copied');
+    btn.innerHTML = '<i class="fas fa-check"></i>';
+    setTimeout(function() {
+      btn.classList.remove('copied');
+      btn.innerHTML = '<i class="fas fa-link"></i>';
+    }, 2000);
+  });
+  if (window.dataLayer) {
+    window.dataLayer.push({ event: 'share', share_method: 'copy_link', content_type: 'article', item_id: window.location.pathname });
+  }
+}
+</script>
