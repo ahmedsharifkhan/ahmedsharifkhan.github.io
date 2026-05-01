@@ -1,0 +1,18 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(Get-ChildItem -Path \"e:\\\\website\\\\ahmedsharifkhan.github.io\\\\assets\\\\images\\\\portfolio\" -File)",
+      "Bash(Select-Object Name)",
+      "PowerShell(Get-ChildItem -Path \"e:\\\\website\\\\ahmedsharifkhan.github.io\\\\assets\\\\images\\\\portfolio\" -File | ForEach-Object { $_.Name })",
+      "PowerShell(Get-ChildItem -Path \"e:\\\\website\\\\ahmedsharifkhan.github.io\\\\assets\\\\images\" -File | ForEach-Object { $_.Name })",
+      "PowerShell(Get-ChildItem -Path \"e:\\\\website\\\\ahmedsharifkhan.github.io\\\\_posts\" -File | ForEach-Object { $_.Name })",
+      "Bash(xxd \"e:/website/ahmedsharifkhan.github.io/noor.html\")",
+      "Bash(xxd \"e:/website/ahmedsharifkhan.github.io/about.html\")",
+      "Bash(Get-ChildItem \"e:/website/ahmedsharifkhan.github.io/assets/images\" -File)",
+      "Bash(Sort-Object LastWriteTime -Descending)",
+      "Bash(Select-Object -First 10)",
+      "Bash(Format-Table Name, LastWriteTime)",
+      "Bash(Get-ChildItem -Path \"e:\\\\website\\\\ahmedsharifkhan.github.io\\\\_includes\" -File)"
+    ]
+  }
+}

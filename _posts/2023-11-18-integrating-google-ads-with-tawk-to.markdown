@@ -6,7 +6,7 @@ date:   2023-11-20 5:35:09 +0600
 categories: [tawk, Code, Website]
 keywords:   tawk Chat Bot
 description:  Google conversion tracking gives you valuable insights into how ad clicks lead to valuable customer interactions in tawk.to.
-image: "https://tds-images.thedailystar.net/sites/default/files/styles/big_202/public/images/2023/11/20/dalle_2023-11-20_22.53.01_-_a_landscape-oriented_close-up_dramatic_image_showing_the_backs_of_a_diverse_group_of_employees_in_silhouette_protesting_outside_an_office_building.png"
+image: "/assets/images/portfolio/Google_Ads 1.png"
 
 team:
   name: Ahmed Sharif Khan Noor

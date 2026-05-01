@@ -55,10 +55,10 @@ social_media:
 
 title:  "Google Ads Conversion Tracking with Google Tag Manager"
 date:   2023-11-21 5:35:09 +0600
-categories: [Tawk, Tracking, Website]
-keywords: Tawk Tracking Website Google Tag Manager
-description:  Tracking Google Ads conversions with Google Tag Manager
-image: "https://tds-images.thedailystar.net/sites/default/files/styles/big_202/public/images/2023/11/20/dalle_2023-11-20_14.03.42_-_an_urban_scene_in_dhaka_north_city_corporation_dncc_depicting_trees_being_numbered_and_mapped_using_the_gprs_system._the_image_shows_workers_in_safe.png"
+categories: [Google Ads, Tracking, Digital Marketing]
+keywords: Google Ads Conversion Tracking Google Tag Manager GTM
+description:  Tracking Google Ads conversions with Google Tag Manager gives you insights into the actions visitors take after viewing an ad on your site.
+image: "/assets/images/portfolio/Conversion Tracking.gif"
 ---
 
 Tracking Google Ads conversions with Google Tag Manager gives you insights into the actions visitors take after viewing an ad on your site.

@@ -6,7 +6,7 @@ date:   2023-11-18 17:35:09 +0600
 categories: [Jekyll, Code, Website]
 keywords: Jekyll  Code Website
 description:  BDIX CONNECTED MEDIA & FTP SERVERS - TOP 50 ACTIVE SERVERS
-image: "https://tds-images.thedailystar.net/sites/default/files/styles/big_202/public/images/2023/05/22/facebook_thumbnail_7_8.png"
+image: /assets/images/portfolio/website 1.webp
 
 team:
   name: Ahmed Sharif Khan Noor

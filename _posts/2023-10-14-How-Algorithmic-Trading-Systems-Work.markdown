@@ -7,7 +7,7 @@ categories: [Health,  Travel, Life Style]
 keywords: Health  Travel Life Style
 description: It is distressing to see the widening gulf between what people expect from parliament and what our parliamentarians actually deliver.
 youtubeid: NaXSmGdrJIM
-image: "https://tds-images.thedailystar.net/sites/default/files/styles/big_202/public/images/2023/10/11/dalle_2023-10-11_19.24.36_-_illustration_of_a_bangladeshi_man_on_a_riverbank_gazing_at_the_sunset_with_holographic_screens_floating_around_him_showcasing_his_passive_income_ea.png"
+image: /assets/images/portfolio/ad creative.jpg
 
 team:
   name: Kayla Bryant

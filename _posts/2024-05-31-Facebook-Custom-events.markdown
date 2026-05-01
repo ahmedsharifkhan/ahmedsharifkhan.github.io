@@ -10,7 +10,7 @@ categories:
 youtubeid: Yw93p7XxIHU
 title: Create Facebook Custom Events and Custom Conversions (With GTM)
 description: Looking to track something that isn't part of Facebook's standard events?
-image: https://tds-images.thedailystar.net/sites/default/files/styles/big_202/public/images/2024/05/27/tsvetoslav-hristov-oig3ogptlow-unsplash.jpg
+image: /assets/images/portfolio/meta ads 1.jpeg
 
 team:
   name: Kayla Bryant

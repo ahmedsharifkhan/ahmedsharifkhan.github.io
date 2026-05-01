@@ -23,7 +23,7 @@ title: Portfolio
           <li class="active" data-filter="*">All</li>
           {% assign unique_categories = site.data.folio.portfolio | map: "category" | uniq %}
           {% for category in unique_categories %}
-            <li data-filter=".{{ category }}">{{ category | capitalize }}</li>
+            <li data-filter=".{{ category | slugify }}">{{ category }}</li>
           {% endfor %}
         </ul>
       </div>
@@ -31,7 +31,7 @@ title: Portfolio
       <div class="filters-content mb-5" data-aos="fade-up" data-aos-delay="200">
         <div class="row grid">
           {% for project in site.data.folio.portfolio %}
-            <div class="isotope-card col-sm-4 all {{ project.category }}">
+            <div class="isotope-card col-sm-4 all {{ project.category | slugify }}">
               <a href="{{ project.lazy_image }}" data-fancybox="gal">
                 <img class="lazy" src="{{ project.lazy_image }}" alt="{{ project.title }}" class="img-fluid">
                 <div class="contents">
@@ -53,20 +53,20 @@ title: Portfolio
           <li class="active" data-filter="*">All</li>
           {% assign unique_categories = site.data.folio.portfolio | map: "category" | uniq %}
           {% for category in unique_categories %}
-            <li data-filter=".{{ category }}">{{ category | capitalize }}</li>
+            <li data-filter=".{{ category | slugify }}">{{ category }}</li>
           {% endfor %}
         </ul>
       </div>
-  
+
       <div class="filters-content mb-5" data-aos="fade-up" data-aos-delay="200">
         <div class="row grid">
           {% for project in site.data.folio.portfolio %}
-            <div class="isotope-card col-sm-4 all {{ project.category }}">
+            <div class="isotope-card col-sm-4 all {{ project.category | slugify }}">
               <a href="{{ project.lazy_image }}" data-fancybox="gal">
-                <img class="lazy img-fluid" data-src="{{ project.lazy_image }}" alt="{{ project.title }}">
+                <img src="{{ project.lazy_image }}" alt="{{ project.title }}" class="img-fluid" style="width:100%; display:block;">
                 <div class="contents">
                   <h3>{{ project.title }}</h3>
-                  <div class="cat">{{ project.category | capitalize }}</div>
+                  <div class="cat">{{ project.category }}</div>
                 </div>
               </a>
             </div>

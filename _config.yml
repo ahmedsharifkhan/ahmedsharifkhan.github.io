@@ -2,8 +2,8 @@
 logo: AHMED'S WORLD
 title: Ahmed world is a portfolio site
 start_year: 2023
-current_year: { { site.time | date: "%Y" } }
-address: 43 Raymouth Rd. Baltemoer, London 3910
+current_year: 2025
+address: Mirpur, Dhaka, Bangladesh
 email: ahmedsharifkhannoor@gmail.com
 phone: +8801744750096 
 description: 
@@ -69,8 +69,6 @@ header_pages:
 google_analytics_id: G-W5KN8DPXQ9
 facebook_pixel_id: 1234567890
 
-gems:
-  - jekyll-sitemap
 # exclude:
 #   - excluded-page.html
 

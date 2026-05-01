@@ -51,19 +51,13 @@ document.addEventListener('DOMContentLoaded', (event) => {
       button.textContent = 'Copy Code';
 
       button.addEventListener('click', () => {
-        const textArea = document.createElement('textarea');
-        textArea.value = codeBlock.innerText;
-        document.body.appendChild(textArea);
-        textArea.select();
-        document.execCommand('copy');
-        document.body.removeChild(textArea);
-
-        // Change the button text to "Copied!" for a short duration
-        const originalText = button.textContent;
-        button.textContent = 'Copied!';
-        setTimeout(() => {
-          button.textContent = originalText;
-        }, 1000); // Adjust the duration as needed
+        navigator.clipboard.writeText(codeBlock.innerText).then(() => {
+          const originalText = button.textContent;
+          button.textContent = 'Copied!';
+          setTimeout(() => {
+            button.textContent = originalText;
+          }, 1000);
+        });
       });
 
       container.appendChild(button);

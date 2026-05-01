@@ -65,11 +65,11 @@ The web container hosts only the tags necessary to monitor and dispatch informat
 
 The server container accepts all HTTP requests from the web container. In the server container, you can set up processing rules before sending data to your Google products or third-party endpoints.
 
-##enter code here Why should you use server-side tagging?
+## Why should you use server-side tagging?
 
 The purpose of the server container is to provide an intermediary endpoint that you own between the browser or device where events are recorded and the third-party endpoints. The server container complements the web container by handling resource-intensive processing that would normally run in the browser in the client-side tagging configuration. The server container also provides you with the opportunity and the tools to screen, validate and modify data as needed, before sending it on to the analytics and advertising endpoints.
 
-The key benefits of using server-side tag`enter code here`ging are:
+The key benefits of using server-side tagging are:
 
 -   Reduces the client processing load, improving website and app performance
     

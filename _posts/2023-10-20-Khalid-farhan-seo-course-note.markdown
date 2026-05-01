@@ -6,7 +6,7 @@ title:  "Google Guide line"
 date:   2023-10-20 #17:35:09 +0600
 categories: [Marketing, Digital Marketing, SEO]
 description: Seo এক্সপার্টরা যেন ভালোভাবে কাজ করতে পারে সেজন্য গুগল তো গাইডলাইন দিচ্ছি তার সাথে সাথে কিছু থার্ড
-image: "https://tds-images.thedailystar.net/sites/default/files/styles/big_202/public/images/2023/07/28/editors_note_picture.png"
+image: /assets/images/portfolio/seo creative.jpg
 
 team:
   name: Kayla Bryant
@@ -365,13 +365,13 @@ Who is my target
 
 404 page ka amadar page nia asa jaikina
 
-Brand mension link building strategy`enter code here`
+Brand mention link building strategy
 
 ## Broken Link Buiding:
 
 404 page ka amadar page nia asa jaikina
 
-Brand mension link building strategy`enter code here`
+Brand mention link building strategy
 
 ### Backlink Building Strategy
 

@@ -10,7 +10,7 @@ categories:
 youtubeid: QmEOPuJr05w
 title: GA4 Enhanced measurement events
 description: Discover how to enable and disable enhanced measurement events and learn more about which parameters are collected for each event
-image: https://tds-images.thedailystar.net/sites/default/files/styles/very_big_1/public/images/2024/04/22/should_social_media_be_our_new_public_square.png
+image: /assets/images/portfolio/ad dashbord.jpg
 
 team:
   name: Kayla Bryant

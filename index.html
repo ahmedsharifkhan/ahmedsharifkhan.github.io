@@ -1,42 +1,576 @@
 ---
 layout: default
-
 title: Home
 ---
 
-{%- include banner.html -%}
+{% assign h = site.data.home %}
+{% assign me = site.data.data %}
 
-<!-- BLOG EDITORIAL -->
-<div class="section-latest">
+<style>
+{% for p in h.hero.platforms %}.hp-pp-{{ forloop.index }} i { color: {{ p.color }}; }
+{% endfor %}
+{% for svc in h.services.items %}.hp-si-{{ forloop.index }} { background: {{ svc.color }}18; color: {{ svc.color }}; }
+{% endfor %}
+</style>
+
+<!-- ============================================================ HERO -->
+<section class="hp-hero">
+  <div class="hp-hero-bg-circle hp-hero-bg-circle--1"></div>
+  <div class="hp-hero-bg-circle hp-hero-bg-circle--2"></div>
   <div class="container">
-    <div class="row gutter-v1 align-items-stretch mb-5">
-      <div class="col-12">
-        <h2 class="section-title">Editorial</h2>
-      </div>
-      <div class="col-md-9 pr-md-5">
-        <div class="row">
-          {% include postbox.html %}
+    <div class="row align-items-center g-5">
+      <div class="col-lg-7" data-aos="fade-right">
+        <span class="hp-badge">{{ h.hero.badge }}</span>
+        <h1 class="hp-hero-title">
+          {{ h.hero.title_line1 }}<br>
+          <span class="hp-hero-title-accent">{{ h.hero.title_line2 }}</span>
+        </h1>
+        <p class="hp-hero-desc">{{ h.hero.description }}</p>
+
+        <div class="hp-hero-platforms">
+          {% for p in h.hero.platforms %}
+          <span class="hp-platform-pill hp-pp-{{ forloop.index }}">
+            <i class="{{ p.icon }}"></i>{{ p.name }}
+          </span>
+          {% endfor %}
         </div>
-      </div>
-      <!-- <div class="col-md-3">
-        <div class="mb-4">
-          <a href="https://vimeo.com/342333493" data-fancybox class="video-wrap">
-            <span class="play-wrap"><span class="icon-play"></span></span>
-            <img src="{{ site.baseurl }}/assets/images/img_h_5.jpg" alt="Image" class="img-fluid rounded">
+
+        <div class="hp-hero-actions">
+          <a href="{{ site.baseurl }}{{ h.hero.cta_primary_url }}" class="hp-btn-primary">
+            <i class="fas fa-rocket me-2"></i>{{ h.hero.cta_primary_text }}
+          </a>
+          <a href="{{ site.baseurl }}{{ h.hero.cta_secondary_url }}" class="hp-btn-secondary">
+            <i class="fas fa-eye me-2"></i>{{ h.hero.cta_secondary_text }}
           </a>
         </div>
-        <div class="floating-block sticky-top text-center">
-          <h2 class="mb-3 text-black">Subscribe to Newsletter</h2>
-          <p>Far far away behind the word mountains far from.</p>
-          <form action="#">
-            <input type="email" class="form-control mb-2" placeholder="Enter email">
-            <input type="submit" value="Subscribe" class="btn btn-primary btn-block">
-          </form>
+      </div>
+      <div class="col-lg-5" data-aos="fade-left">
+        <div class="hp-hero-photo-wrap">
+          <div class="hp-hero-photo-ring"></div>
+          <img src="{{ me.ahmed_image }}" alt="{{ me.name }}" class="hp-hero-photo">
+          <div class="hp-hero-stats-grid">
+            {% for s in h.hero.stats %}
+            <div class="hp-hero-stat">
+              <div class="hp-hero-stat-num">{{ s.number }}</div>
+              <div class="hp-hero-stat-lbl">{{ s.label }}</div>
+            </div>
+            {% endfor %}
+          </div>
         </div>
-      </div> -->
-      {%- include sidebar.html -%}
-
+      </div>
     </div>
   </div>
-</div>
-{%- include client.html -%}
+</section>
+
+<!-- ============================================================ ABOUT -->
+<section class="hp-about">
+  <div class="container">
+    <div class="row align-items-center g-5">
+      <div class="col-lg-5" data-aos="fade-right">
+        <div class="hp-about-img-wrap">
+          <img src="{{ site.baseurl }}/assets/images/media buying.png" alt="Media Buying" class="img-fluid">
+          <div class="hp-about-tag">
+            <i class="fas fa-map-marker-alt me-1"></i>Mirpur, Dhaka
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-7" data-aos="fade-left">
+        <span class="hp-eyebrow">{{ h.about.eyebrow }}</span>
+        <h2 class="hp-section-title">{{ h.about.title }}</h2>
+        <p class="hp-about-role">{{ h.about.role }}</p>
+        <p class="hp-about-desc">{{ h.about.description }}</p>
+        <ul class="hp-about-highlights">
+          {% for item in h.about.highlights %}
+          <li><i class="{{ item.icon }}"></i>{{ item.text }}</li>
+          {% endfor %}
+        </ul>
+        <a href="{{ site.baseurl }}{{ h.about.cta_url }}" class="hp-btn-primary">
+          {{ h.about.cta_text }}<i class="fas fa-arrow-right ms-2"></i>
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================ SERVICES -->
+<section class="hp-services">
+  <div class="container">
+    <div class="row justify-content-center mb-5">
+      <div class="col-lg-6 text-center">
+        <span class="hp-eyebrow">{{ h.services.eyebrow }}</span>
+        <h2 class="hp-section-title">{{ h.services.title }}</h2>
+        <p class="hp-section-sub">{{ h.services.subtitle }}</p>
+      </div>
+    </div>
+    <div class="row g-4">
+      {% for svc in h.services.items %}
+      <div class="col-sm-6 col-lg-4" data-aos="fade-up" data-aos-delay="{{ forloop.index | times: 80 }}">
+        <div class="hp-service-card">
+          <div class="hp-service-icon hp-si-{{ forloop.index }}">
+            <i class="{{ svc.icon }}"></i>
+          </div>
+          <h4 class="hp-service-title">{{ svc.title }}</h4>
+          <p class="hp-service-desc">{{ svc.desc }}</p>
+        </div>
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================ RESULTS -->
+<section class="hp-results">
+  <div class="hp-results-glow"></div>
+  <div class="container">
+    <div class="row justify-content-center mb-5">
+      <div class="col-lg-6 text-center">
+        <span class="hp-eyebrow" style="color:rgba(255,255,255,0.5)">{{ h.results.eyebrow }}</span>
+        <h2 class="hp-section-title" style="color:#fff">{{ h.results.title }}</h2>
+        <p class="hp-section-sub" style="color:rgba(255,255,255,0.6)">{{ h.results.subtitle }}</p>
+      </div>
+    </div>
+    <div class="row g-4">
+      {% for r in h.results.items %}
+      <div class="col-sm-6 col-lg-3" data-aos="fade-up" data-aos-delay="{{ forloop.index | times: 100 }}">
+        <div class="hp-result-card">
+          <div class="hp-result-icon"><i class="{{ r.icon }}"></i></div>
+          <div class="hp-result-number">{{ r.number }}</div>
+          <div class="hp-result-label">{{ r.label }}</div>
+          <p class="hp-result-desc">{{ r.desc }}</p>
+        </div>
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================ PORTFOLIO -->
+<section class="hp-portfolio">
+  <div class="container">
+    <div class="row justify-content-between align-items-end mb-5">
+      <div class="col-lg-6">
+        <span class="hp-eyebrow">MY WORK</span>
+        <h2 class="hp-section-title">Portfolio Highlights</h2>
+      </div>
+      <div class="col-auto">
+        <a href="{{ site.baseurl }}/portfolio" class="hp-btn-outline">View All Work <i class="fas fa-arrow-right ms-2"></i></a>
+      </div>
+    </div>
+    <div class="row g-3">
+      {% assign folio_items = site.data.folio.portfolio | reverse %}
+      {% for project in folio_items limit:6 %}
+      <div class="col-6 col-md-4" data-aos="fade-up" data-aos-delay="{{ forloop.index | times: 60 }}">
+        <a href="{{ project.lazy_image }}" data-fancybox="hp-gal" class="hp-folio-item">
+          <img src="{{ project.lazy_image }}" alt="{{ project.title }}" class="hp-folio-img">
+          <div class="hp-folio-overlay">
+            <span class="hp-folio-cat">{{ project.category }}</span>
+            <span class="hp-folio-name">{{ project.title }}</span>
+          </div>
+        </a>
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================ PROCESS -->
+<section class="hp-process">
+  <div class="container">
+    <div class="row justify-content-center mb-5">
+      <div class="col-lg-6 text-center">
+        <span class="hp-eyebrow">{{ h.process.eyebrow }}</span>
+        <h2 class="hp-section-title">{{ h.process.title }}</h2>
+        <p class="hp-section-sub">{{ h.process.subtitle }}</p>
+      </div>
+    </div>
+    <div class="row g-4">
+      {% for step in h.process.steps %}
+      <div class="col-sm-6 col-lg-4" data-aos="fade-up" data-aos-delay="{{ forloop.index | times: 80 }}">
+        <div class="hp-process-card">
+          <div class="hp-process-num">{{ step.number }}</div>
+          <div class="hp-process-icon"><i class="{{ step.icon }}"></i></div>
+          <h4 class="hp-process-title">{{ step.title }}</h4>
+          <p class="hp-process-desc">{{ step.desc }}</p>
+        </div>
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================ TESTIMONIALS -->
+<section class="hp-testimonials">
+  <div class="container">
+    <div class="row justify-content-center mb-5">
+      <div class="col-lg-6 text-center">
+        <span class="hp-eyebrow" style="color:rgba(255,255,255,0.5)">TESTIMONIALS</span>
+        <h2 class="hp-section-title" style="color:#fff">What Clients Say</h2>
+      </div>
+    </div>
+    <div class="row g-4 justify-content-center">
+      {% for client in site.data.client.client limit:3 %}
+      <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="{{ forloop.index | times: 100 }}">
+        <div class="hp-testimonial-card">
+          <div class="hp-testimonial-stars">
+            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+          </div>
+          <p class="hp-testimonial-msg">&ldquo;{{ client.message }}&rdquo;</p>
+          <div class="hp-testimonial-author">
+            <img src="{{ client.image }}" alt="{{ client.name }}" class="hp-testimonial-avatar">
+            <div>
+              <div class="hp-testimonial-name">{{ client.name }}</div>
+              <div class="hp-testimonial-role">{{ client.keywords | truncate: 30 }}</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================ TOOLS -->
+<section class="hp-tools">
+  <div class="container">
+    <div class="row justify-content-center mb-5">
+      <div class="col-lg-6 text-center">
+        <span class="hp-eyebrow">{{ h.tools.eyebrow }}</span>
+        <h2 class="hp-section-title">{{ h.tools.title }}</h2>
+      </div>
+    </div>
+    <div class="hp-tools-grid">
+      {% for tool in h.tools.items %}
+      <div class="hp-tool-pill" data-aos="fade-up">
+        <i class="{{ tool.icon }}"></i>{{ tool.name }}
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================ BLOG -->
+<section class="hp-blog">
+  <div class="container">
+    <div class="row justify-content-between align-items-end mb-5">
+      <div class="col-lg-6">
+        <span class="hp-eyebrow">LATEST ARTICLES</span>
+        <h2 class="hp-section-title">From the Blog</h2>
+      </div>
+      <div class="col-auto">
+        <a href="{{ site.baseurl }}/blog" class="hp-btn-outline">All Articles <i class="fas fa-arrow-right ms-2"></i></a>
+      </div>
+    </div>
+    <div class="row g-4">
+      {% for post in site.posts limit:3 %}
+      <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="{{ forloop.index | times: 80 }}">
+        <a href="{{ post.url | relative_url }}" class="hp-blog-card">
+          {% if post.image %}
+          <div class="hp-blog-img-wrap">
+            <img src="{{ post.image }}" alt="{{ post.title }}" class="hp-blog-img">
+          </div>
+          {% endif %}
+          <div class="hp-blog-body">
+            <div class="hp-blog-date">{{ post.date | date: "%b %d, %Y" }}</div>
+            <h4 class="hp-blog-title">{{ post.title | truncate: 65 }}</h4>
+            <p class="hp-blog-desc">{{ post.description | truncate: 100 }}</p>
+            <span class="hp-blog-read">Read More <i class="fas fa-arrow-right ms-1"></i></span>
+          </div>
+        </a>
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================ FREE AUDIT -->
+<section class="hp-audit">
+  <div class="hp-audit-glow"></div>
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-lg-8 text-center" data-aos="zoom-in">
+        <span class="hp-badge" style="background:rgba(255,255,255,0.15);margin-bottom:16px">{{ h.audit.eyebrow }}</span>
+        <h2 class="hp-audit-title">{{ h.audit.title }}</h2>
+        <p class="hp-audit-desc">{{ h.audit.description }}</p>
+        <ul class="hp-audit-perks">
+          {% for perk in h.audit.perks %}
+          <li><i class="fas fa-check-circle"></i>{{ perk }}</li>
+          {% endfor %}
+        </ul>
+        <a href="{{ site.baseurl }}{{ h.audit.cta_url }}" class="hp-btn-primary hp-btn-large">
+          <i class="fas fa-rocket me-2"></i>{{ h.audit.cta_text }}
+        </a>
+        <p class="hp-audit-note">{{ h.audit.note }}</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================ FAQ -->
+<section class="hp-faq">
+  <div class="container">
+    <div class="row justify-content-center mb-5">
+      <div class="col-lg-6 text-center">
+        <span class="hp-eyebrow">{{ h.faq.eyebrow }}</span>
+        <h2 class="hp-section-title">{{ h.faq.title }}</h2>
+      </div>
+    </div>
+    <div class="row justify-content-center">
+      <div class="col-lg-8">
+        <div class="hp-faq-list" id="hpFaqAccordion">
+          {% for item in h.faq.items %}
+          <div class="hp-faq-item" data-aos="fade-up" data-aos-delay="{{ forloop.index | times: 60 }}">
+            <button class="hp-faq-q{% if forloop.first %} hp-faq-q--open{% endif %}" onclick="hpFaqToggle(this)">
+              {{ item.question }}
+              <i class="fas fa-chevron-down hp-faq-icon"></i>
+            </button>
+            <div class="hp-faq-a{% if forloop.first %} hp-faq-a--open{% endif %}">
+              <div class="hp-faq-a-inner">{{ item.answer }}</div>
+            </div>
+          </div>
+          {% endfor %}
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================ CONTACT -->
+<section class="hp-contact">
+  <div class="container">
+    <div class="row justify-content-between align-items-center g-5">
+      <div class="col-lg-6" data-aos="fade-right">
+        <span class="hp-eyebrow">GET IN TOUCH</span>
+        <h2 class="hp-section-title">Let's Work Together</h2>
+        <p class="hp-section-sub">Have a project in mind? Fill in the form and I'll get back to you within 24 hours with a free strategy consultation.</p>
+        <div class="hp-contact-info-list">
+          <a href="mailto:{{ me.contact.email }}" class="hp-contact-info-item">
+            <div class="hp-contact-info-icon"><i class="fas fa-envelope"></i></div>
+            <span>{{ me.contact.email }}</span>
+          </a>
+          <a href="tel:{{ me.contact.phone }}" class="hp-contact-info-item">
+            <div class="hp-contact-info-icon"><i class="fas fa-phone-alt"></i></div>
+            <span>{{ me.contact.phone }}</span>
+          </a>
+          <a href="https://wa.me/{{ me.contact.phone | remove: '+' | remove: ' ' }}" target="_blank" class="hp-contact-info-item">
+            <div class="hp-contact-info-icon" style="background:#e7fdf0;color:#25d366"><i class="fab fa-whatsapp"></i></div>
+            <span>WhatsApp Me</span>
+          </a>
+        </div>
+      </div>
+      <div class="col-lg-6" data-aos="fade-left">
+        <div class="hp-contact-form-card">
+          <iframe name="hp_hidden_iframe" id="hp_hidden_iframe" style="display:none;"
+            onload="if(hp_submitted){window.location='{{ site.baseurl }}/success';}"></iframe>
+          <form action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSeo8Dw2zcB_edyl4YtlBmJ543Kspejk--KdPvdA8Voh3NAgeQ/formResponse"
+            method="post" target="hp_hidden_iframe" onsubmit="hp_submitted=true;">
+            <div class="row g-3">
+              <div class="col-sm-6">
+                <input type="text" class="hp-input" name="entry.1726838017" placeholder="Your Name" required>
+              </div>
+              <div class="col-sm-6">
+                <input type="email" class="hp-input" name="entry.368384318" placeholder="Email Address" required>
+              </div>
+              <div class="col-12">
+                <textarea class="hp-input hp-textarea" name="entry.2045894047" rows="4" placeholder="Tell me about your project…" required></textarea>
+              </div>
+              <div class="col-12">
+                <button type="submit" class="hp-btn-primary w-100">
+                  <i class="fas fa-paper-plane me-2"></i>Send Message
+                </button>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<script>var hp_submitted=false;</script>
+
+<style>
+/* ========================================================
+   HOME PAGE — all section styles
+   ======================================================== */
+:root {
+  --hp-dark:    #0f1623;
+  --hp-dark2:   #1e2a3a;
+  --hp-dark3:   #2c3d55;
+  --hp-blue:    #4a9eff;
+  --hp-blue2:   #2c7be5;
+  --hp-text:    #3d4f65;
+  --hp-muted:   #6c757d;
+  --hp-light:   #f8f9fb;
+}
+
+/* Shared */
+.hp-eyebrow { display:block;font-size:.7rem;font-weight:800;letter-spacing:.15rem;color:var(--hp-blue);text-transform:uppercase;margin-bottom:8px; }
+.hp-section-title { font-size:1.9rem;font-weight:900;color:#1e2736;line-height:1.2;margin-bottom:14px; }
+.hp-section-sub { font-size:.92rem;color:var(--hp-muted);line-height:1.7;margin-bottom:0; }
+.hp-badge { display:inline-block;background:linear-gradient(90deg,var(--hp-blue),var(--hp-blue2));color:#fff;font-size:.68rem;font-weight:800;letter-spacing:.12rem;padding:4px 14px;border-radius:20px; }
+.hp-btn-primary { display:inline-flex;align-items:center;background:linear-gradient(135deg,var(--hp-blue),var(--hp-blue2));color:#fff!important;font-size:.9rem;font-weight:700;padding:13px 26px;border-radius:10px;text-decoration:none!important;box-shadow:0 6px 20px rgba(74,158,255,.35);transition:transform .2s,box-shadow .2s;border:none;cursor:pointer; }
+.hp-btn-primary:hover { transform:translateY(-2px);box-shadow:0 10px 28px rgba(74,158,255,.45);color:#fff!important; }
+.hp-btn-primary.hp-btn-large { font-size:1rem;padding:16px 36px; }
+.hp-btn-secondary { display:inline-flex;align-items:center;background:rgba(255,255,255,.1);color:rgba(255,255,255,.85)!important;font-size:.9rem;font-weight:600;padding:13px 26px;border-radius:10px;text-decoration:none!important;border:1px solid rgba(255,255,255,.2);transition:background .2s; }
+.hp-btn-secondary:hover { background:rgba(255,255,255,.18);color:#fff!important; }
+.hp-btn-outline { display:inline-flex;align-items:center;border:1.5px solid #d0dbe8;color:var(--hp-text)!important;font-size:.88rem;font-weight:600;padding:10px 20px;border-radius:8px;text-decoration:none!important;transition:border-color .2s,color .2s; }
+.hp-btn-outline:hover { border-color:var(--hp-blue);color:var(--hp-blue)!important; }
+
+/* HERO */
+.hp-hero { background:linear-gradient(135deg,var(--hp-dark) 0%,var(--hp-dark2) 50%,var(--hp-dark3) 100%);padding:90px 0 70px;position:relative;overflow:hidden; }
+.hp-hero-bg-circle { position:absolute;border-radius:50%;pointer-events:none; }
+.hp-hero-bg-circle--1 { top:-150px;right:-150px;width:600px;height:600px;background:radial-gradient(circle,rgba(74,158,255,.08) 0%,transparent 70%); }
+.hp-hero-bg-circle--2 { bottom:-100px;left:-100px;width:400px;height:400px;background:radial-gradient(circle,rgba(74,158,255,.05) 0%,transparent 70%); }
+.hp-hero-title { font-size:3rem;font-weight:900;color:#fff;line-height:1.1;margin:16px 0 18px;letter-spacing:-.02rem; }
+.hp-hero-title-accent { color:var(--hp-blue); }
+.hp-hero-desc { font-size:.98rem;color:rgba(255,255,255,.65);line-height:1.75;max-width:520px;margin-bottom:24px; }
+.hp-hero-platforms { display:flex;flex-wrap:wrap;gap:8px;margin-bottom:28px; }
+.hp-platform-pill { display:inline-flex;align-items:center;gap:7px;font-size:.78rem;font-weight:600;padding:6px 14px;border-radius:20px;background:rgba(255,255,255,.08);color:rgba(255,255,255,.8);border:1px solid rgba(255,255,255,.12); }
+.hp-hero-actions { display:flex;gap:12px;flex-wrap:wrap;margin-bottom:0; }
+.hp-hero-photo-wrap { position:relative;text-align:center; }
+.hp-hero-photo-ring { position:absolute;inset:-12px;border-radius:50%;border:2px solid rgba(74,158,255,.25);animation:hpPulse 3s ease-in-out infinite; }
+@keyframes hpPulse { 0%,100%{opacity:.3;transform:scale(1)} 50%{opacity:.6;transform:scale(1.025)} }
+.hp-hero-photo { width:240px;height:240px;border-radius:50%;object-fit:cover;object-position:top center;border:4px solid rgba(255,255,255,.85);box-shadow:0 0 0 8px rgba(74,158,255,.12),0 20px 50px rgba(0,0,0,.4);display:block;margin:0 auto 24px; }
+.hp-hero-stats-grid { display:grid;grid-template-columns:repeat(2,1fr);gap:12px; }
+.hp-hero-stat { background:rgba(255,255,255,.07);border:1px solid rgba(255,255,255,.1);border-radius:12px;padding:14px;text-align:center; }
+.hp-hero-stat-num { font-size:1.4rem;font-weight:900;color:#fff;line-height:1; }
+.hp-hero-stat-lbl { font-size:.7rem;color:rgba(255,255,255,.5);margin-top:4px; }
+
+/* ABOUT */
+.hp-about { padding:80px 0;background:#fff; }
+.hp-about-img-wrap { position:relative;border-radius:16px;overflow:hidden; }
+.hp-about-img-wrap img { width:100%;border-radius:16px; }
+.hp-about-tag { position:absolute;bottom:16px;left:16px;background:var(--hp-dark);color:rgba(255,255,255,.8);font-size:.78rem;padding:6px 14px;border-radius:20px; }
+.hp-about-role { font-size:.88rem;font-weight:700;color:var(--hp-blue);text-transform:uppercase;letter-spacing:.06rem;margin-bottom:12px; }
+.hp-about-desc { font-size:.92rem;color:var(--hp-text);line-height:1.8;margin-bottom:20px; }
+.hp-about-highlights { list-style:none;padding:0;margin:0 0 28px; }
+.hp-about-highlights li { display:flex;align-items:flex-start;gap:10px;font-size:.85rem;color:var(--hp-text);margin-bottom:10px; }
+.hp-about-highlights li i { color:var(--hp-blue);margin-top:2px;flex-shrink:0; }
+
+/* SERVICES */
+.hp-services { padding:80px 0;background:var(--hp-light); }
+.hp-service-card { background:#fff;border-radius:14px;padding:28px 24px;border:1.5px solid #e8edf5;height:100%;transition:transform .2s,box-shadow .2s,border-color .2s; }
+.hp-service-card:hover { transform:translateY(-4px);box-shadow:0 12px 32px rgba(74,158,255,.1);border-color:var(--hp-blue); }
+.hp-service-icon { width:48px;height:48px;border-radius:12px;display:flex;align-items:center;justify-content:center;font-size:1.2rem;margin-bottom:14px; }
+.hp-service-title { font-size:1rem;font-weight:700;color:#1e2736;margin-bottom:8px; }
+.hp-service-desc { font-size:.82rem;color:var(--hp-muted);line-height:1.65;margin:0; }
+
+/* RESULTS */
+.hp-results { padding:80px 0;background:linear-gradient(135deg,var(--hp-dark) 0%,var(--hp-dark2) 50%,var(--hp-dark3) 100%);position:relative;overflow:hidden; }
+.hp-results-glow { position:absolute;top:-100px;right:-100px;width:400px;height:400px;border-radius:50%;background:radial-gradient(circle,rgba(74,158,255,.08) 0%,transparent 70%);pointer-events:none; }
+.hp-result-card { background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.1);border-radius:14px;padding:28px 22px;height:100%;transition:background .2s,transform .2s; }
+.hp-result-card:hover { background:rgba(255,255,255,.1);transform:translateY(-3px); }
+.hp-result-icon { width:44px;height:44px;border-radius:12px;background:linear-gradient(135deg,var(--hp-blue),var(--hp-blue2));color:#fff;display:flex;align-items:center;justify-content:center;font-size:1.1rem;margin-bottom:14px; }
+.hp-result-number { font-size:2rem;font-weight:900;color:#fff;line-height:1;margin-bottom:4px; }
+.hp-result-label { font-size:.75rem;font-weight:700;color:var(--hp-blue);text-transform:uppercase;letter-spacing:.06rem;margin-bottom:10px; }
+.hp-result-desc { font-size:.8rem;color:rgba(255,255,255,.5);line-height:1.6;margin:0; }
+
+/* PORTFOLIO */
+.hp-portfolio { padding:80px 0;background:#fff; }
+.hp-folio-item { display:block;position:relative;border-radius:12px;overflow:hidden;text-decoration:none!important; }
+.hp-folio-img { width:100%;aspect-ratio:4/3;object-fit:cover;display:block;transition:transform .3s; }
+.hp-folio-item:hover .hp-folio-img { transform:scale(1.05); }
+.hp-folio-overlay { position:absolute;inset:0;background:linear-gradient(to top,rgba(15,22,35,.9) 0%,transparent 60%);opacity:0;transition:opacity .3s;display:flex;flex-direction:column;justify-content:flex-end;padding:14px; }
+.hp-folio-item:hover .hp-folio-overlay { opacity:1; }
+.hp-folio-cat { font-size:.68rem;font-weight:700;color:var(--hp-blue);text-transform:uppercase;letter-spacing:.08rem;margin-bottom:4px; }
+.hp-folio-name { font-size:.85rem;font-weight:600;color:#fff; }
+
+/* PROCESS */
+.hp-process { padding:80px 0;background:var(--hp-light); }
+.hp-process-card { background:#fff;border-radius:14px;padding:28px 22px;height:100%;border:1.5px solid #e8edf5;position:relative;transition:box-shadow .2s,border-color .2s; }
+.hp-process-card:hover { box-shadow:0 8px 28px rgba(74,158,255,.1);border-color:var(--hp-blue); }
+.hp-process-num { position:absolute;top:20px;right:20px;font-size:2.5rem;font-weight:900;color:#f0f4f8;line-height:1; }
+.hp-process-icon { width:44px;height:44px;border-radius:12px;background:linear-gradient(135deg,#e8f1ff,#d0e5ff);color:var(--hp-blue2);display:flex;align-items:center;justify-content:center;font-size:1.1rem;margin-bottom:14px; }
+.hp-process-title { font-size:.98rem;font-weight:700;color:#1e2736;margin-bottom:8px; }
+.hp-process-desc { font-size:.82rem;color:var(--hp-muted);line-height:1.65;margin:0; }
+
+/* TESTIMONIALS */
+.hp-testimonials { padding:80px 0;background:linear-gradient(135deg,var(--hp-dark) 0%,var(--hp-dark2) 100%); }
+.hp-testimonial-card { background:rgba(255,255,255,.07);border:1px solid rgba(255,255,255,.1);border-radius:14px;padding:28px 24px;height:100%; }
+.hp-testimonial-stars { color:#fbbf24;font-size:.85rem;margin-bottom:14px; }
+.hp-testimonial-msg { font-size:.88rem;color:rgba(255,255,255,.75);line-height:1.7;font-style:italic;margin-bottom:18px; }
+.hp-testimonial-author { display:flex;align-items:center;gap:12px; }
+.hp-testimonial-avatar { width:42px;height:42px;border-radius:50%;object-fit:cover;border:2px solid rgba(255,255,255,.2); }
+.hp-testimonial-name { font-size:.88rem;font-weight:700;color:#fff; }
+.hp-testimonial-role { font-size:.75rem;color:rgba(255,255,255,.4); }
+
+/* TOOLS */
+.hp-tools { padding:80px 0;background:#fff; }
+.hp-tools-grid { display:flex;flex-wrap:wrap;gap:12px;justify-content:center; }
+.hp-tool-pill { display:inline-flex;align-items:center;gap:8px;background:var(--hp-light);border:1.5px solid #e8edf5;color:var(--hp-text);font-size:.84rem;font-weight:600;padding:10px 18px;border-radius:30px;transition:border-color .2s,color .2s,box-shadow .2s; }
+.hp-tool-pill i { color:var(--hp-blue);font-size:.9rem; }
+.hp-tool-pill:hover { border-color:var(--hp-blue);color:var(--hp-blue2);box-shadow:0 4px 14px rgba(74,158,255,.12); }
+
+/* BLOG */
+.hp-blog { padding:80px 0;background:var(--hp-light); }
+.hp-blog-card { display:block;background:#fff;border-radius:14px;overflow:hidden;text-decoration:none!important;border:1.5px solid #e8edf5;height:100%;transition:transform .2s,box-shadow .2s; }
+.hp-blog-card:hover { transform:translateY(-4px);box-shadow:0 12px 32px rgba(0,0,0,.08); }
+.hp-blog-img-wrap { overflow:hidden;aspect-ratio:16/9; }
+.hp-blog-img { width:100%;height:100%;object-fit:cover;transition:transform .3s; }
+.hp-blog-card:hover .hp-blog-img { transform:scale(1.04); }
+.hp-blog-body { padding:20px; }
+.hp-blog-date { font-size:.72rem;color:var(--hp-blue);font-weight:700;text-transform:uppercase;letter-spacing:.06rem;margin-bottom:8px; }
+.hp-blog-title { font-size:.95rem;font-weight:700;color:#1e2736;margin-bottom:8px;line-height:1.4; }
+.hp-blog-desc { font-size:.8rem;color:var(--hp-muted);line-height:1.6;margin-bottom:12px; }
+.hp-blog-read { font-size:.8rem;font-weight:700;color:var(--hp-blue); }
+
+/* FREE AUDIT */
+.hp-audit { padding:90px 0;background:linear-gradient(135deg,var(--hp-dark) 0%,#1a2540 50%,var(--hp-dark3) 100%);position:relative;overflow:hidden; }
+.hp-audit-glow { position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);width:600px;height:600px;border-radius:50%;background:radial-gradient(circle,rgba(74,158,255,.1) 0%,transparent 70%);pointer-events:none; }
+.hp-audit-title { font-size:2.2rem;font-weight:900;color:#fff;margin:16px 0 16px; }
+.hp-audit-desc { font-size:.95rem;color:rgba(255,255,255,.65);line-height:1.75;max-width:600px;margin:0 auto 28px; }
+.hp-audit-perks { list-style:none;padding:0;display:flex;flex-wrap:wrap;gap:10px 20px;justify-content:center;margin-bottom:32px; }
+.hp-audit-perks li { display:flex;align-items:center;gap:8px;font-size:.85rem;color:rgba(255,255,255,.75); }
+.hp-audit-perks li i { color:var(--hp-blue);font-size:.8rem; }
+.hp-audit-note { font-size:.75rem;color:rgba(255,255,255,.3);margin-top:14px;margin-bottom:0; }
+
+/* FAQ */
+.hp-faq { padding:80px 0;background:var(--hp-light); }
+.hp-faq-list { display:flex;flex-direction:column;gap:10px; }
+.hp-faq-item { background:#fff;border-radius:12px;border:1.5px solid #e8edf5;overflow:hidden; }
+.hp-faq-q { width:100%;background:none;border:none;text-align:left;padding:18px 20px;font-size:.92rem;font-weight:700;color:#1e2736;cursor:pointer;display:flex;justify-content:space-between;align-items:center;gap:16px; }
+.hp-faq-q--open { color:var(--hp-blue2); }
+.hp-faq-icon { font-size:.75rem;transition:transform .3s;flex-shrink:0; }
+.hp-faq-q--open .hp-faq-icon { transform:rotate(180deg); }
+.hp-faq-a { max-height:0;overflow:hidden;transition:max-height .35s ease; }
+.hp-faq-a--open { max-height:300px; }
+.hp-faq-a-inner { padding:0 20px 18px;font-size:.88rem;color:var(--hp-muted);line-height:1.75; }
+
+/* CONTACT */
+.hp-contact { padding:80px 0;background:#fff; }
+.hp-contact-info-list { display:flex;flex-direction:column;gap:14px;margin-top:28px; }
+.hp-contact-info-item { display:flex;align-items:center;gap:14px;font-size:.9rem;color:var(--hp-text);text-decoration:none!important;transition:color .2s; }
+.hp-contact-info-item:hover { color:var(--hp-blue2); }
+.hp-contact-info-icon { width:40px;height:40px;border-radius:10px;background:linear-gradient(135deg,#e8f1ff,#d0e5ff);color:var(--hp-blue2);display:flex;align-items:center;justify-content:center;font-size:.95rem;flex-shrink:0; }
+.hp-contact-form-card { background:var(--hp-light);border-radius:16px;padding:36px 32px;border:1.5px solid #e8edf5; }
+.hp-input { width:100%;padding:12px 14px;border:1.5px solid #e2e8f0;border-radius:10px;font-size:.9rem;color:#2c3d55;background:#fff;outline:none;transition:border-color .2s,box-shadow .2s;font-family:inherit; }
+.hp-input:focus { border-color:var(--hp-blue);box-shadow:0 0 0 3px rgba(74,158,255,.12); }
+.hp-textarea { resize:vertical;min-height:110px; }
+.w-100 { width:100%; }
+
+@media(max-width:991px){
+  .hp-hero-title{font-size:2.2rem}
+  .hp-hero-photo{width:180px;height:180px}
+}
+@media(max-width:767px){
+  .hp-hero{padding:60px 0 50px}
+  .hp-hero-title{font-size:1.75rem}
+  .hp-audit-title{font-size:1.6rem}
+  .hp-section-title{font-size:1.5rem}
+  .hp-hero-stats-grid{grid-template-columns:repeat(4,1fr)}
+  .hp-contact-form-card{padding:24px 18px}
+}
+</style>
+
+<script>
+function hpFaqToggle(btn) {
+  var item = btn.closest('.hp-faq-item');
+  var answer = item.querySelector('.hp-faq-a');
+  var isOpen = answer.classList.contains('hp-faq-a--open');
+  document.querySelectorAll('.hp-faq-a--open').forEach(function(el){ el.classList.remove('hp-faq-a--open'); });
+  document.querySelectorAll('.hp-faq-q--open').forEach(function(el){ el.classList.remove('hp-faq-q--open'); });
+  if (!isOpen) {
+    answer.classList.add('hp-faq-a--open');
+    btn.classList.add('hp-faq-q--open');
+  }
+}
+</script>

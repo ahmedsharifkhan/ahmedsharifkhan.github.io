@@ -1,27 +1,78 @@
-title: About Us
-subtitle: What we do?
-description: |
-    <section id="about">
-        
-        <p>Hello, I'm <strong>Ahmed Sharif Khan Noor</strong>, a passionate digital marketer and graphics designer with a creative flair and a strategic mindset. I thrive on turning innovative ideas into compelling visual stories that resonate with audiences.</p>
-    </section>
+title: About Me
+subtitle: Digital Marketing Specialist & Media Buying Expert
+tagline: I help businesses grow through data-driven paid advertising — Meta, Google, TikTok, and beyond.
 
-    <section id="digital-marketing">
-        <h2>Digital Marketing Expertise</h2>
-        <p>In the ever-evolving landscape of digital marketing, I bring a wealth of experience in creating impactful online campaigns. From social media strategies that engage and grow communities to data-driven insights that optimize marketing performance, my goal is to elevate your brand in the digital sphere.</p>
-    </section>
+bio: |
+  Hi, I'm <strong>Ahmed Sharif Khan Noor</strong> — a results-driven Digital Marketing Specialist based in Mirpur, Dhaka, Bangladesh. With 3+ years of hands-on experience in paid media, I've managed multi-platform campaigns across Meta, Google, TikTok, and LinkedIn, consistently delivering measurable ROI for businesses across the US, UK, UAE, and Bangladesh.
+  <br><br>
+  I started my journey with a BBA from EXIM Bank Agricultural University Bangladesh, where I developed a deep interest in marketing strategy and consumer behaviour. Since then, I've worked with global brands, local businesses, and e-commerce stores — helping them turn ad spend into real revenue.
+  <br><br>
+  I believe great marketing is half creativity, half data. I combine compelling storytelling with conversion tracking, pixel setup, UTM attribution, and continuous A/B testing to make every rupee of your budget work harder.
 
-    <section id="graphics-design">
-        <h2>Graphics Design Creativity</h2>
-        <p>As a graphics designer, I specialize in translating concepts into visually stunning designs. Whether it's crafting eye-catching logos, designing captivating marketing materials, or developing cohesive brand identities, I believe in the power of design to make a lasting impression.</p>
-    </section>
+stats:
+  - number: "3+"
+    label: Years of Experience
+  - number: "700%+"
+    label: Peak ROAS Achieved
+  - number: "200+"
+    label: US Companies Supported
+  - number: "50+"
+    label: Active Clients Served
 
-    <section id="why-work-with-me">
-        <h2>Why Work With Me?</h2>
-        <ul>
-            <li><strong>Innovative Solutions:</strong> I approach every project with fresh ideas and a commitment to delivering innovative solutions tailored to your brand.</li>
-            <li><strong>Strategic Approach:</strong> My digital marketing strategies are not only creative but also driven by data and a deep understanding of audience behavior.</li>
-            <li><strong>Visual Excellence:</strong> I bring a keen eye for aesthetics to my graphics design work, ensuring that every design element aligns seamlessly with your brand identity.</li>
-            <li><strong>Collaborative Partnership:</strong> I value collaboration and believe in working closely with clients to bring their visions to life. Your success is my priority.</li>
-        </ul>
-    </section>
+expertise:
+  - icon: fab fa-meta
+    title: Meta Ads
+    desc: Full-funnel FB & IG campaigns — prospecting, retargeting, CAPI, lookalike audiences.
+  - icon: fab fa-google
+    title: Google Ads
+    desc: Search, Display, YouTube, Performance Max — keyword strategy to conversion optimisation.
+  - icon: fab fa-tiktok
+    title: TikTok Ads
+    desc: UGC-style creatives, TopFeed, Spark Ads — reaching Gen Z and millennial audiences.
+  - icon: fab fa-linkedin
+    title: LinkedIn Ads
+    desc: B2B lead generation — Sponsored Content, InMail, Lead Gen Forms.
+  - icon: fas fa-chart-line
+    title: Analytics & Tracking
+    desc: GTM, GA4, Meta Pixel, Conversion API, UTM tracking, full attribution setup.
+  - icon: fas fa-funnel-dollar
+    title: Full-Funnel Strategy
+    desc: TOFU → MOFU → BOFU — audience research, creative testing, budget optimisation.
+
+achievements:
+  - icon: fas fa-trophy
+    title: Best Employee 2024
+    company: Business Globalizer
+    desc: Awarded Best Employee of Brand & Promotion for driving international client growth.
+  - icon: fas fa-chart-bar
+    title: 700–800% ROAS
+    company: Ecomclips
+    desc: Achieved exceptional return on ad spend running Google Ads for e-commerce clients.
+  - icon: fas fa-ad
+    title: 600% ROAS on Meta
+    company: Ecomclips
+    desc: Delivered 6x return on Facebook Ads through precise targeting and creative testing.
+  - icon: fas fa-globe
+    title: Global Impact
+    company: Business Globalizer
+    desc: Supported 1,000+ ITINs and 200+ US company formations through targeted campaigns.
+
+certifications:
+  - name: Scaling META Ads
+    by: Godson Okorodudu
+    year: "2024"
+  - name: Create Landing Pages That Sell With AI
+    by: Godson Okorodudu
+    year: "2024"
+  - name: Digital Marketing Mastery
+    by: Idean Consulting
+    year: "2023"
+  - name: Digital Marketing, Google Ads & Facebook Ads
+    by: Skilluper.com
+    year: "2023"
+  - name: Google Digital Marketing & E-commerce Professional
+    by: Google / Skilluper.com
+    year: "2022"
+  - name: Digital Marketing Associate
+    by: Facebook (Meta)
+    year: "2021"

@@ -10,7 +10,7 @@ categories:
 youtubeid: OTxz8hqdtEk
 title: How to set up tawk.to for Google Analytics 4 tracking with Google Tag Manager
 description: Google Analytics tracking allows you to learn more about your visitors’ behavior on your site and how they communicate with you
-image: https://tds-images.thedailystar.net/sites/default/files/styles/big_202/public/images/2023/10/19/dalle_2023-10-19_19.19.51_-_vibrant_landscape_image_of_two_brown-skinned_urban_bangladeshi_girls_in_their_teens_sitting_on_a_city_bench._one_holds_a_smartphone_and_they_both_dan.png
+image: /assets/images/portfolio/ad dashbord.jpg
 
 team:
   name: Kayla Bryant

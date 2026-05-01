@@ -1,0 +1,196 @@
+# ============================================================
+# HOME PAGE DATA — edit this file to update the homepage
+# ============================================================
+
+# --- HERO ---
+hero:
+  badge: "Digital Marketing Specialist & Media Buyer"
+  title_line1: "Scale Your Business"
+  title_line2: "with Data-Driven Ads"
+  description: "I help brands generate measurable ROI through high-performance paid campaigns on Meta, Google, TikTok, and LinkedIn — backed by full-funnel strategy and conversion tracking."
+  cta_primary_text: "Get Free Audit"
+  cta_primary_url: "/contact"
+  cta_secondary_text: "View My Work"
+  cta_secondary_url: "/portfolio"
+  platforms:
+    - name: Meta Ads
+      icon: fab fa-facebook-f
+      color: "#1877f2"
+    - name: Google Ads
+      icon: fab fa-google
+      color: "#ea4335"
+    - name: TikTok Ads
+      icon: fab fa-tiktok
+      color: "#000000"
+    - name: LinkedIn Ads
+      icon: fab fa-linkedin-in
+      color: "#0077b5"
+  stats:
+    - number: "700%+"
+      label: "Peak ROAS"
+    - number: "3+"
+      label: "Years Experience"
+    - number: "200+"
+      label: "Campaigns Run"
+    - number: "50+"
+      label: "Happy Clients"
+
+# --- ABOUT ---
+about:
+  eyebrow: "WHO I AM"
+  title: "Ahmed Sharif Khan Noor"
+  role: "Digital Marketing Specialist"
+  description: "Based in Mirpur, Dhaka — I'm a results-driven media buyer and digital marketing strategist with 3+ years of experience. I've managed campaigns for businesses in the US, UK, UAE, and Bangladesh, consistently delivering measurable ROI."
+  highlights:
+    - icon: fas fa-trophy
+      text: "Best Employee of Brand & Promotion 2024 — Business Globalizer"
+    - icon: fas fa-chart-line
+      text: "Achieved 700–800% ROAS through Google Ads campaigns"
+    - icon: fas fa-ad
+      text: "600% return on ad spend via Facebook Ads"
+  cta_text: "Full Profile"
+  cta_url: "/about"
+
+# --- SERVICES ---
+services:
+  eyebrow: "WHAT I OFFER"
+  title: "Services"
+  subtitle: "End-to-end paid media management — from strategy and creative to tracking and optimisation."
+  items:
+    - icon: fab fa-facebook-f
+      color: "#1877f2"
+      title: "Meta Ads"
+      desc: "Full-funnel Facebook & Instagram campaigns — audience research, creative testing, CAPI setup, retargeting."
+    - icon: fab fa-google
+      color: "#ea4335"
+      title: "Google Ads"
+      desc: "Search, Display, YouTube, Performance Max — keyword strategy, bid management, conversion optimisation."
+    - icon: fab fa-tiktok
+      color: "#000000"
+      title: "TikTok Ads"
+      desc: "UGC-style creatives, TopFeed & Spark Ads — reaching high-intent Gen Z and millennial audiences."
+    - icon: fab fa-linkedin-in
+      color: "#0077b5"
+      title: "LinkedIn Ads"
+      desc: "B2B lead generation — Sponsored Content, Lead Gen Forms, InMail targeting by job title and industry."
+    - icon: fas fa-funnel-dollar
+      color: "#7c3aed"
+      title: "Full-Funnel Strategy"
+      desc: "TOFU → MOFU → BOFU campaign architecture with audience segmentation and budget allocation."
+    - icon: fas fa-chart-bar
+      color: "#059669"
+      title: "Analytics & Tracking"
+      desc: "GTM, GA4, Meta Pixel, Conversion API (CAPI), UTM tracking — accurate attribution across all channels."
+
+# --- RESULTS ---
+results:
+  eyebrow: "PROVEN TRACK RECORD"
+  title: "Real Numbers. Real Results."
+  subtitle: "Every metric below comes from actual campaigns run for real clients."
+  items:
+    - number: "700–800%"
+      label: "ROAS on Google Ads"
+      desc: "Achieved for e-commerce clients at Ecomclips running Search and Shopping campaigns."
+      icon: fab fa-google
+    - number: "600%"
+      label: "ROAS on Meta Ads"
+      desc: "Facebook & Instagram campaign return for multiple product verticals."
+      icon: fab fa-facebook-f
+    - number: "50%"
+      label: "Faster UK Company Setup"
+      desc: "Streamlined processes that cut UK business registration time in half at Business Globalizer."
+      icon: fas fa-rocket
+    - number: "1,000+"
+      label: "ITINs Facilitated"
+      desc: "Helped international clients achieve seamless US tax compliance through targeted campaigns."
+      icon: fas fa-globe
+
+# --- PROCESS ---
+process:
+  eyebrow: "HOW I WORK"
+  title: "My Process"
+  subtitle: "A systematic 5-step approach to every campaign — from zero to profitable."
+  steps:
+    - number: "01"
+      icon: fas fa-search
+      title: "Audit & Research"
+      desc: "Deep dive into your current campaigns, competitors, audience data, and conversion funnel to find opportunities."
+    - number: "02"
+      icon: fas fa-map
+      title: "Strategy & Planning"
+      desc: "Build a full-funnel campaign structure with clear KPIs, audience segments, budget allocation, and creative brief."
+    - number: "03"
+      icon: fas fa-paint-brush
+      title: "Creative & Setup"
+      desc: "Develop ad creatives, copy, and landing pages. Set up tracking — Pixel, CAPI, GTM, UTM — for full attribution."
+    - number: "04"
+      icon: fas fa-play-circle
+      title: "Launch & Monitor"
+      desc: "Launch campaigns and monitor performance daily — catch issues early and capitalise on winning ad sets."
+    - number: "05"
+      icon: fas fa-chart-line
+      title: "Optimise & Scale"
+      desc: "A/B test creatives and audiences, cut losers fast, scale winners — continuously improving ROAS."
+
+# --- TOOLS ---
+tools:
+  eyebrow: "TECH STACK"
+  title: "Tools I Use"
+  items:
+    - name: Meta Ads Manager
+      icon: fab fa-facebook-f
+    - name: Google Ads
+      icon: fab fa-google
+    - name: TikTok Ads Manager
+      icon: fab fa-tiktok
+    - name: LinkedIn Campaign Manager
+      icon: fab fa-linkedin-in
+    - name: Google Tag Manager
+      icon: fas fa-tag
+    - name: Google Analytics 4
+      icon: fas fa-chart-bar
+    - name: Meta Pixel & CAPI
+      icon: fas fa-code
+    - name: Canva
+      icon: fas fa-palette
+    - name: CapCut
+      icon: fas fa-film
+    - name: Revealbot
+      icon: fas fa-robot
+    - name: Madgicx
+      icon: fas fa-magic
+    - name: Google Merchant Center
+      icon: fas fa-store
+
+# --- FREE AUDIT ---
+audit:
+  eyebrow: "LIMITED FREE OFFER"
+  title: "Get a Free Campaign Audit"
+  description: "Not happy with your ad results? I'll review your active Meta or Google campaigns — creative, targeting, structure, and tracking — and send you a detailed report with actionable fixes. No strings attached."
+  perks:
+    - "Full campaign structure review"
+    - "Creative & copy feedback"
+    - "Tracking & attribution check"
+    - "Competitor ad analysis"
+    - "Actionable improvement plan"
+  cta_text: "Claim Your Free Audit"
+  cta_url: "/contact"
+  note: "Limited to 5 audits per month. First come, first served."
+
+# --- FAQ ---
+faq:
+  eyebrow: "FAQ"
+  title: "Frequently Asked Questions"
+  items:
+    - question: "What platforms do you run ads on?"
+      answer: "I manage paid campaigns on Meta (Facebook & Instagram), Google Ads (Search, Display, YouTube, Performance Max), TikTok Ads, and LinkedIn Ads. I can also help with Pinterest and Twitter Ads."
+    - question: "What is your minimum ad budget?"
+      answer: "For Meta and Google Ads, I recommend a minimum budget of $500–$1,000/month to see meaningful results. For TikTok and LinkedIn, $1,000+/month is ideal. Budget depends on your industry, goals, and competition."
+    - question: "How soon can I expect results?"
+      answer: "Most campaigns start showing data within the first week. Meaningful results and optimisations typically come after 2–4 weeks of data collection. Significant ROAS improvements are usually visible by month 2–3."
+    - question: "Do you offer campaign management or just setup?"
+      answer: "Both. I offer one-time campaign setup & audit services as well as ongoing monthly management including daily monitoring, weekly optimisations, and monthly performance reports."
+    - question: "How do you track campaign performance?"
+      answer: "I use Meta Pixel with Conversion API (CAPI), Google Tag Manager, GA4, and UTM parameters for full cross-channel attribution. You get transparent access to all dashboards and a monthly report."
+    - question: "Can you work with my existing team?"
+      answer: "Absolutely. I collaborate closely with in-house teams, designers, content creators, and developers. I can also handle everything end-to-end if you prefer a single point of contact."
