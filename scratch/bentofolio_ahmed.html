@@ -1,0 +1,748 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Ahmed Sharif Khan — Digital Marketing Specialist & Media Buyer</title>
+  <meta name="description" content="Ahmed Sharif Khan Noor — Digital Marketing Specialist & Media Buyer, 4+ years experience, 700%+ ROAS">
+  <link rel="icon" href="../assets/images/favicon.png" type="image/png">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+<style>
+/* ─── CSS Variables ─────────────────────────────────────── */
+:root {
+  --bg:           #F0F0EB;
+  --card:         #FFFFFF;
+  --text:         #0F1117;
+  --text-2:       #6B7280;
+  --text-3:       #9CA3AF;
+  --border:       #E3E3DA;
+  --badge:        #EBEBE4;
+  --primary:      #4770FF;
+  --primary-d:    #2F52D9;
+  --nav-bg:       rgba(240,240,235,0.88);
+  --shadow:       0 2px 20px rgba(0,0,0,0.06);
+}
+body.dark {
+  --bg:    #111318;
+  --card:  #1A1F2C;
+  --text:  #F0F1F5;
+  --text-2:#9CA3AF;
+  --text-3:#6B7280;
+  --border:#252B3B;
+  --badge: #1E2435;
+  --nav-bg:rgba(17,19,24,0.88);
+  --shadow:0 2px 20px rgba(0,0,0,0.3);
+}
+
+/* ─── Reset / Base ──────────────────────────────────────── */
+*{margin:0;padding:0;box-sizing:border-box}
+body{
+  font-family:'Inter',sans-serif;
+  background:var(--bg);
+  color:var(--text);
+  transition:background .3s,color .3s;
+  min-height:100vh;
+}
+a{text-decoration:none;color:inherit}
+img{display:block;max-width:100%}
+
+/* ─── Nav ───────────────────────────────────────────────── */
+.hdr{
+  position:sticky;top:0;z-index:999;
+  background:var(--nav-bg);
+  backdrop-filter:blur(14px);
+  border-bottom:1px solid var(--border);
+  padding:12px 0;
+  transition:background .3s;
+}
+.hdr .wrap{
+  max-width:1320px;margin:0 auto;padding:0 24px;
+  display:flex;align-items:center;gap:16px;
+}
+.logo{
+  display:flex;align-items:center;gap:8px;
+  font-size:17px;font-weight:800;color:var(--text);
+  flex-shrink:0;
+}
+.logo span{color:var(--primary)}
+
+.nav-links{
+  display:flex;align-items:center;gap:2px;
+  list-style:none;margin:0 auto;padding:0;
+}
+.nav-links a{
+  display:flex;align-items:center;gap:5px;
+  padding:7px 13px;border-radius:9px;
+  font-size:13.5px;font-weight:500;color:var(--text-2);
+  transition:all .18s;
+}
+.nav-links a:hover,.nav-links a.active{
+  background:var(--card);color:var(--text);
+}
+
+.hdr-right{display:flex;align-items:center;gap:10px;flex-shrink:0}
+
+.theme-btn{
+  width:38px;height:38px;border:1px solid var(--border);
+  background:var(--card);border-radius:9px;
+  display:flex;align-items:center;justify-content:center;
+  cursor:pointer;transition:all .18s;color:var(--text-2);
+  font-size:15px;
+}
+.theme-btn:hover{background:var(--badge);color:var(--text)}
+
+.talk-btn{
+  display:flex;align-items:center;gap:8px;
+  padding:9px 20px;background:var(--primary);color:#fff;
+  border-radius:10px;font-size:13.5px;font-weight:600;
+  transition:all .2s;
+}
+.talk-btn:hover{background:var(--primary-d);color:#fff;transform:translateY(-1px)}
+
+.mob-menu-btn{
+  display:none;width:38px;height:38px;border:1px solid var(--border);
+  background:var(--card);border-radius:9px;cursor:pointer;
+  align-items:center;justify-content:center;font-size:15px;color:var(--text);
+}
+
+/* ─── Card ──────────────────────────────────────────────── */
+.card{
+  background:var(--card);
+  border:1px solid var(--border);
+  border-radius:20px;
+  box-shadow:var(--shadow);
+  transition:transform .25s,box-shadow .25s,background .3s,border-color .3s;
+  overflow:hidden;
+}
+.card:hover{transform:translateY(-3px);box-shadow:0 12px 40px rgba(0,0,0,.10)}
+body.dark .card:hover{box-shadow:0 12px 40px rgba(0,0,0,.35)}
+.card-body{padding:26px}
+
+.card-title{
+  font-size:17px;font-weight:700;color:var(--text);
+  display:flex;align-items:center;justify-content:space-between;margin:0;
+}
+.link-btn{
+  display:flex;align-items:center;gap:5px;
+  font-size:12.5px;font-weight:600;color:var(--primary);
+  transition:gap .2s;
+}
+.link-btn:hover{gap:9px;color:var(--primary)}
+
+/* ─── Main Layout ───────────────────────────────────────── */
+.main-area{padding:28px 0}
+.main-area .wrap{max-width:1320px;margin:0 auto;padding:0 24px}
+
+/* ─── Profile Card ──────────────────────────────────────── */
+.profile-card{height:100%}
+.profile-card .card-body{
+  display:flex;flex-direction:column;align-items:center;
+  text-align:center;padding:30px 24px;height:100%;
+}
+
+.avatar-ring{
+  position:relative;width:120px;height:120px;margin-bottom:18px;flex-shrink:0;
+}
+.avatar-ring img{
+  width:120px;height:120px;border-radius:50%;
+  object-fit:cover;object-position:top center;
+  border:3px solid var(--primary);
+}
+.online-dot{
+  position:absolute;bottom:5px;right:5px;
+  width:15px;height:15px;background:#22c55e;
+  border-radius:50%;border:2px solid var(--card);
+}
+.online-dot::after{
+  content:'';position:absolute;
+  inset:-4px;border-radius:50%;
+  background:rgba(34,197,94,.25);
+  animation:pulse 2.2s ease-in-out infinite;
+}
+@keyframes pulse{0%,100%{opacity:1;transform:scale(1)}50%{opacity:0;transform:scale(1.8)}}
+
+.profile-name{font-size:21px;font-weight:800;margin-bottom:6px;line-height:1.2}
+.profile-badge{
+  display:inline-block;padding:4px 13px;
+  background:rgba(71,112,255,.1);color:var(--primary);
+  border-radius:20px;font-size:11.5px;font-weight:600;
+  margin-bottom:14px;
+}
+.profile-desc{
+  font-size:13.5px;line-height:1.75;color:var(--text-2);
+  margin-bottom:18px;
+}
+.profile-desc strong{color:var(--primary)}
+
+/* Stats grid inside profile */
+.stats-grid{
+  display:grid;grid-template-columns:repeat(2,1fr);gap:10px;
+  width:100%;margin-bottom:20px;
+}
+.stat-box{
+  background:var(--badge);border:1px solid var(--border);
+  border-radius:13px;padding:12px 8px;text-align:center;
+  transition:background .3s,border-color .3s;
+}
+.stat-num{font-size:18px;font-weight:800;color:var(--primary);line-height:1}
+.stat-lbl{font-size:10.5px;color:var(--text-2);margin-top:3px;font-weight:500}
+
+.btn-group-profile{display:flex;gap:8px;width:100%;margin-bottom:16px}
+.pbtn{
+  flex:1;display:flex;align-items:center;justify-content:center;
+  gap:6px;padding:10px 12px;border-radius:10px;
+  font-size:13px;font-weight:600;cursor:pointer;border:none;transition:all .2s;
+}
+.pbtn-primary{background:var(--primary);color:#fff}
+.pbtn-primary:hover{background:var(--primary-d);color:#fff}
+.pbtn-secondary{background:var(--badge);color:var(--text);border:1px solid var(--border)}
+.pbtn-secondary:hover{background:var(--badge)}
+.pbtn-secondary.copied{background:#22c55e;color:#fff;border-color:#22c55e}
+
+.social-row{display:flex;gap:8px}
+.social-row a{
+  width:36px;height:36px;border-radius:9px;
+  display:flex;align-items:center;justify-content:center;
+  background:var(--badge);border:1px solid var(--border);
+  color:var(--text-2);font-size:14px;transition:all .2s;
+}
+.social-row a:hover{background:var(--primary);color:#fff;border-color:var(--primary);transform:translateY(-2px)}
+
+/* ─── Work Experience Card ──────────────────────────────── */
+.work-card .card-body{overflow:hidden}
+.exp-wrap{
+  margin-top:18px;height:165px;overflow:hidden;position:relative;
+}
+.exp-wrap::after{
+  content:'';position:absolute;bottom:0;left:0;right:0;height:36px;
+  background:linear-gradient(transparent,var(--card));
+  pointer-events:none;z-index:1;transition:background .3s;
+}
+.exp-list{list-style:none;padding:0;margin:0;animation:scrollUp 10s linear infinite}
+.exp-list:hover{animation-play-state:paused}
+@keyframes scrollUp{0%{transform:translateY(0)}100%{transform:translateY(-50%)}}
+
+.exp-item{
+  display:flex;align-items:center;gap:12px;
+  padding:10px 0;border-bottom:1px solid var(--border);
+  transition:border-color .3s;
+}
+.exp-item:last-child{border:none}
+.exp-ico{
+  width:38px;height:38px;border-radius:10px;flex-shrink:0;
+  display:flex;align-items:center;justify-content:center;font-size:15px;
+}
+.exp-info{flex:1;min-width:0}
+.exp-info h4{font-size:13.5px;font-weight:600;margin:0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.exp-info p{font-size:11.5px;color:var(--text-2);margin:2px 0 0}
+.exp-date{font-size:10.5px;color:var(--text-3);white-space:nowrap;flex-shrink:0}
+
+/* ─── Expertise Card ────────────────────────────────────── */
+.tool-item{
+  display:flex;flex-direction:column;align-items:center;
+  padding:14px 8px;background:var(--badge);border:1px solid var(--border);
+  border-radius:13px;text-align:center;cursor:default;
+  transition:all .22s;
+}
+.tool-item:hover{background:var(--primary);border-color:var(--primary);transform:translateY(-3px)}
+.tool-item:hover .tool-ico,.tool-item:hover .tool-name{color:#fff}
+.tool-ico{font-size:20px;color:var(--primary);margin-bottom:7px;transition:color .2s}
+.tool-name{font-size:10.5px;font-weight:600;color:var(--text);transition:color .2s}
+
+/* ─── Projects Card ─────────────────────────────────────── */
+.project-card{height:100%}
+.project-card .card-body{display:flex;flex-direction:column;height:100%}
+.project-thumb{
+  border-radius:12px;overflow:hidden;position:relative;flex-shrink:0;
+}
+.project-thumb img{
+  width:100%;height:135px;object-fit:cover;
+  transition:transform .3s;
+}
+.project-thumb:hover img{transform:scale(1.05)}
+.proj-tag{
+  position:absolute;bottom:8px;left:8px;
+  padding:3px 10px;background:rgba(0,0,0,.65);color:#fff;
+  border-radius:6px;font-size:10.5px;font-weight:600;
+  backdrop-filter:blur(4px);
+}
+
+/* ─── Services Card ─────────────────────────────────────── */
+.svc-item{
+  display:flex;flex-direction:column;align-items:center;
+  padding:22px 10px;background:var(--badge);border:1px solid var(--border);
+  border-radius:14px;text-align:center;cursor:default;transition:all .22s;
+}
+.svc-item:hover{background:var(--primary);border-color:var(--primary);transform:translateY(-3px)}
+.svc-item:hover .svc-ico,.svc-item:hover .svc-label{color:#fff}
+.svc-ico{font-size:26px;color:var(--primary);margin-bottom:10px;transition:color .2s}
+.svc-label{font-size:12.5px;font-weight:600;color:var(--text);transition:color .2s}
+
+/* ─── Let's Work Card ───────────────────────────────────── */
+.work-together-card{
+  height:100%;
+  background:var(--primary) !important;
+  border-color:var(--primary) !important;
+}
+.work-together-card .card-body{
+  display:flex;flex-direction:column;justify-content:space-between;height:100%;
+}
+.marquee-wrap{overflow:hidden;white-space:nowrap;margin-bottom:16px}
+.marquee-wrap p{
+  display:inline-block;
+  animation:marquee 14s linear infinite;
+  font-size:12.5px;color:rgba(255,255,255,.75);font-weight:500;
+}
+@keyframes marquee{0%{transform:translateX(0)}100%{transform:translateX(-50%)}}
+.work-together-card h2{
+  font-size:28px;font-weight:800;color:#fff;line-height:1.25;margin-bottom:18px;
+}
+.work-together-card .link-btn{color:#fff;font-size:14.5px}
+.work-together-card .link-btn:hover{color:#fff}
+
+/* ─── Background Blobs ──────────────────────────────────── */
+.bg-blobs{
+  position:fixed;inset:0;pointer-events:none;z-index:-1;overflow:hidden;
+}
+.blob{position:absolute;border-radius:50%;filter:blur(90px);opacity:.055}
+body.dark .blob{opacity:.12}
+.blob-1{width:560px;height:560px;background:var(--primary);top:-200px;right:-80px}
+.blob-2{width:420px;height:420px;background:#a855f7;bottom:60px;left:-140px}
+
+/* ─── Footer ────────────────────────────────────────────── */
+.footer{
+  border-top:1px solid var(--border);
+  padding:18px 0;margin-top:28px;text-align:center;
+  font-size:12.5px;color:var(--text-3);
+  transition:border-color .3s;
+}
+.footer a{color:var(--primary)}
+
+/* ─── Responsive ────────────────────────────────────────── */
+@media(max-width:1199px){
+  .nav-links{display:none}
+  .nav-links.open{
+    display:flex;flex-direction:column;
+    position:fixed;top:64px;left:0;right:0;
+    background:var(--card);border-bottom:1px solid var(--border);
+    padding:14px 20px;z-index:998;gap:2px;
+  }
+  .mob-menu-btn{display:flex}
+}
+@media(max-width:767px){
+  .btn-group-profile{flex-direction:column}
+  .stats-grid{grid-template-columns:repeat(4,1fr)}
+  .stat-num{font-size:15px}
+  .card-body{padding:20px 16px}
+  .work-together-card h2{font-size:22px}
+}
+@media(max-width:480px){
+  .stats-grid{grid-template-columns:repeat(2,1fr)}
+}
+</style>
+</head>
+<body id="body">
+
+<div id="pg" style="opacity:0;transition:opacity .45s ease">
+
+<!-- ═══════════════════ HEADER ════════════════════════════ -->
+<header class="hdr">
+  <div class="wrap">
+    <div class="logo">
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M0 1.5A1.5 1.5 0 011.5 0H9a1.5 1.5 0 011.5 1.5v21A1.5 1.5 0 019 24H1.5A1.5 1.5 0 010 22.5V1.5zM13.5 1.5A1.5 1.5 0 0115 0h7.5A1.5 1.5 0 0124 1.5V9a1.5 1.5 0 01-1.5 1.5H15A1.5 1.5 0 0113.5 9V1.5zM13.5 15a1.5 1.5 0 011.5-1.5h7.5A1.5 1.5 0 0124 15v7.5A1.5 1.5 0 0122.5 24H15a1.5 1.5 0 01-1.5-1.5V15z" fill="#4770FF"/></svg>
+      Ahmed<span>SK</span>
+    </div>
+
+    <ul class="nav-links" id="navLinks">
+      <li><a href="#" class="active"><i class="fas fa-home me-1" style="font-size:12px"></i>Home</a></li>
+      <li><a href="#">About</a></li>
+      <li><a href="#">Services</a></li>
+      <li><a href="#">Works</a></li>
+      <li><a href="#">Blog</a></li>
+      <li><a href="mailto:ahmedsharifkhannoor@gmail.com">Contact</a></li>
+    </ul>
+
+    <div class="hdr-right">
+      <button class="theme-btn" id="themeBtn" title="Toggle theme">
+        <i class="fas fa-moon" id="themeIcon"></i>
+      </button>
+      <a href="mailto:ahmedsharifkhannoor@gmail.com" class="talk-btn d-none d-sm-flex">
+        Let's Talk
+        <svg width="15" height="15" viewBox="0 0 20 20" fill="none"><path d="M17.5 11.67V6.67H12.5" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/><path d="M17.5 6.67L10 14.17 2.5 6.67" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </a>
+      <button class="mob-menu-btn" id="mobBtn"><i class="fas fa-bars"></i></button>
+    </div>
+  </div>
+</header>
+
+<!-- ═══════════════════ MAIN ══════════════════════════════ -->
+<main class="main-area">
+  <div class="wrap">
+    <div class="row g-4">
+
+      <!-- ── Col 1 · Profile ────────────────────────────── -->
+      <div class="col-xl-4">
+        <div class="card profile-card">
+          <div class="card-body">
+
+            <div class="avatar-ring">
+              <img src="../assets/images/ahmed sharif Khan noor.png" alt="Ahmed Sharif Khan Noor">
+              <div class="online-dot"></div>
+            </div>
+
+            <h2 class="profile-name">Ahmed Sharif Khan 👋</h2>
+            <span class="profile-badge">Digital Marketing Specialist &amp; Media Buyer</span>
+
+            <p class="profile-desc">
+              A results-driven <strong>Media Buyer</strong> &amp; <strong>Marketing Strategist</strong>
+              with <strong>4+ years</strong> of experience. Delivering
+              <strong>700%+ ROAS</strong> for brands across Meta, Google, TikTok &amp; LinkedIn
+              — serving clients in <strong>24+ countries</strong>.
+            </p>
+
+            <div class="stats-grid">
+              <div class="stat-box">
+                <div class="stat-num">700%+</div>
+                <div class="stat-lbl">Peak ROAS</div>
+              </div>
+              <div class="stat-box">
+                <div class="stat-num">4+</div>
+                <div class="stat-lbl">Yrs Experience</div>
+              </div>
+              <div class="stat-box">
+                <div class="stat-num">1K+</div>
+                <div class="stat-lbl">Campaigns Run</div>
+              </div>
+              <div class="stat-box">
+                <div class="stat-num">50+</div>
+                <div class="stat-lbl">Happy Clients</div>
+              </div>
+            </div>
+
+            <div class="btn-group-profile">
+              <a class="pbtn pbtn-primary" href="tel:+8801744750096">
+                <i class="fas fa-phone"></i> Book A Call
+              </a>
+              <button class="pbtn pbtn-secondary" id="copyBtn" data-email="ahmedsharifkhannoor@gmail.com">
+                <i class="fas fa-copy"></i> Copy Email
+              </button>
+            </div>
+
+            <div class="social-row">
+              <a href="https://www.facebook.com/ahmedsharifkhannoor" target="_blank" title="Facebook"><i class="fab fa-facebook-f"></i></a>
+              <a href="https://www.linkedin.com/in/ahmedsharifkhannoor" target="_blank" title="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+              <a href="https://www.github.com/ahmedsharifkhan" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
+              <a href="https://x.com/ahmedsharifkhan" target="_blank" title="X / Twitter"><i class="fab fa-x-twitter"></i></a>
+              <a href="https://www.instagram.com/ahmedsharifkhannoor" target="_blank" title="Instagram"><i class="fab fa-instagram"></i></a>
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+      <!-- ── Col 2 · Experience + Tools ───────────────── -->
+      <div class="col-xl-4">
+        <div class="row g-4 h-100">
+
+          <!-- Work Experience -->
+          <div class="col-12">
+            <div class="card work-card">
+              <div class="card-body">
+                <h3 class="card-title">Work Experience</h3>
+                <div class="exp-wrap">
+                  <ul class="exp-list" id="expList">
+                    <!-- Real entries -->
+                    <li class="exp-item">
+                      <div class="exp-ico" style="background:rgba(71,112,255,.12)">
+                        <i class="fas fa-globe" style="color:#4770FF"></i>
+                      </div>
+                      <div class="exp-info">
+                        <h4>Business Globalizer</h4>
+                        <p>Digital Marketing Specialist</p>
+                      </div>
+                      <span class="exp-date">2024–Now</span>
+                    </li>
+                    <li class="exp-item">
+                      <div class="exp-ico" style="background:rgba(234,67,53,.12)">
+                        <i class="fas fa-shopping-bag" style="color:#ea4335"></i>
+                      </div>
+                      <div class="exp-info">
+                        <h4>Ecomclips</h4>
+                        <p>Project Manager — Digital Mkt.</p>
+                      </div>
+                      <span class="exp-date">2022–2023</span>
+                    </li>
+                    <li class="exp-item">
+                      <div class="exp-ico" style="background:rgba(168,85,247,.12)">
+                        <i class="fas fa-laptop-code" style="color:#a855f7"></i>
+                      </div>
+                      <div class="exp-info">
+                        <h4>Freelance</h4>
+                        <p>Media Buyer — Multiple Clients</p>
+                      </div>
+                      <span class="exp-date">2022–2025</span>
+                    </li>
+                    <!-- Duplicated for seamless loop -->
+                    <li class="exp-item">
+                      <div class="exp-ico" style="background:rgba(71,112,255,.12)">
+                        <i class="fas fa-globe" style="color:#4770FF"></i>
+                      </div>
+                      <div class="exp-info">
+                        <h4>Business Globalizer</h4>
+                        <p>Digital Marketing Specialist</p>
+                      </div>
+                      <span class="exp-date">2024–Now</span>
+                    </li>
+                    <li class="exp-item">
+                      <div class="exp-ico" style="background:rgba(234,67,53,.12)">
+                        <i class="fas fa-shopping-bag" style="color:#ea4335"></i>
+                      </div>
+                      <div class="exp-info">
+                        <h4>Ecomclips</h4>
+                        <p>Project Manager — Digital Mkt.</p>
+                      </div>
+                      <span class="exp-date">2022–2023</span>
+                    </li>
+                    <li class="exp-item">
+                      <div class="exp-ico" style="background:rgba(168,85,247,.12)">
+                        <i class="fas fa-laptop-code" style="color:#a855f7"></i>
+                      </div>
+                      <div class="exp-info">
+                        <h4>Freelance</h4>
+                        <p>Media Buyer — Multiple Clients</p>
+                      </div>
+                      <span class="exp-date">2022–2025</span>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Expert Tools -->
+          <div class="col-12">
+            <div class="card">
+              <div class="card-body">
+                <h3 class="card-title">My Expert Area</h3>
+                <div class="row g-2 mt-3">
+                  <div class="col-4">
+                    <div class="tool-item">
+                      <i class="fab fa-facebook-f tool-ico"></i>
+                      <span class="tool-name">Meta Ads</span>
+                    </div>
+                  </div>
+                  <div class="col-4">
+                    <div class="tool-item">
+                      <i class="fab fa-google tool-ico"></i>
+                      <span class="tool-name">Google Ads</span>
+                    </div>
+                  </div>
+                  <div class="col-4">
+                    <div class="tool-item">
+                      <i class="fab fa-tiktok tool-ico"></i>
+                      <span class="tool-name">TikTok Ads</span>
+                    </div>
+                  </div>
+                  <div class="col-4">
+                    <div class="tool-item">
+                      <i class="fab fa-linkedin-in tool-ico"></i>
+                      <span class="tool-name">LinkedIn Ads</span>
+                    </div>
+                  </div>
+                  <div class="col-4">
+                    <div class="tool-item">
+                      <i class="fas fa-tag tool-ico"></i>
+                      <span class="tool-name">GTM</span>
+                    </div>
+                  </div>
+                  <div class="col-4">
+                    <div class="tool-item">
+                      <i class="fas fa-chart-bar tool-ico"></i>
+                      <span class="tool-name">GA4</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- ── Col 3 · Recent Projects ───────────────────── -->
+      <div class="col-xl-4">
+        <div class="card project-card">
+          <div class="card-body">
+            <h3 class="card-title">
+              Recent Projects
+              <a class="link-btn" href="#">
+                All Projects
+                <svg width="16" height="16" viewBox="0 0 20 20" fill="none"><path d="M4.167 10H15.833" stroke="#4770FF" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/><path d="M10.833 15L15.833 10" stroke="#4770FF" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/><path d="M10.833 5L15.833 10" stroke="#4770FF" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              </a>
+            </h3>
+            <div class="row g-3 mt-1">
+              <div class="col-12">
+                <div class="project-thumb">
+                  <img src="../assets/images/portfolio/Google_Ads 1.png" alt="Google Ads Campaign Result">
+                  <span class="proj-tag">Google Ads</span>
+                </div>
+              </div>
+              <div class="col-12">
+                <div class="project-thumb">
+                  <img src="../assets/images/portfolio/Social Medai Post Design (1).jpg" alt="Meta Ads Creative">
+                  <span class="proj-tag">Meta Ads Creative</span>
+                </div>
+              </div>
+              <div class="col-6">
+                <div class="project-thumb">
+                  <img src="../assets/images/portfolio/Conversion Tracking.gif" alt="Conversion Tracking" style="height:90px">
+                  <span class="proj-tag">Tracking</span>
+                </div>
+              </div>
+              <div class="col-6">
+                <div class="project-thumb">
+                  <img src="../assets/images/portfolio/TikTok-Ads-Results 7.png" alt="TikTok Ads" style="height:90px">
+                  <span class="proj-tag">TikTok Ads</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div><!-- /row -->
+
+    <!-- ═══ Services Row ══════════════════════════════════ -->
+    <div class="row g-4 mt-1">
+
+      <!-- Services -->
+      <div class="col-xl-8">
+        <div class="card">
+          <div class="card-body">
+            <h3 class="card-title">
+              Services I Offer
+              <a class="link-btn" href="#">
+                See All
+                <svg width="16" height="16" viewBox="0 0 20 20" fill="none"><path d="M4.167 10H15.833" stroke="#4770FF" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/><path d="M10.833 15L15.833 10" stroke="#4770FF" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/><path d="M10.833 5L15.833 10" stroke="#4770FF" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              </a>
+            </h3>
+            <div class="row g-3 mt-1">
+              <div class="col-md-3 col-6">
+                <div class="svc-item">
+                  <i class="fab fa-facebook-f svc-ico"></i>
+                  <span class="svc-label">Meta Ads</span>
+                </div>
+              </div>
+              <div class="col-md-3 col-6">
+                <div class="svc-item">
+                  <i class="fab fa-google svc-ico"></i>
+                  <span class="svc-label">Google Ads</span>
+                </div>
+              </div>
+              <div class="col-md-3 col-6">
+                <div class="svc-item">
+                  <i class="fab fa-tiktok svc-ico"></i>
+                  <span class="svc-label">TikTok Ads</span>
+                </div>
+              </div>
+              <div class="col-md-3 col-6">
+                <div class="svc-item">
+                  <i class="fab fa-linkedin-in svc-ico"></i>
+                  <span class="svc-label">LinkedIn Ads</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Let's Work Together -->
+      <div class="col-xl-4">
+        <div class="card work-together-card">
+          <div class="card-body">
+            <div class="marquee-wrap">
+              <p>Available For Hire 🚀 Growing Brands with Data-Driven Ads 📈 Available For Hire 🚀 Growing Brands with Data-Driven Ads 📈 &nbsp;&nbsp;&nbsp;</p>
+            </div>
+            <h2>Let's 👋<span class="d-block">Work Together</span></h2>
+            <a class="link-btn" href="mailto:ahmedsharifkhannoor@gmail.com">
+              Let's Talk
+              <svg width="18" height="18" viewBox="0 0 20 20" fill="none"><path d="M17.5 11.67V6.67H12.5" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/><path d="M17.5 6.67L10 14.17 2.5 6.67" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </a>
+          </div>
+        </div>
+      </div>
+
+    </div><!-- /services row -->
+  </div>
+</main>
+
+<!-- Background decorative blobs -->
+<div class="bg-blobs">
+  <div class="blob blob-1"></div>
+  <div class="blob blob-2"></div>
+</div>
+
+<!-- ═══════════════════ FOOTER ════════════════════════════ -->
+<footer class="footer">
+  <p>© Ahmed Sharif Khan 2024 &nbsp;·&nbsp; Inspired by <a href="https://marveltheme.com" target="_blank">BentoFolio by MarvelTheme</a></p>
+</footer>
+
+</div><!-- /#pg -->
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+<script>
+(function(){
+  // ── Fade in ──────────────────────────────────────────
+  window.addEventListener('load',()=>{
+    document.getElementById('pg').style.opacity='1';
+  });
+
+  // ── Dark / Light Mode ────────────────────────────────
+  const body = document.getElementById('body');
+  const themeBtn = document.getElementById('themeBtn');
+  const themeIcon = document.getElementById('themeIcon');
+
+  function applyTheme(dark){
+    body.classList.toggle('dark', dark);
+    themeIcon.className = dark ? 'fas fa-sun' : 'fas fa-moon';
+  }
+
+  const saved = localStorage.getItem('bf-theme');
+  const prefersDark = window.matchMedia('(prefers-color-scheme:dark)').matches;
+  applyTheme(saved ? saved==='dark' : prefersDark);
+
+  themeBtn.addEventListener('click',()=>{
+    const isDark = !body.classList.contains('dark');
+    applyTheme(isDark);
+    localStorage.setItem('bf-theme', isDark?'dark':'light');
+  });
+
+  // ── Mobile menu ──────────────────────────────────────
+  document.getElementById('mobBtn').addEventListener('click',()=>{
+    document.getElementById('navLinks').classList.toggle('open');
+  });
+  document.addEventListener('click', e=>{
+    if(!e.target.closest('.hdr')) document.getElementById('navLinks').classList.remove('open');
+  });
+
+  // ── Copy email ───────────────────────────────────────
+  const copyBtn = document.getElementById('copyBtn');
+  copyBtn.addEventListener('click',()=>{
+    navigator.clipboard.writeText(copyBtn.dataset.email).then(()=>{
+      copyBtn.innerHTML='<i class="fas fa-check"></i> Copied!';
+      copyBtn.classList.add('copied');
+      setTimeout(()=>{
+        copyBtn.innerHTML='<i class="fas fa-copy"></i> Copy Email';
+        copyBtn.classList.remove('copied');
+      },2200);
+    });
+  });
+})();
+</script>
+</body>
+</html>
