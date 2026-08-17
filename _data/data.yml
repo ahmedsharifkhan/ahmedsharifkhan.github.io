@@ -1,11 +1,11 @@
 name: Ahmed Sharif Khan
-subtitle: Digital Marketing Specialist and Media Buying
+subtitle: Digital Marketer and Media Buyer
 ahmed_image: /assets/images/ahmed sharif Khan noor.png
 
 # Sidebar
 contact:
   email: ahmedsharifkhannoor@gmail.com
-  phone: +8801744750096
+  phone: "+8801744750096"
   address: Mirpur, Dhaka
   github: https://www.github.com/ahmedsharifkhan
   facebook: https://www.facebook.com/ahmedsharifkhannoor
@@ -30,87 +30,117 @@ education:
   - degree: SSC
     university: Nayansuka R. K High School
 
-# Career Summary
+# Career Objective
 profile: |
-  I am a highly motivated and results-driven digital marketing professional with extensive experience in running Meta paid campaigns, budget optimization, and leveraging strategic insights. Passionate about utilizing data-driven decision-making to enhance brand visibility and achieve impressive ROI. Seeking a competitive position to apply my marketing expertise, expand my skill set, and contribute to the success of your organization.
+  Digital Marketing and Media Buying professional with hands-on experience managing Meta and Google advertising campaigns for e-commerce and service-based businesses. Skilled in campaign planning, budget optimization, audience targeting, conversion tracking, creative testing, and performance reporting. Experienced in working with local and international clients to generate leads, increase sales, and improve advertising efficiency.
 
 # Experience
 experience:
-  - role: Digital Marketing Specialist
-    time: 2024 - Present
+  - role: Executive, Digital Marketing & Media Buying
+    time: February 2025 - Present
+    company: BouncePixel
+    url:
+    organization: Digital Marketing
+    details: |
+      <div class="experience-details">
+        <p class="description">
+          BouncePixel is a digital marketing agency providing paid advertising, campaign management, creative strategy, tracking, and performance optimization services for local and international clients.
+        </p>
+        <h6 class="subtitle">Key Qualifications and Responsibilities</h6>
+        <ul class="unordered-list">
+          <li>Plan, launch, and optimize paid advertising campaigns across Meta, Google, and TikTok.</li>
+          <li>Develop campaign strategies based on client goals, target audiences, budgets, and conversion objectives.</li>
+          <li>Manage campaign budgets, bidding strategies, placements, and daily performance.</li>
+          <li>Build custom, lookalike, retargeting, and remarketing audiences.</li>
+          <li>Monitor CTR, CPC, CPM, CPA, conversion rate, and ROAS to identify optimization opportunities.</li>
+          <li>Coordinate ad creatives, copy, landing pages, and promotional offers with creative and content teams.</li>
+          <li>Set up and troubleshoot Meta Pixel, Conversion API, Google Tag Manager, and campaign tracking.</li>
+        </ul>
+        <h6 class="subtitle">Key Achievements</h6>
+        <ul class="unordered-list">
+          <li>Managed paid advertising campaigns for local and international clients.</li>
+          <li>Improved campaign performance through audience testing, creative testing, and budget optimization.</li>
+          <li>Supported lead generation and e-commerce sales campaigns across multiple industries.</li>
+          <li>Resolved advertising account, tracking, campaign approval, and performance-related issues.</li>
+        </ul>
+      </div>
+    tagname: Technologies Used
+    technologies_used: |
+      Meta Ads, Google Ads, TikTok Ads, Meta Pixel, Conversion API, Google Tag Manager, Campaign Tracking, Budget Optimization
+
+  - role: Executive, Digital Marketing and Media Buyer
+    time: December 2023 - January 2025
     company: Business Globalizer
     url: https://businessglobalizer.com
     organization: Digital Marketing
     details: |
       <div class="experience-details">
         <p class="description">
-          Business Globalizer is a trusted partner for global business expansion, providing expert services in company formation, banking setup, eCommerce solutions, and tax filing in the US, UK, and UAE.
+          Business Globalizer provides company formation, business setup, tax, banking, and e-commerce support for international entrepreneurs.
         </p>
         <h6 class="subtitle">Key Qualifications and Responsibilities</h6>
         <ul class="unordered-list">
-          <li>Developed and optimized content funnels to enhance advertising strategies, effectively engaging target audiences.</li>
-          <li>Managed budgets for paid media campaigns, ensuring efficient allocation and maximizing ROI.</li>
-          <li>Collaborated with cross-functional marketing teams to align campaign strategies with overarching goals.</li>
-          <li>Executed multi-platform advertising campaigns, overseeing setup, placement, and continuous monitoring.</li>
-          <li>Optimized buying strategies, adjusting tactics to improve performance and meet objectives.</li>
-          <li>Analyzed performance metrics to assess campaign effectiveness and identify opportunities for improvement.</li>
-          <li>Ensured sales channel alignment with marketing objectives and maintained consistent brand messaging.</li>
-          <li>Defined and evaluated key media KPIs, using insights to inform and enhance future strategies.</li>
+          <li>Planned and managed Meta and Google Ads campaigns for international business formation services.</li>
+          <li>Developed lead generation funnels for company formation, tax, banking, and e-commerce solutions.</li>
+          <li>Managed campaign budgets, audience targeting, bidding strategies, and media allocation.</li>
+          <li>Conducted audience, competitor, and market research for international customer acquisition.</li>
+          <li>Monitored CTR, CPC, CPM, CPA, conversion rate, and ROAS.</li>
+          <li>Implemented retargeting campaigns for website visitors, leads, and potential clients.</li>
+          <li>Worked with creative, sales, content, and customer support teams to improve lead quality and conversion.</li>
         </ul>
         <h6 class="subtitle">Key Achievements</h6>
         <ul class="unordered-list">
-          <li>🏆 Best Employee of Brand &amp; Promotion 2024 at Business Globalizer</li>
-          <li>Obtained 1000+ ITINs — Facilitated seamless U.S. tax compliance for international clients.</li>
-          <li>Formed 200+ U.S. Companies — Provided end-to-end support for business setup and compliance.</li>
-          <li>Launched 100+ UK Businesses — Delivered expert guidance for UK company formation.</li>
-          <li>Streamlined Processes — Reduced company setup times in the UK by 50%.</li>
-          <li>Achieved 70%+ Client Satisfaction through high-quality company formation services.</li>
+          <li>Generated qualified leads for international business formation services through paid advertising.</li>
+          <li>Improved campaign performance through audience refinement, creative testing, and retargeting.</li>
+          <li>Supported customer acquisition campaigns targeting the United States, United Kingdom, and other international markets.</li>
+          <li>🏆 Received the Best Employee, Brand & Promotion Award in 2024.</li>
         </ul>
       </div>
     tagname: Technologies Used
     technologies_used: |
       Meta Ads, Google Ads, TikTok Ads, LinkedIn Ads, GTM, GA4, Meta Pixel, CAPI, UTM Tracking, Campaign Attribution, Budget Optimization
 
-  - role: Project Manager (Digital Marketing)
-    time: 2022 - 2023
+  - role: Digital Marketing and Media Buying Executive
+    time: April 2022 - December 2023
     company: Ecomclips
     url: https://ecomclips.com
-    organization: IT
+    organization: E-commerce
     details: |
       <div class="experience-details">
         <p class="description">
-          Ecomclips is a data-driven eCommerce solution that helps with online marketing, brand identity, SEO, and content creation.
+          Ecomclips is a data-driven e-commerce solutions company providing digital advertising, online marketing, brand identity, SEO, and content creation services.
         </p>
         <h6 class="subtitle">Key Qualifications and Responsibilities</h6>
         <ul class="unordered-list">
-          <li>Planned, executed, and optimized social media advertising campaigns across Facebook, Google Ads, Instagram, Twitter, and LinkedIn.</li>
-          <li>Conducted thorough audience research and utilized data analytics to identify target demographics and optimize ad targeting strategies.</li>
-          <li>Collaborated with cross-functional teams to develop compelling ad creatives and messaging aligned with brand guidelines.</li>
-          <li>Monitored and analyzed KPIs to measure campaign effectiveness and made data-driven recommendations for continuous improvement.</li>
-          <li>Stayed abreast of industry trends and algorithm changes to ensure best practices.</li>
-          <li>Produced 50+ Facebook posts and 50+ Google Ads for multiple clients.</li>
-          <li>Ran paid campaigns on Facebook, Instagram, LinkedIn, Twitter/X, TikTok with optimization and analytics monitoring.</li>
+          <li>Planned and managed paid advertising campaigns for e-commerce clients.</li>
+          <li>Conducted audience research, competitor analysis, and customer segmentation.</li>
+          <li>Managed campaign budgets, placements, bidding, and daily optimization.</li>
+          <li>Coordinated with design and content teams to produce advertising creatives and copy.</li>
+          <li>Implemented retargeting, remarketing, and lookalike audience campaigns.</li>
+          <li>Monitored performance and prepared reports with optimization recommendations.</li>
+          <li>Tested audiences, creatives, offers, headlines, and campaign structures.</li>
         </ul>
         <h6 class="subtitle">Key Achievements</h6>
         <ul class="unordered-list">
-          <li>🏆 Awarded Employee of the Month</li>
-          <li>Achieved ROAS of 700–800% from Google Ads campaigns.</li>
-          <li>Attained remarkable 600% return on ad spend (ROAS) through Facebook Ads.</li>
+          <li>Managed paid advertising campaigns for multiple e-commerce clients.</li>
+          <li>Contributed to revenue growth through Meta and Google advertising campaigns.</li>
+          <li>Improved campaign performance through audience testing, creative optimization, and data-driven budget allocation.</li>
+          <li>Received recognition for strong performance and contribution to campaign delivery.</li>
         </ul>
       </div>
     tagname: Technologies Used
     technologies_used: |
       Digital Marketing, Social Media Marketing, Google Ads, Facebook Ads, Google Tag Manager, Google Analytics, SEO, Meta Pixel
 
-  - role: Remote Digital Marketing & Media Buying Support
-    time: 2022 - 2025
+  - role: Remote Digital Marketing & Media Buying Consultant
+    time: 2022 - Present
     company: Multiple Clients
     url:
     organization: Freelance
     details: |
       <div class="experience-details">
         <p class="description">
-          Provided remote digital marketing and media buying support to multiple businesses, helping them establish and grow their online presence from scratch.
+          Provided remote digital marketing and media buying consultancy to multiple businesses, helping them establish and grow their online presence.
         </p>
         <ul class="unordered-list">
           <li>Solemare</li>
@@ -123,39 +153,6 @@ experience:
     tagname: Technologies Used
     technologies_used: |
       Meta Ads, Google Ads, TikTok Ads, Content Strategy, Audience Research, Campaign Optimization
-
-  - role: Final-Year Thesis Research
-    time: 2020
-    company: Elkjournals
-    url: https://www.elkjournals.com/journalcurrentissue.asp?JType=EAPJMRM&VType=11&IType=3
-    details: |
-      <div class="experience-details">
-        <h6 class="subtitle">Active research with Md. Abdullah-Al-Masum (Senior Lecturer)</h6>
-        <p class="description">
-          IMPACT OF COVID-19 ON PROMOTIONAL STRATEGIES OF PHARMACEUTICAL COMPANIES IN BANGLADESH
-        </p>
-        <ul class="unordered-list">
-          <li>Volume 11 Issue 3 (July – September 2020)</li>
-        </ul>
-      </div>
-
-  - role: Research Publication
-    time: 2021
-    company: EBAUB
-    url: https://ebaub.ac.bd/journal/ej/archive/vol3.html
-    details: |
-      <div class="experience-details">
-        <h6 class="subtitle">Active research with Md. Abdullah-Al-Masum (Senior Lecturer)</h6>
-        <p class="description">
-          Strategies to Fight against the Downward Sales during COVID-19: Study on Pharmaceutical Companies in Bangladesh
-        </p>
-        <ul class="unordered-list">
-          <li>EBAUB Journal Volume 3 January 2021</li>
-        </ul>
-      </div>
-    tagname: Methods Used
-    technologies_used: |
-      Market Research, Data Collection, Data Analysis, SPSS
 
 
 # Other Details (right column of resume)
@@ -186,50 +183,70 @@ other:
 
   - title: SKILLS & EXPERTISE
     details: |
-      Meta Ads (FB+IG Ads Manager)
-      Google Ads (Search, Display, YouTube, Performance Max)
-      TikTok Ads Manager
-      LinkedIn Ads, Twitter Ads & Pinterest Ads
-      Campaign Planning & Funnel Strategy (TOFU, MOFU, BOFU)
-      Budget Management & Optimization
-      Conversion Rate Optimization (CRO)
-      Landing Page Testing (A/B Testing)
-      GTM + GA4
-      Meta Pixel & Conversion API (CAPI)
-      Google Merchant Center Setup & Feed Management
-      UTM Tracking & Campaign Attribution
-      Audience Research & Persona Creation
-      Competitor Ad Analysis
-      Keyword Research
-      Full-Funnel Marketing Strategy
-      Retargeting and Remarketing
-      Ad Copywriting & Hook Strategy
-      Content Planning (Calendar + Platform Strategy + UGC)
-      Creative Testing & Optimization
-      Canva / CapCut / Adobe Express
-      AI-Powered Ad Tools (Revealbot, Madgicx)
+      Meta Ads
+      Google Ads
+      TikTok Ads
+      LinkedIn Ads
+      Pinterest Ads
+      Campaign Planning
+      Media Planning
+      Audience Targeting
+      Retargeting & Lookalike Audiences
+      A/B Testing
+      Budget Optimization
+      Meta Pixel & Conversion API
+      Google Tag Manager
+      GA4
+      UTM Tracking
+      Looker Studio
+      Attribution & Funnel Analysis
+      Email & SMS Marketing Automation
+      Lead Nurturing & Abandoned Cart Flows
+      Retention Campaigns
+      Customer Segmentation
+      Lead Management & Sales Pipeline (CRM)
+      Follow-up Automation
+      Canva & Ad Creative Design
+      Short-form Video Editing
+      Ad & Landing Page Copywriting
+      Content Strategy
+      ChatGPT, Claude & Google Gemini
+      Google Flow & Prompt Engineering
+      AI-assisted Research & Content Creation
 
   - title: COURSES & CERTIFICATIONS
     details: |
       Scaling META Ads by Godson Okorodudu (2024)
       Create Landing Pages That Sell With AI by Godson Okorodudu (2024)
       Digital Marketing Mastery by Idean Consulting (2023)
-      Digital Marketing, Google Ads, Facebook Ads by Skilluper.com (2023)
-      Google Digital Marketing & E-commerce Professional by Google / Skilluper.com (2022)
-      Social Media Banner Design Graphic Designer by Dopementor.com (2022)
+      Digital Marketing, Google Ads, Facebook Ads and other by Skilluper (2023)
+      Google Digital Marketing & E-commerce Professional by Google Skilluper (2022)
       Digital Marketing Associate by Facebook (2021)
+      Social Media Banner Design Graphic Designer by Rashidul Islam (2022)
 
   - title: ACHIEVEMENTS & ACTIVITIES
     details: |
-      🏆 Best Employee of Brand & Promotion 2024 — Business Globalizer
-      25th Pacific-Asia Conference on Knowledge Discovery and Data Mining
-      Commonwealth - Common Purpose - Open Source Leader
+      🏆 Best Employee, Brand & Promotion 2024 at Business Globalizer
+      Meta Ads Campaign Planning and Optimization
+      Facebook and Instagram Media Buying
+      Meta Pixel and Conversion API Implementation
+      Audience Research and Segmentation
+      Retargeting and Lookalike Campaign Management
+      Creative Testing and Performance Optimization
+      ROAS, CPA, CTR, and CPC Optimization
+      E-commerce Sales Campaign Management
+      Lead Generation Campaign Management
+      Meta Ads Workshops and Industry Learning
+      Managed Campaigns for Multiple Local and International Brands
 
   - title: CORE COMPETENCIES
     details: |
-      Able to work in a team and maintain effective relationships
-      Skilled to complete work on time
-      Evaluate situations and find effective solutions
+      Campaign Planning and Execution
+      Analytical Thinking and Problem Solving
+      Team Collaboration and Communication
+      Time and Priority Management
+      Attention to Detail
+      Adaptability and Continuous Learning
 
   - title: L A N G U A G E
     details: |
@@ -242,8 +259,7 @@ other:
       Data Science
       Photography
       Cloud Computing
-      Online Gaming
-      Traveling
+      Product Testing
 
   - title: R E F E R E N C E
     varsity: Executive Head of Brand and Promotion
@@ -260,16 +276,3 @@ other:
     details: |
       <a href="tel:+8801710720118">01710720118</a>
       <a href="mailto:aamtonmoy@outlook.com">aamtonmoy@outlook.com</a>
-
-
-course:
-  - details: |
-      <li>Scaling META Ads by Godson Okorodudu (2024)</li>
-      <li>Create Landing Pages That Sell With AI by Godson Okorodudu (2024)</li>
-      <li>Digital Marketing Mastery by Idean Consulting (2023)</li>
-      <li>Digital Marketing, Google Ads, Facebook Ads and other by Skilluper.com (2023)</li>
-      <li>Google Digital Marketing &amp; E-commerce Professional by Google / Skilluper.com (2022)</li>
-      <li>Social Media Banner Design Graphic Designer by Dopementor.com (2022)</li>
-      <li>Digital Marketing Associate by Facebook (2021)</li>
-      <li>Web Design for Everybody Authorized by the University of Michigan (2020)</li>
-      <li>Open Source Leader Authorized by Common Purpose (2020)</li>

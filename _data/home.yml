@@ -194,3 +194,102 @@ faq:
       answer: "I use Meta Pixel with Conversion API (CAPI), Google Tag Manager, GA4, and UTM parameters for full cross-channel attribution. You get transparent access to all dashboards and a monthly report."
     - question: "Can you work with my existing team?"
       answer: "Absolutely. I collaborate closely with in-house teams, designers, content creators, and developers. I can also handle everything end-to-end if you prefer a single point of contact."
+
+# --- TRUSTED BY ---
+trusted_by:
+  eyebrow: "TRUSTED BY"
+  items:
+    - name: "Business Globalizer"
+      note: "Digital Marketing Specialist · 2024–Present"
+    - name: "Ecomclips"
+      note: "Project Manager, Digital Marketing · 2022–2023"
+    - name: "Solemare"
+      note: "Remote media buying support"
+    - name: "Jungle Bari"
+      note: "Remote media buying support"
+    - name: "Kidoriabd"
+      note: "Remote media buying support"
+    - name: "Sharon Clothing"
+      note: "Remote media buying support"
+
+# --- SKILLS ---
+skills:
+  eyebrow: "WHAT I'M GOOD AT"
+  title: "Skills & Expertise"
+  subtitle: "A hands-on toolkit built from 4+ years of running real ad budgets across platforms."
+
+# --- FEATURED PROJECTS SLIDER ---
+projects_slider:
+  eyebrow: "MY WORK"
+  title: "Featured Projects"
+  subtitle: "A mix of live campaign results, ad creatives and design work from recent projects."
+
+# --- CASE STUDIES ---
+case_studies:
+  eyebrow: "PROOF OF WORK"
+  title: "Case Studies"
+  subtitle: "A closer look at how the numbers on this page actually got made."
+  items:
+    - company: "Ecomclips"
+      tag: "E-commerce · Google & Meta Ads"
+      problem: "Campaigns were spending steadily on Google and Meta, but conversions weren't scaling with the budget increases."
+      strategy: "Rebuilt the account structure around Search + Shopping campaigns for Google, and full-funnel Meta campaigns with dedicated retargeting audiences."
+      execution: "Rewrote ad copy, ran structured creative tests, set up Meta Pixel with accurate conversion tracking, and ran weekly optimisation cycles on budget and bids."
+      result: "700–800% ROAS on Google Ads and 600% ROAS on Meta Ads, sustained across multiple product verticals."
+      metric_number: "700–800%"
+      metric_label: "Google Ads ROAS"
+    - company: "Business Globalizer"
+      tag: "Global Business Services · Content & Media Buying"
+      problem: "International clients needed a faster, clearer path to U.S. company formation and ITIN support, but the funnel and internal process were slow."
+      strategy: "Developed and optimised content funnels for paid campaigns, aligning ad messaging with the sales team's actual process to cut friction for leads."
+      execution: "Managed multi-platform ad budgets end-to-end — setup, placement, monitoring — while collaborating with the sales team to streamline the UK company setup workflow."
+      result: "Helped facilitate 1,000+ ITINs, formed 200+ U.S. companies, launched 100+ UK businesses, and cut UK setup time by 50% — earning Best Employee of Brand & Promotion 2024."
+      metric_number: "50%"
+      metric_label: "Faster UK company setup"
+
+# --- EXPERIENCE ---
+experience_section:
+  eyebrow: "CAREER"
+  title: "Experience"
+  subtitle: "Where I've worked and what I was responsible for."
+
+# --- REFERENCES ---
+references:
+  eyebrow: "REFERENCES"
+  title: "Professional References"
+  subtitle: "People I've worked directly with — available for reference on request."
+  items:
+    - name: "MD J Naem"
+      role: "Executive Head of Brand and Promotion"
+      company: "Business Globalizer"
+      phone: "+8801956656095"
+      email: "naem@businessglobalizer.net"
+    - name: "Abdullah Al Mamun Tonmoy"
+      role: "Sr. Executive of Digital Marketing and E-Commerce Operations"
+      company: "Cosmic Bags"
+      phone: "+8801710720118"
+      email: "aamtonmoy@outlook.com"
+
+# --- CERTIFICATIONS & EDUCATION ---
+certifications:
+  eyebrow: "LIFELONG LEARNING"
+  title: "Certifications & Education"
+  subtitle: "Formal education plus the courses I've taken to stay sharp on paid media."
+
+# --- WHY WORK WITH ME ---
+why_us:
+  eyebrow: "WHY WORK WITH ME"
+  title: "What you actually get"
+  items:
+    - icon: fas fa-trophy
+      title: "Proven, not promised"
+      desc: "700–800% ROAS on Google Ads and 600% on Meta Ads aren't projections — they're results from real client accounts."
+    - icon: fas fa-layer-group
+      title: "Full-funnel, not just ads"
+      desc: "Strategy, creative, tracking and optimisation handled end-to-end — not just campaign setup and walk-away."
+    - icon: fas fa-bolt
+      title: "Multi-platform fluency"
+      desc: "Meta, Google, TikTok and LinkedIn Ads under one roof, so your budget goes where the data actually says it should."
+    - icon: fas fa-comments
+      title: "Direct communication"
+      desc: "You work with me directly — no account manager relay, no junior hand-offs on your budget."

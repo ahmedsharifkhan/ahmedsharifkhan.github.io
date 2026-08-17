@@ -810,3 +810,142 @@ portfolio:
     lazy_image: /assets/images/portfolio/website.png
     keywords: Website, Complete Design, Overview
     category: Website
+
+# ============================================================
+# Personal Brand Creative
+# ============================================================
+
+  - title: Marketing is Influencing Human Psychology
+    date: 2025-05-13 10:00:00 +0600
+    description: |
+      Personal-brand social post on how marketing taps into buyer psychology
+    url:
+    lazy_image: /assets/images/new images noor/2.jpg
+    keywords: Personal Brand, Social Post, Digital Marketing
+    category: Personal Brand Creative
+
+  - title: Sale Isn't the Last Word, Data Is the Real Story
+    date: 2025-05-13 10:00:00 +0600
+    description: |
+      Data-driven marketing social post creative
+    url:
+    lazy_image: /assets/images/new images noor/3.png
+    keywords: Personal Brand, Data-Driven Marketing, Social Post
+    category: Personal Brand Creative
+
+  - title: Why Doesn't AI Ever Recommend Your Website?
+    date: 2025-05-13 10:00:00 +0600
+    description: |
+      SEO and AI-search awareness social post creative
+    url:
+    lazy_image: /assets/images/new images noor/4.png
+    keywords: Personal Brand, SEO, AI Search, Social Post
+    category: Personal Brand Creative
+
+  - title: Turn Clicks Into Real Customers
+    date: 2025-05-13 10:00:00 +0600
+    description: |
+      Facebook Pixel and Conversion API awareness creative
+    url:
+    lazy_image: /assets/images/new images noor/5.png
+    keywords: Personal Brand, Facebook Pixel, Conversion API
+    category: Personal Brand Creative
+
+  - title: Digital Marketing Expert
+    date: 2025-05-13 10:00:00 +0600
+    description: |
+      Personal-brand banner design
+    url:
+    lazy_image: /assets/images/new images noor/7.png
+    keywords: Personal Brand, Digital Marketing, Banner Design
+    category: Personal Brand Creative
+
+  - title: Can One Ad Account Run Ads for Multiple Pages?
+    date: 2025-05-13 10:00:00 +0600
+    description: |
+      Meta Ads education social post creative
+    url:
+    lazy_image: /assets/images/new images noor/8.png
+    keywords: Personal Brand, Meta Ads, Education Post
+    category: Personal Brand Creative
+
+  - title: The Fish Employee vs. The Chicken Employee
+    date: 2025-05-13 10:00:00 +0600
+    description: |
+      Illustrative career-advice social post creative
+    url:
+    lazy_image: /assets/images/new images noor/9.jpg
+    keywords: Personal Brand, Illustration, Social Post
+    category: Personal Brand Creative
+
+  - title: Facebook Pixel Conversion API — iOS Update With GTM
+    date: 2025-05-13 10:00:00 +0600
+    description: |
+      Technical explainer creative on iOS 14.5 tracking updates
+    url:
+    lazy_image: /assets/images/new images noor/10.png
+    keywords: Personal Brand, Facebook Pixel, GTM, iOS 14.5
+    category: Personal Brand Creative
+
+  - title: Setup Facebook Pixel & Conversion API (Server-Side)
+    date: 2025-05-13 10:00:00 +0600
+    description: |
+      Server-side tracking setup explainer creative
+    url:
+    lazy_image: /assets/images/new images noor/11.png
+    keywords: Personal Brand, Server-Side Tracking, GTM
+    category: Personal Brand Creative
+
+  - title: Marketing is Influencing Human Psychology — v2
+    date: 2025-05-13 10:00:00 +0600
+    description: |
+      Personal-brand social post variant with performance stat overlay
+    url:
+    lazy_image: /assets/images/new images noor/12.jpg
+    keywords: Personal Brand, Social Post, Digital Marketing
+    category: Personal Brand Creative
+
+  - title: Laravel PHP CMS — Custom Data Layer for Pixel Tracking
+    date: 2025-05-13 10:00:00 +0600
+    description: |
+      Technical creative on custom data layers for conversion tracking
+    url:
+    lazy_image: /assets/images/new images noor/13.png
+    keywords: Personal Brand, Laravel, Data Layer, Tracking
+    category: Personal Brand Creative
+
+  - title: Advanced Conversion Tracking That Maximizes Your ROI
+    date: 2025-05-13 10:00:00 +0600
+    description: |
+      Personal-brand creative on conversion tracking and ROI
+    url:
+    lazy_image: /assets/images/new images noor/14.png
+    keywords: Personal Brand, Conversion Tracking, ROI
+    category: Personal Brand Creative
+
+  - title: Not Getting Customers? Social Media Marketing Is the Answer
+    date: 2025-05-13 10:00:00 +0600
+    description: |
+      Social media marketing promotional creative
+    url:
+    lazy_image: /assets/images/new images noor/15.jpg
+    keywords: Personal Brand, Social Media Marketing, Promotional
+    category: Personal Brand Creative
+
+  - title: Marketing is Influencing Human Psychology — v3
+    date: 2025-05-13 10:00:00 +0600
+    description: |
+      Personal-brand social post variant with performance stat overlay
+    url:
+    lazy_image: /assets/images/new images noor/16.jpg
+    keywords: Personal Brand, Social Post, Digital Marketing
+    category: Personal Brand Creative
+
+  - title: High Converting Website — For Business or Personal Brand
+    date: 2025-05-13 10:00:00 +0600
+    description: |
+      Website service promotional creative
+    url:
+    lazy_image: /assets/images/new images noor/17.jpg
+    keywords: Personal Brand, Website, SEO, Social Media
+    category: Personal Brand Creative

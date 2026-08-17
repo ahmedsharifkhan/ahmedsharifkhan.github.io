@@ -1,0 +1,19 @@
+/* ==========================================================
+   SITE-WIDE MOBILE FIXES
+   The shared navbar logo used to sit in a 25%-wide column next
+   to a 75%-wide icon column below 768px, forcing the full name
+   ("Ahmed Sharif Khan Noor.") to wrap into 4 lines that visually
+   collided with the search/social/hamburger icons. navbar.html
+   now stacks the two columns full-width instead; this file just
+   tunes spacing/size for that stacked layout.
+   ========================================================== */
+
+@media (max-width: 767.98px) {
+  .site-nav .row { row-gap: 10px; }
+  .site-nav .logo { font-size: clamp(1.05rem, 6vw, 1.6rem); line-height: 1.2; }
+  .site-nav .top-menu { padding-top: 2px; }
+}
+
+@media (max-width: 400px) {
+  .site-nav .logo { font-size: 1.05rem; }
+}

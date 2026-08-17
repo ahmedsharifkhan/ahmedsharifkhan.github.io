@@ -1,0 +1,99 @@
+/* ==========================================================
+   RESUME THEME — recolors the resume page to match the main
+   site's brand gradient (blue -> cyan -> violet) instead of the
+   old flat dark-navy palette. Loaded after pillar-1.css so these
+   overrides win; the print block re-asserts !important to beat
+   pillar-1.css's own print-only header override.
+   ========================================================== */
+
+.resume-header {
+  background: linear-gradient(135deg, #0c1b3a 0%, #0d47b0 38%, #0aa0e8 72%, #6b55ff 100%);
+}
+.resume-header::before {
+  background: radial-gradient(circle, rgba(255, 255, 255, .10) 0%, transparent 70%);
+}
+.resume-header::after {
+  background: radial-gradient(circle, rgba(107, 85, 255, .18) 0%, transparent 70%);
+}
+.resume-header .row::after {
+  background: linear-gradient(90deg, #4a9eff 0%, #12c7e8 45%, #6b55ff 100%);
+  height: 4px;
+}
+.resume-header .picture {
+  box-shadow: 0 0 0 6px rgba(74, 158, 255, .35), 0 10px 30px rgba(0, 0, 0, .4);
+}
+.resume-header .title {
+  background: linear-gradient(90deg, #4a9eff, #2c7be5);
+  border-left-color: transparent;
+  color: #fff;
+}
+.resume-social li a:hover .fa-container {
+  background: linear-gradient(135deg, #4a9eff, #6b55ff);
+  border-color: transparent;
+}
+
+.resume-section-title {
+  color: #101a2c;
+}
+.resume-section-title:after {
+  background: linear-gradient(90deg, #4a9eff 0%, #12c7e8 50%, #6b55ff 100%);
+  height: 2.5px;
+}
+
+.resume-timeline:before {
+  background: linear-gradient(180deg, #4a9eff, #6b55ff);
+}
+.resume-timeline-item:before {
+  border-color: #2c7be5;
+  box-shadow: 0 0 0 3px rgba(74, 158, 255, .15);
+}
+
+.resume-timeline-item-desc .badge.bg-secondary,
+.resume-section-content .badge.bg-secondary {
+  background: #eaf3ff !important;
+  color: #2c7be5 !important;
+  font-weight: 600;
+}
+
+@media print {
+  .resume-header {
+    background: linear-gradient(135deg, #0c1b3a 0%, #0d47b0 38%, #0aa0e8 72%, #6b55ff 100%) !important;
+  }
+  .resume-header .row::after {
+    background: linear-gradient(90deg, #4a9eff 0%, #12c7e8 45%, #6b55ff 100%) !important;
+  }
+  .resume-section-title:after {
+    background: linear-gradient(90deg, #4a9eff 0%, #12c7e8 50%, #6b55ff 100%) !important;
+  }
+}
+
+/* ==========================================================
+   MOBILE OPTIMIZATION
+   ========================================================== */
+.resume-wrapper-inner { max-width: 100%; overflow-x: hidden; }
+.resume-timeline-item { max-width: 100%; }
+
+@media (max-width: 767.98px) {
+  .resume-body.p-5 { padding: 1.75rem 1.25rem !important; }
+  .resume-header .name { font-size: 1.5rem; word-break: break-word; }
+  .resume-header .title { font-size: .82rem; }
+  .primary-info, .secondary-info { text-align: center; }
+  .resume-social { justify-content: center; display: flex; flex-wrap: wrap; gap: 4px 0; }
+
+  /* The floating PDF button + its hover tooltip: on a touch screen the
+     tooltip can't be hovered anyway, and its nowrap text can push the
+     page wider than the viewport. Shrink the button and drop the tooltip. */
+  .pdf-fab-wrapper { bottom: 18px; right: 18px; }
+  .pdf-fab-btn { padding: 10px 18px; font-size: .82rem; }
+  .pdf-fab-btn .btn-label { display: none; }
+  .pdf-fab-hint { display: none !important; }
+}
+
+@media (max-width: 480px) {
+  .resume-header .name { font-size: 1.25rem; letter-spacing: .04rem; }
+  .resume-picture-holder { padding: 16px 16px 6px; }
+  .resume-header .picture { width: 90px; height: 90px; }
+  .resume-section-title { font-size: 1.05rem; }
+  .resume-timeline { padding-left: 1.5rem; }
+  .resume-timeline-item:before { left: -26px; }
+}

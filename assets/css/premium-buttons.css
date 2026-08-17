@@ -1,0 +1,118 @@
+/* ==========================================================
+   PREMIUM BUTTON UPGRADE — gradient fills + left-to-right glaze
+   Applies across the whole site (home, about, blog, contact,
+   resume/CV). Reference: Business Globalizer landing page.
+   ========================================================== */
+
+@keyframes btnGlaze {
+  0%, 42% { left: -80%; }
+  70%, 100% { left: 150%; }
+}
+
+/* ---- Unified primary-CTA color across every page: same blue → indigo
+   gradient regardless of each page's own local color variables. ---- */
+.hp-btn-primary,
+.about-btn-primary,
+.bl-cta-btn,
+.consultancy-btn,
+.contact-submit-btn,
+.pdf-fab-btn {
+  background: linear-gradient(105deg, #075EE8 0%, #0A9DF4 48%, #7257FF 100%) !important;
+  box-shadow: 0 12px 28px rgba(19, 108, 232, .28), inset 0 1px 0 rgba(255, 255, 255, .28) !important;
+}
+.hp-btn-primary:hover,
+.about-btn-primary:hover,
+.bl-cta-btn:hover,
+.consultancy-btn:hover,
+.contact-submit-btn:hover,
+.pdf-fab-btn:hover {
+  filter: saturate(1.08) brightness(1.03);
+  box-shadow: 0 16px 34px rgba(19, 108, 232, .34), inset 0 1px 0 rgba(255, 255, 255, .3) !important;
+}
+
+/* ---- Group A: bold, already-gradient CTA buttons — white sweep ---- */
+.hp-btn-primary,
+.about-btn-primary,
+.bl-cta-btn,
+.consultancy-btn,
+.contact-submit-btn,
+.pdf-fab-btn,
+/* ---- Group B: light buttons on white backgrounds — recolored below, blue sweep ---- */
+.hp-btn-outline,
+.hp-btn-secondary,
+.about-btn-secondary {
+  position: relative;
+  isolation: isolate;
+  overflow: hidden;
+}
+
+.hp-btn-primary::after,
+.about-btn-primary::after,
+.bl-cta-btn::after,
+.consultancy-btn::after,
+.contact-submit-btn::after,
+.pdf-fab-btn::after {
+  content: "";
+  position: absolute;
+  z-index: 2;
+  top: -80%;
+  bottom: -80%;
+  left: -80%;
+  width: 34%;
+  transform: skewX(-24deg);
+  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, .75), transparent);
+  opacity: .75;
+  pointer-events: none;
+  animation: btnGlaze 3.4s ease-in-out infinite;
+}
+
+/* Light outline button: give it a soft brand-blue gradient fill so it
+   reads as a real button instead of a bare border, then sweep it with a
+   blue-tinted glaze (white would be invisible on a near-white fill). */
+.hp-btn-outline {
+  background: linear-gradient(120deg, #ffffff 0%, #eef5ff 55%, #eaf1ff 100%);
+  border-color: #cfe1f7;
+}
+.hp-btn-outline:hover {
+  background: linear-gradient(120deg, #f3f9ff 0%, #e4f0ff 55%, #dfebff 100%);
+}
+.hp-btn-outline::after,
+.hp-btn-secondary::after,
+.about-btn-secondary::after {
+  content: "";
+  position: absolute;
+  z-index: 2;
+  top: -80%;
+  bottom: -80%;
+  left: -80%;
+  width: 34%;
+  transform: skewX(-24deg);
+  background: linear-gradient(90deg, transparent, rgba(20, 135, 255, .28), transparent);
+  opacity: .9;
+  pointer-events: none;
+  animation: btnGlaze 3.4s ease-in-out infinite;
+}
+
+/* Stagger a couple of buttons so a page full of CTAs doesn't glaze in unison */
+.hp-btn-secondary::after,
+.about-btn-secondary::after {
+  animation-delay: .6s;
+}
+.bl-cta-btn::after,
+.consultancy-btn::after {
+  animation-delay: 1.1s;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .hp-btn-primary::after,
+  .about-btn-primary::after,
+  .bl-cta-btn::after,
+  .consultancy-btn::after,
+  .contact-submit-btn::after,
+  .pdf-fab-btn::after,
+  .hp-btn-secondary::after,
+  .about-btn-secondary::after,
+  .hp-btn-outline::after {
+    animation: none;
+  }
+}

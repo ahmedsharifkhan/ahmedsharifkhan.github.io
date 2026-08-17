@@ -15,7 +15,11 @@
   <meta name="description" content="{{ page.description | default: site.description | strip_html | truncate: 158 }}">
   <meta name="keywords" content="{{ page.keywords | default: site.keywords }}">
   <meta name="author" content="Ahmed Sharif Khan Noor">
+  {% if page.noindex %}
+  <meta name="robots" content="noindex, nofollow">
+  {% else %}
   <meta name="robots" content="index, follow">
+  {% endif %}
   <link rel="canonical" href="{{ page.url | absolute_url }}">
   <meta name="google-site-verification" content="FY761GODLm7L0iuWDtItCKMWVmWik8CA7pO1knXG_5c">
 
@@ -29,7 +33,7 @@
   {% endif %}
   <meta property="og:description" content="{{ page.description | default: site.description | strip_html | truncate: 155 }}">
   <meta property="og:url" content="{{ page.url | absolute_url }}">
-  <meta property="og:image" content="{{ page.image | default: '/assets/images/ahmed sharif Khan noor.png' | absolute_url }}">
+  <meta property="og:image" content="{{ page.image | default: '/assets/images/og-cover.jpg' | absolute_url }}">
   <meta property="og:image:width" content="1200">
   <meta property="og:image:height" content="630">
 
@@ -42,20 +46,20 @@
   <meta name="twitter:title" content="Ahmed Sharif Khan Noor — Digital Marketing Specialist">
   {% endif %}
   <meta name="twitter:description" content="{{ page.description | default: site.description | strip_html | truncate: 155 }}">
-  <meta name="twitter:image" content="{{ page.image | default: '/assets/images/ahmed sharif Khan noor.png' | absolute_url }}">
+  <meta name="twitter:image" content="{{ page.image | default: '/assets/images/og-cover.jpg' | absolute_url }}">
 
   <!-- ── JSON-LD Structured Data ───────────────────────────── -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
     "@type": "Person",
-    "name": "Ahmed Sharif Khan Noor",
-    "jobTitle": "Digital Marketing Specialist",
-    "description": "Results-driven Digital Marketing Specialist & Media Buyer with 4+ years of experience. Managed 1,000+ campaigns on Meta, Google, TikTok, and LinkedIn Ads.",
-    "url": "https://ahmedsharifkhan.github.io",
-    "image": "https://ahmedsharifkhan.github.io/assets/images/ahmed sharif Khan noor.png",
-    "email": "ahmedsharifkhannoor@gmail.com",
-    "telephone": "+8801744750096",
+    "name": {{ site.data.data.name | append: " Noor" | jsonify }},
+    "jobTitle": {{ site.data.data.subtitle | jsonify }},
+    "description": {{ site.data.data.profile | strip | jsonify }},
+    "url": "{{ site.baseurl | absolute_url }}",
+    "image": "{{ '/assets/images/og-cover.jpg' | absolute_url }}",
+    "email": "{{ site.data.data.contact.email }}",
+    "telephone": "{{ site.data.data.contact.phone }}",
     "address": {
       "@type": "PostalAddress",
       "addressLocality": "Mirpur",
@@ -63,10 +67,11 @@
       "addressCountry": "BD"
     },
     "sameAs": [
-      "https://www.linkedin.com/in/ahmedsharifkhannoor",
-      "https://www.facebook.com/ahmedsharifkhannoor",
-      "https://www.instagram.com/ahmedsharifkhannoor",
-      "https://twitter.com/maxnoor87"
+      "{{ site.data.data.contact.linkedin }}",
+      "{{ site.data.data.contact.facebook }}",
+      "{{ site.data.data.contact.instagram }}",
+      "{{ site.data.data.contact.twitter }}",
+      "{{ site.data.data.contact.github }}"
     ],
     "knowsAbout": ["Meta Ads", "Google Ads", "TikTok Ads", "LinkedIn Ads", "Digital Marketing", "Media Buying", "ROAS Optimization"]
   }
@@ -93,6 +98,8 @@
   <link rel="stylesheet" href="{{ site.baseurl }}/assets/css/jquery.fancybox.min.css">
   <link rel="stylesheet" href="{{ site.baseurl }}/assets/css/aos.css">
   <link rel="stylesheet" href="{{ site.baseurl }}/assets/css/style.css">
+  <link rel="stylesheet" href="{{ site.baseurl }}/assets/css/premium-buttons.css">
+  <link rel="stylesheet" href="{{ site.baseurl }}/assets/css/site-mobile-fixes.css">
 
   <!-- ── Analytics & Tracking ──────────────────────────────── -->
   {% include tracking.html %}
